@@ -1,0 +1,104 @@
+# Clash 订阅 - 更新于 2026-03-27 13:36:40
+# 节点数: 6
+
+proxies:
+- name: alvin9999.com
+  server: ip1.758733.xyz
+  port: 10088
+  type: tuic
+  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+  password: dongtaiwang.com
+  sni: apple.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: dongtaiwang.com_0
+  server: 163.172.116.154
+  port: 33887
+  type: tuic
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+  password: dongtaiwang.com
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: dongtaiwang.com_0_2
+  server: 157.254.223.24
+  port: 41122
+  type: tuic
+  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: dongtaiwang.com_0_3
+  server: 157.254.223.48
+  port: 11540
+  type: tuic
+  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: https://github.com/Alvin9999-newpac/fanqiang/wiki
+  type: hysteria
+  server: 2a14:7584:d097::a
+  port: 54177
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: https://github.com/Alvin9999-newpac/fanqiang/wiki_2
+  type: hysteria
+  server: 2a14:7584:d097::a
+  port: 54177
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - alvin9999.com
+  - dongtaiwang.com_0
+  - dongtaiwang.com_0_2
+  - dongtaiwang.com_0_3
+  - https://github.com/Alvin9999-newpac/fanqiang/wiki
+  - https://github.com/Alvin9999-newpac/fanqiang/wiki_2
+- name: 🐢 延迟最低
+  type: url-test
+  proxies:
+  - alvin9999.com
+  - dongtaiwang.com_0
+  - dongtaiwang.com_0_2
+  - dongtaiwang.com_0_3
+  - https://github.com/Alvin9999-newpac/fanqiang/wiki
+  - https://github.com/Alvin9999-newpac/fanqiang/wiki_2
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+rules:
+- MATCH,🚀 节点选择
