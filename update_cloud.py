@@ -3,12 +3,13 @@ import yaml
 import base64
 import socket
 import concurrent.futures
-import time
 from datetime import datetime
 
-GITEE_TOKEN = "1b3d7f9a6abdd26e15a44367f8695751"
-GITEE_USER = "fwf1222"
-GITEE_REPO = "clash-sub"
+TEST_TIMEOUT = 4
+
+all_proxies = []
+seen_names = set()
+name_counter = {}
 
 CLASH_SOURCES = {
     'clash': 'https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/clash.meta2/{}/config.yaml',
@@ -21,12 +22,6 @@ PUBLIC_SUBS = [
     'https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/clash.yml',
     'https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml',
 ]
-
-TEST_TIMEOUT = 4
-
-all_proxies = []
-seen_names = set()
-name_counter = {}
 
 def parse_hysteria(config):
     proxies = []
@@ -69,20 +64,17 @@ def parse_hysteria2(config):
     return proxies
 
 def test_tcp(proxy):
-    """TCP 端口连通性测试"""
     try:
         server = proxy.get('server', '')
         port = proxy.get('port', 0)
-        
         if not server or not port:
             return False
-        
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(TEST_TIMEOUT)
         result = sock.connect_ex((server, port))
         sock.close()
         return result == 0
-    except Exception as e:
+    except:
         return False
 
 def fetch_nodes():
@@ -181,16 +173,15 @@ def fetch_nodes():
     return all_proxies
 
 def verify_nodes(proxies):
-    """并行验证节点"""
     print("\n正在验证节点连通性...")
     valid = []
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
         futures = {executor.submit(test_tcp, p): p for p in proxies}
         for i, future in enumerate(concurrent.futures.as_completed(futures)):
             if future.result():
                 valid.append(futures[future])
-            if (i + 1) % 10 == 0:
+            if (i + 1) % 20 == 0:
                 print(f"  已验证 {i+1}/{len(proxies)}")
     
     print(f"\n验证完成: {len(valid)} 个可用, {len(proxies) - len(valid)} 个不可用")
@@ -203,8 +194,11 @@ def main():
         print("没有获取到任何节点!")
         return
     
-    print("\n跳过节点验证（国内网络环境下端口不可用）")
-    valid = proxies
+    valid = verify_nodes(proxies)
+    
+    if not valid:
+        print("所有节点不可用，保留原始节点")
+        valid = proxies
     
     config = {
         'proxies': valid,
@@ -221,9 +215,8 @@ def main():
     with open('sub.yaml', 'w', encoding='utf-8') as f:
         f.write(sub_content)
     
-    print(f"\n订阅文件已生成: sub.yaml ({len(valid)} 个节点)")
-    print("请手动提交: cd /d/脚本/clash-sub && git add . && git commit -m '更新' && git push")
-    print("\n完成!")
+    print(f"\n订阅文件已生成: sub.yaml ({len(valid)} 个可用节点)")
+    print("完成!")
 
 if __name__ == "__main__":
     main()
