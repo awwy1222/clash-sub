@@ -91,10 +91,22 @@ RULES = """# 本地网络
 - MATCH,🚀 节点选择
 """
 
+def sanitize_name(name):
+    import re
+    if not name or not isinstance(name, str):
+        return f"node_{len(seen_names) + 1}"
+    if name.startswith('http'):
+        return f"node_{len(seen_names) + 1}"
+    name = re.sub(r'[^\w\u4e00-\u9fff\-_ ]', '', name)
+    if len(name) > 50:
+        name = name[:50]
+    return name if name.strip() else f"node_{len(seen_names) + 1}"
+
 def add_proxy(proxy, source):
     global seen_names, name_counter
     
     name = proxy.get('name', f"node_{len(gitlabip_proxies) + len(public_proxies) + 1}")
+    name = sanitize_name(name)
     final_name = name
     if final_name in seen_names:
         if name not in name_counter:
@@ -126,13 +138,19 @@ def parse_hysteria_json(config):
             server = config.get('server', '')
             if ':' in server:
                 host, port = server.split(':', 1)
+                up = config.get('up_mbps', 10)
+                down = config.get('down_mbps', 50)
+                if isinstance(up, str):
+                    up = int(up.split()[0]) if up.split() else 10
+                if isinstance(down, str):
+                    down = int(down.split()[0]) if down.split() else 50
                 proxies.append({
                     'name': f"hysteria_{host}",
                     'type': 'hysteria',
                     'server': host,
                     'port': int(port),
-                    'up': config.get('up_mbps', 10),
-                    'down': config.get('down_mbps', 50),
+                    'up': up,
+                    'down': down,
                     'auth-str': config.get('auth_str', ''),
                     'obfs': config.get('obfs', ''),
                     'sni': config.get('server_name', ''),
@@ -230,6 +248,40 @@ def main():
     gitlabip_names = [p['name'] for p in gitlabip_proxies] if gitlabip_proxies else ['DIRECT']
     public_names = [p['name'] for p in public_proxies] if public_proxies else ['DIRECT']
     
+    rules_list = [
+        'DOMAIN-SUFFIX,local,DIRECT',
+        'IP-CIDR,127.0.0.0/8,DIRECT',
+        'IP-CIDR,10.0.0.0/8,DIRECT',
+        'IP-CIDR,172.16.0.0/12,DIRECT',
+        'IP-CIDR,192.168.0.0/16,DIRECT',
+        'IP-CIDR,224.0.0.0/4,DIRECT',
+        'IP-CIDR,255.255.255.255/32,DIRECT',
+        'GEOIP,CN,DIRECT',
+        'IP-CIDR,100.64.0.0/10,DIRECT',
+        'IP-CIDR,100.0.0.0/8,DIRECT',
+        'DOMAIN-SUFFIX,cn,DIRECT',
+        'DOMAIN-SUFFIX,baidu.com,DIRECT',
+        'DOMAIN-SUFFIX,qq.com,DIRECT',
+        'DOMAIN-SUFFIX,weixin.com,DIRECT',
+        'DOMAIN-SUFFIX,taobao.com,DIRECT',
+        'DOMAIN-SUFFIX,tmall.com,DIRECT',
+        'DOMAIN-SUFFIX,jd.com,DIRECT',
+        'DOMAIN-SUFFIX,alipay.com,DIRECT',
+        'DOMAIN-SUFFIX,163.com,DIRECT',
+        'DOMAIN-SUFFIX,bilibili.com,DIRECT',
+        'DOMAIN-SUFFIX,tencent.com,DIRECT',
+        'DOMAIN-SUFFIX,weibo.com,DIRECT',
+        'DOMAIN-SUFFIX,csdn.net,DIRECT',
+        'DOMAIN-SUFFIX,ithome.com,DIRECT',
+        'DOMAIN-SUFFIX,netease.com,DIRECT',
+        'DOMAIN-SUFFIX,microsoft.com,DIRECT',
+        'DOMAIN-SUFFIX,office.com,DIRECT',
+        'DOMAIN-SUFFIX,apple.com,DIRECT',
+        'DOMAIN-SUFFIX,icloud.com,DIRECT',
+        'DOMAIN-SUFFIX,steamcontent.com,DIRECT',
+        'MATCH,🚀 节点选择',
+    ]
+    
     config = {
         'proxies': all_proxies,
         'proxy-groups': [
@@ -238,10 +290,11 @@ def main():
             {'name': '公共节点', 'type': 'select', 'proxies': public_names},
             {'name': '🐢 延迟最低', 'type': 'url-test', 'proxies': [p['name'] for p in all_proxies], 'url': 'http://www.gstatic.com/generate_204', 'interval': 300, 'tolerance': 50}
         ],
+        'rules': rules_list,
     }
     
     yaml_content = yaml.dump(config, allow_unicode=True, sort_keys=False)
-    sub_content = f'# Clash 订阅 - 更新于 {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n# EdgeGo: {len(gitlabip_proxies)} 个, 公共: {len(public_proxies)} 个\n\n' + yaml_content + '\n' + RULES
+    sub_content = f'# Clash 订阅 - 更新于 {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n# EdgeGo: {len(gitlabip_proxies)} 个, 公共: {len(public_proxies)} 个\n\n' + yaml_content
     
     with open('sub.yaml', 'w', encoding='utf-8') as f:
         f.write(sub_content)
