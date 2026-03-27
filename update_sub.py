@@ -24,6 +24,16 @@ all_proxies = []
 seen_names = set()
 name_counter = {}
 
+def is_valid_proxy(proxy):
+    server = proxy.get('server', '')
+    if not server:
+        return False
+    if server.startswith('[') and not server.endswith(']'):
+        return False
+    if len(server) < 3:
+        return False
+    return True
+
 print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始获取节点...")
 
 # 获取 Clash 节点
@@ -37,6 +47,8 @@ for name, template in CLASH_SOURCES.items():
                 data = yaml.safe_load(resp.text)
                 if data and 'proxies' in data:
                     for proxy in data['proxies']:
+                        if not is_valid_proxy(proxy):
+                            continue
                         pname = proxy.get('name', f"node_{len(all_proxies)+1}")
                         final_name = pname
                         if final_name in seen_names:
@@ -60,6 +72,8 @@ for sub_url in PUBLIC_SUBS:
             data = yaml.safe_load(resp.text)
             if data and 'proxies' in data:
                 for proxy in data['proxies']:
+                    if not is_valid_proxy(proxy):
+                        continue
                     pname = proxy.get('name', f"pub_{len(all_proxies)+1}")
                     final_name = pname
                     if final_name in seen_names:
