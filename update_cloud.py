@@ -35,6 +35,66 @@ PUBLIC_SUBS = [
     'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/clash.yml',
 ]
 
+RULES = """# 本地网络
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR,255.255.255.255/32,DIRECT
+- GEOIP,CN,DIRECT
+
+# Tailscale 虚拟网络
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,100.0.0.0/8,DIRECT
+
+# 广告
+- DOMAIN-SUFFIX,ad.zanox.com,REJECT
+- DOMAIN-SUFFIX,adcolony.com,REJECT
+- DOMAIN-SUFFIX,admob.com,REJECT
+- DOMAIN-SUFFIX,ads.twitter.com,REJECT
+- DOMAIN-SUFFIX,advertising.com,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-SUFFIX,googlesyndication.com,REJECT
+
+# 国内常见网站直连
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-SUFFIX,baidu.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,weixin.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,alipay.com,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ithome.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+
+# Microsoft
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-KEYWORD,microsoft,DIRECT
+- DOMAIN-KEYWORD,azure,DIRECT
+- DOMAIN-KEYWORD,githubusercontent,DIRECT
+
+# Apple
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+
+# Steam
+- DOMAIN-SUFFIX,steamcontent.com,DIRECT
+- DOMAIN-KEYWORD,steamcommunity,DIRECT
+- DOMAIN-KEYWORD,steammobile,DIRECT
+
+# 默认规则
+- MATCH,🚀 节点选择
+"""
+
 def add_proxy(proxy, source):
     global seen_names, name_counter
     
@@ -182,11 +242,10 @@ def main():
             {'name': '公共节点', 'type': 'select', 'proxies': public_names},
             {'name': '🐢 延迟最低', 'type': 'url-test', 'proxies': [p['name'] for p in all_proxies], 'url': 'http://www.gstatic.com/generate_204', 'interval': 300, 'tolerance': 50}
         ],
-        'rules': ['MATCH,🚀 节点选择']
     }
     
     yaml_content = yaml.dump(config, allow_unicode=True, sort_keys=False)
-    sub_content = f'# Clash 订阅 - 更新于 {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n# EdgeGo: {len(gitlabip_proxies)} 个, 公共: {len(public_proxies)} 个\n\n' + yaml_content
+    sub_content = f'# Clash 订阅 - 更新于 {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n# EdgeGo: {len(gitlabip_proxies)} 个, 公共: {len(public_proxies)} 个\n\n' + yaml_content + '\n' + RULES
     
     with open('sub.yaml', 'w', encoding='utf-8') as f:
         f.write(sub_content)
