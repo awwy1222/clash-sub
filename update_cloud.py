@@ -29,6 +29,10 @@ PUBLIC_SUBS = [
     'https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml',
     'https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/clash.yml',
     'https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml',
+    'https://raw.githubusercontent.com/free-nodes/v2rayfree/main/clash.yml',
+    'https://raw.githubusercontent.com/clash-2025/freenode/main/clash.yml',
+    'https://raw.githubusercontent.com/clash-v2ray-ssr/clashfreenode.com/main/clash.yml',
+    'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/clash.yml',
 ]
 
 def add_proxy(proxy, source):
@@ -54,7 +58,8 @@ def parse_clash_yaml(data):
     proxies = []
     if data and 'proxies' in data:
         for p in data['proxies']:
-            if p.get('type') not in ['select', 'fallback', 'url-test']:
+            ptype = p.get('type', '')
+            if ptype not in ['select', 'fallback', 'url-test']:
                 proxies.append(p)
     return proxies
 
