@@ -3,37 +3,79 @@ import yaml
 import base64
 from datetime import datetime
 
-BASE_URL = "https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/clash.meta2/{}/config.yaml"
 GITEE_TOKEN = "1b3d7f9a6abdd26e15a44367f8695751"
 GITEE_USER = "fwf1222"
 GITEE_REPO = "clash-sub"
+
+# Clash 兼容的来源
+CLASH_SOURCES = {
+    'clash_1': 'https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/clash.meta2/{}/config.yaml',
+    'clash_2': 'https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/clash.meta2/{}/config.yaml',
+}
+
+# 公共订阅源（可能有免费节点）
+PUBLIC_SUBS = [
+    'https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml',
+    'https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/clash.yml',
+    'https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml',
+]
 
 all_proxies = []
 seen_names = set()
 name_counter = {}
 
-for i in range(1, 7):
-    url = BASE_URL.format(i)
+print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始获取节点...")
+
+# 获取 Clash 节点
+for name, template in CLASH_SOURCES.items():
+    max_page = 6 if 'clash' in name else 6
+    for i in range(1, max_page + 1):
+        url = template.format(i)
+        try:
+            resp = requests.get(url, timeout=15)
+            if resp.status_code == 200:
+                data = yaml.safe_load(resp.text)
+                if data and 'proxies' in data:
+                    for proxy in data['proxies']:
+                        pname = proxy.get('name', f"node_{len(all_proxies)+1}")
+                        final_name = pname
+                        if final_name in seen_names:
+                            if pname not in name_counter:
+                                name_counter[pname] = 1
+                            name_counter[pname] += 1
+                            final_name = f"{pname}_{name_counter[pname]}"
+                        
+                        proxy['name'] = final_name
+                        seen_names.add(final_name)
+                        all_proxies.append(proxy)
+                    print(f"  {name}/{i}: {len(data['proxies'])} 个节点")
+        except Exception as e:
+            pass
+
+# 尝试公共订阅
+for sub_url in PUBLIC_SUBS:
     try:
-        resp = requests.get(url, timeout=15)
+        resp = requests.get(sub_url, timeout=15)
         if resp.status_code == 200:
             data = yaml.safe_load(resp.text)
             if data and 'proxies' in data:
                 for proxy in data['proxies']:
-                    name = proxy.get('name', f'node_{len(all_proxies)+1}')
-                    final_name = name
+                    pname = proxy.get('name', f"pub_{len(all_proxies)+1}")
+                    final_name = pname
                     if final_name in seen_names:
-                        if name not in name_counter:
-                            name_counter[name] = 1
-                        name_counter[name] += 1
-                        final_name = f'{name}_{name_counter[name]}'
+                        if pname not in name_counter:
+                            name_counter[pname] = 1
+                        name_counter[pname] += 1
+                        final_name = f"{pname}_{name_counter[pname]}"
+                    
                     proxy['name'] = final_name
                     seen_names.add(final_name)
                     all_proxies.append(proxy)
-    except Exception as e:
-        print(f'Error fetching {url}: {e}')
+                print(f"  公共订阅: {len(data['proxies'])} 个节点")
+    except:
+        pass
 
-print(f'获取到 {len(all_proxies)} 个节点')
+print(f"\n总计获取 {len(all_proxies)} 个节点")
 
 config = {
     'proxies': all_proxies,
@@ -54,6 +96,8 @@ if get_resp.status_code == 200:
     data = get_resp.json()
     if isinstance(data, dict):
         sha = data.get('sha')
+    elif isinstance(data, list) and len(data) > 0:
+        sha = data[0].get('sha')
 
 # 上传
 put_data = {
