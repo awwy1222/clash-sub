@@ -102,8 +102,21 @@ def sanitize_name(name):
         name = name[:50]
     return name if name.strip() else f"node_{len(seen_names) + 1}"
 
+def is_valid_proxy(proxy):
+    server = proxy.get('server', '')
+    if not server:
+        return False
+    if server.startswith('[') and not server.endswith(']'):
+        return False
+    if len(server) < 3:
+        return False
+    return True
+
 def add_proxy(proxy, source):
     global seen_names, name_counter
+    
+    if not is_valid_proxy(proxy):
+        return
     
     name = proxy.get('name', f"node_{len(gitlabip_proxies) + len(public_proxies) + 1}")
     name = sanitize_name(name)
