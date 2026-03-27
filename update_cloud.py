@@ -1,13 +1,13 @@
 import requests
 import yaml
-import base64
 import socket
 import concurrent.futures
 from datetime import datetime
 
 TEST_TIMEOUT = 4
 
-all_proxies = []
+gitlabip_proxies = []
+public_proxies = []
 seen_names = set()
 name_counter = {}
 
@@ -50,173 +50,135 @@ def parse_hysteria2(config):
     proxies = []
     try:
         if isinstance(config, dict) and 'server' in config:
-            proxies.append({
-                'name': f"hysteria2_{config.get('server', '')}",
-                'type': 'hysteria2',
-                'server': config.get('server', ''),
-                'port': config.get('server_port', 443),
-                'password': config.get('password', ''),
-                'sni': config.get('server_name', ''),
-                'skip-cert-verify': config.get('insecure', False),
-            })
+            server = config.get('server', '')
+            if ':' in server:
+                host = server.split(':')[0]
+                try:
+                    port = int(server.split(':')[1].split(',')[0])
+                except:
+                    port = 443
+                proxies.append({
+                    'name': f"hysteria2_{host}",
+                    'type': 'hysteria2',
+                    'server': host,
+                    'port': port,
+                    'password': config.get('auth', ''),
+                    'sni': config.get('tls', {}).get('sni', ''),
+                    'skip-cert-verify': config.get('tls', {}).get('insecure', False),
+                })
     except:
         pass
     return proxies
 
-def test_tcp(proxy):
-    try:
-        server = proxy.get('server', '')
-        port = proxy.get('port', 0)
-        if not server or not port:
-            return False
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(TEST_TIMEOUT)
-        result = sock.connect_ex((server, port))
-        sock.close()
-        return result == 0
-    except:
-        return False
-
-def fetch_nodes():
-    global all_proxies, seen_names, name_counter
+def add_proxy(proxy, source):
+    global seen_names, name_counter
+    pname = proxy.get('name', f"node_{len(gitlabip_proxies) + len(public_proxies) + 1}")
+    final_name = pname
+    if final_name in seen_names:
+        if pname not in name_counter:
+            name_counter[pname] = 1
+        name_counter[pname] += 1
+        final_name = f"{pname}_{name_counter[pname]}"
     
-    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始获取节点...")
+    proxy['name'] = final_name
+    seen_names.add(final_name)
+    
+    if source == 'gitlabip':
+        gitlabip_proxies.append(proxy)
+    else:
+        public_proxies.append(proxy)
+
+def fetch_gitlabip():
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 获取 EdgeGo 节点...")
     
     for i in range(1, 7):
-        url = CLASH_SOURCES['clash'].format(i)
         try:
-            resp = requests.get(url, timeout=15)
+            resp = requests.get(CLASH_SOURCES['clash'].format(i), timeout=15)
             if resp.status_code == 200:
                 data = yaml.safe_load(resp.text)
                 if data and 'proxies' in data:
-                    for proxy in data['proxies']:
-                        pname = proxy.get('name', f"node_{len(all_proxies)+1}")
-                        final_name = pname
-                        if final_name in seen_names:
-                            if pname not in name_counter:
-                                name_counter[pname] = 1
-                            name_counter[pname] += 1
-                            final_name = f"{pname}_{name_counter[pname]}"
-                        proxy['name'] = final_name
-                        seen_names.add(final_name)
-                        all_proxies.append(proxy)
+                    for p in data['proxies']:
+                        add_proxy(p, 'gitlabip')
                     print(f"  Clash/{i}: +{len(data['proxies'])}")
         except:
             pass
     
     for i in range(1, 5):
-        url = CLASH_SOURCES['hysteria'].format(i)
         try:
-            resp = requests.get(url, timeout=15)
+            resp = requests.get(CLASH_SOURCES['hysteria'].format(i), timeout=15)
             if resp.status_code == 200:
                 proxies = parse_hysteria(resp.json())
-                for proxy in proxies:
-                    pname = proxy.get('name', f"hys_{len(all_proxies)+1}")
-                    final_name = pname
-                    if final_name in seen_names:
-                        if pname not in name_counter:
-                            name_counter[pname] = 1
-                        name_counter[pname] += 1
-                        final_name = f"{pname}_{name_counter[pname]}"
-                    proxy['name'] = final_name
-                    seen_names.add(final_name)
-                    all_proxies.append(proxy)
+                for p in proxies:
+                    add_proxy(p, 'gitlabip')
                 if proxies:
                     print(f"  Hysteria/{i}: +{len(proxies)}")
         except:
             pass
     
     for i in range(1, 5):
-        url = CLASH_SOURCES['hysteria2'].format(i)
         try:
-            resp = requests.get(url, timeout=15)
+            resp = requests.get(CLASH_SOURCES['hysteria2'].format(i), timeout=15)
             if resp.status_code == 200:
                 proxies = parse_hysteria2(resp.json())
-                for proxy in proxies:
-                    pname = proxy.get('name', f"hys2_{len(all_proxies)+1}")
-                    final_name = pname
-                    if final_name in seen_names:
-                        if pname not in name_counter:
-                            name_counter[pname] = 1
-                        name_counter[pname] += 1
-                        final_name = f"{pname}_{name_counter[pname]}"
-                    proxy['name'] = final_name
-                    seen_names.add(final_name)
-                    all_proxies.append(proxy)
+                for p in proxies:
+                    add_proxy(p, 'gitlabip')
                 if proxies:
                     print(f"  Hysteria2/{i}: +{len(proxies)}")
         except:
             pass
     
+    print(f"  EdgeGo 节点: {len(gitlabip_proxies)} 个")
+
+def fetch_public():
+    print(f"\n获取公共订阅节点...")
+    
     for sub_url in PUBLIC_SUBS:
         try:
-            resp = requests.get(sub_url, timeout=15)
+            resp = requests.get(sub_url, timeout=30)
             if resp.status_code == 200:
                 data = yaml.safe_load(resp.text)
                 if data and 'proxies' in data:
-                    for proxy in data['proxies']:
-                        pname = proxy.get('name', f"pub_{len(all_proxies)+1}")
-                        final_name = pname
-                        if final_name in seen_names:
-                            if pname not in name_counter:
-                                name_counter[pname] = 1
-                            name_counter[pname] += 1
-                            final_name = f"{pname}_{name_counter[pname]}"
-                        proxy['name'] = final_name
-                        seen_names.add(final_name)
-                        all_proxies.append(proxy)
-                    print(f"  公共订阅: +{len(data['proxies'])}")
-        except:
-            pass
-    
-    print(f"\n获取到 {len(all_proxies)} 个节点")
-    return all_proxies
-
-def verify_nodes(proxies):
-    print("\n正在验证节点连通性...")
-    valid = []
-    
-    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
-        futures = {executor.submit(test_tcp, p): p for p in proxies}
-        for i, future in enumerate(concurrent.futures.as_completed(futures)):
-            if future.result():
-                valid.append(futures[future])
-            if (i + 1) % 20 == 0:
-                print(f"  已验证 {i+1}/{len(proxies)}")
-    
-    print(f"\n验证完成: {len(valid)} 个可用, {len(proxies) - len(valid)} 个不可用")
-    return valid
+                    for p in data['proxies']:
+                        add_proxy(p, 'public')
+                    print(f"  {sub_url.split('/')[-2]}: +{len(data['proxies'])}")
+        except Exception as e:
+            print(f"  {sub_url.split('/')[-2]}: 获取失败")
 
 def main():
-    proxies = fetch_nodes()
+    fetch_gitlabip()
+    fetch_public()
     
-    if not proxies:
+    print(f"\n总计: EdgeGo {len(gitlabip_proxies)} 个, 公共 {len(public_proxies)} 个")
+    
+    all_proxies = gitlabip_proxies + public_proxies
+    
+    if not all_proxies:
         print("没有获取到任何节点!")
         return
     
-    valid = verify_nodes(proxies)
-    
-    if not valid:
-        print("所有节点不可用，保留原始节点")
-        valid = proxies
+    gitlabip_names = [p['name'] for p in gitlabip_proxies] if gitlabip_proxies else ['DIRECT']
+    public_names = [p['name'] for p in public_proxies] if public_proxies else ['DIRECT']
     
     config = {
-        'proxies': valid,
+        'proxies': all_proxies,
         'proxy-groups': [
-            {'name': '🚀 节点选择', 'type': 'select', 'proxies': [p['name'] for p in valid]},
-            {'name': '🐢 延迟最低', 'type': 'url-test', 'proxies': [p['name'] for p in valid], 'url': 'http://www.gstatic.com/generate_204', 'interval': 300, 'tolerance': 50}
+            {'name': '🚀 节点选择', 'type': 'select', 'proxies': ['EdgeGo节点', '公共节点', '🐢 延迟最低']},
+            {'name': 'EdgeGo节点', 'type': 'select', 'proxies': gitlabip_names},
+            {'name': '公共节点', 'type': 'select', 'proxies': public_names},
+            {'name': '🐢 延迟最低', 'type': 'url-test', 'proxies': all_proxies, 'url': 'http://www.gstatic.com/generate_204', 'interval': 300, 'tolerance': 50}
         ],
         'rules': ['MATCH,🚀 节点选择']
     }
     
     yaml_content = yaml.dump(config, allow_unicode=True, sort_keys=False)
-    sub_content = f'# Clash 订阅 - 更新于 {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n# 节点数: {len(valid)}\n\n' + yaml_content
+    sub_content = f'# Clash 订阅 - 更新于 {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n# EdgeGo: {len(gitlabip_proxies)} 个, 公共: {len(public_proxies)} 个\n\n' + yaml_content
     
     with open('sub.yaml', 'w', encoding='utf-8') as f:
         f.write(sub_content)
     
-    print(f"\n订阅文件已生成: sub.yaml ({len(valid)} 个可用节点)")
-    print("完成!")
+    print(f"\n订阅文件已生成: sub.yaml")
+    print(f"  - EdgeGo 节点: {len(gitlabip_proxies)} 个")
+    print(f"  - 公共节点: {len(public_proxies)} 个")
 
 if __name__ == "__main__":
     main()
