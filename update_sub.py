@@ -107,11 +107,15 @@ def upload_to_gitee(content):
     import json
     
     # 读取现有文件 SHA
-    get_url = f"https://gitee.com/api/v5/repos/{GITEE_USER}/{GITEE_REPO}/contents/sub.yaml"
-    get_resp = requests.get(get_url, headers={"Authorization": f"token {GITEE_TOKEN}"})
+    get_url = f"https://gitee.com/api/v5/repos/{GITEE_USER}/{GITEE_REPO}/contents/sub.yaml?access_token={GITEE_TOKEN}"
+    get_resp = requests.get(get_url)
     sha = None
     if get_resp.status_code == 200:
-        sha = get_resp.json().get('sha')
+        data = get_resp.json()
+        if isinstance(data, dict):
+            sha = data.get('sha')
+        elif isinstance(data, list) and len(data) > 0:
+            sha = data[0].get('sha')
     
     # 上传/更新文件
     put_url = f"https://gitee.com/api/v5/repos/{GITEE_USER}/{GITEE_REPO}/contents/sub.yaml"
@@ -124,6 +128,7 @@ def upload_to_gitee(content):
         data["sha"] = sha
     
     resp = requests.post(put_url, json=data)
+    print(f"  -> Gitee API 响应: {resp.status_code}")
     if resp.status_code == 201:
         print("  -> Gitee 更新成功!")
     else:
