@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-03-27 17:22:54
-# EdgeGo: 14 个, 公共: 41 个
+# Clash 订阅 - 更新于 2026-03-28 02:52:00
+# EdgeGo: 11 个, 公共: 41 个
 
 proxies:
 - name: alvin9999com
@@ -124,27 +124,6 @@ proxies:
   port: 27921
   password: dongtaiwang.com
   sni: www.bing.com
-  skip-cert-verify: true
-- name: hysteria2_2a10
-  type: hysteria2
-  server: '[2a10'
-  port: 443
-  password: VNws548Lj/fDRk58HE6dKAcTNpb8+iIk+ycqKEBNG/U=
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: hysteria2_2001
-  type: hysteria2
-  server: '[2001'
-  port: 443
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: hysteria2_2001_2
-  type: hysteria2
-  server: '[2001'
-  port: 443
-  password: dongtaiwang.com
-  sni: www.microsoft.com
   skip-cert-verify: true
 - alterId: 0
   cipher: auto
@@ -515,9 +494,6 @@ proxy-groups:
   - hysteria_58312990
   - hysteria_58312990_2
   - hysteria2_15725422343
-  - hysteria2_2a10
-  - hysteria2_2001
-  - hysteria2_2001_2
 - name: 公共节点
   type: select
   proxies:
@@ -576,9 +552,6 @@ proxy-groups:
   - hysteria_58312990
   - hysteria_58312990_2
   - hysteria2_15725422343
-  - hysteria2_2a10
-  - hysteria2_2001
-  - hysteria2_2001_2
   - 防范境外势力渗透
   - 防范境外势力渗透 1
   - 防范境外势力渗透 2
