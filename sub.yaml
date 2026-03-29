@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-03-28 02:52:00
-# EdgeGo: 11 个, 公共: 41 个
+# Clash 订阅 - 更新于 2026-03-29 03:26:16
+# EdgeGo: 11 个, 公共: 36 个
 
 proxies:
 - name: alvin9999com
@@ -233,48 +233,48 @@ proxies:
 - name: 香港3ripaojiedian
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 921
-  server: 54.178.73.158
+  port: 21413
+  server: 54.168.243.160
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 6313
-  server: 54.168.70.136
+  port: 921
+  server: 18.163.28.243
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 1850
-  server: 95.40.57.225
+  port: 921
+  server: 18.162.154.71
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 1951
-  server: 18.166.228.88
+  port: 3278
+  server: 43.207.1.64
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2ripaojiedian
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 34818
-  server: 52.195.233.17
+  port: 4937
+  server: 153.121.38.213
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3ripaojiedian
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 4937
-  server: 52.195.233.17
+  port: 9201
+  server: 43.207.1.64
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -282,7 +282,7 @@ proxies:
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
   port: 1524
-  server: 160.16.72.205
+  server: 153.121.45.139
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -290,39 +290,39 @@ proxies:
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
   port: 4674
-  server: 54.168.242.122
+  server: 160.16.214.104
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 22045
-  server: 18.166.228.88
+  port: 30726
+  server: 18.162.154.71
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 4019
-  server: 54.168.70.136
+  port: 3057
+  server: 13.192.233.204
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2ripaojiedian
   network: tcp
   password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 3057
-  server: 54.168.242.122
+  port: 29370
+  server: 43.207.1.64
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 37223
-  server: 95.40.26.214
+  port: 14919
+  server: 3.112.191.104
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -336,19 +336,47 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: AU_speednode_0004
-  password: IL37892054
-  port: 443
-  server: enhanced-crayfish.rooster465.autos
-  skip-cert-verify: false
-  sni: enhanced-crayfish.rooster465.autos
-  type: trojan
-  udp: true
-- name: KR_speednode_0021
+- name: AT_speednode_0002
   network: ws
   password: trojan
-  port: 20000
-  server: 211.110.32.47
+  port: 8444
+  server: 152.53.200.98
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: CN_speednode_0004
+  password: 71165393-5252-4fea-ac96-c36b508720c8
+  port: 44302
+  server: hk07.jsytongxin.com
+  skip-cert-verify: true
+  sni: jsygouer.weixin-baidu-qq.com
+  type: trojan
+  udp: true
+- name: CN_speednode_0005
+  password: 71165393-5252-4fea-ac96-c36b508720c8
+  port: 39204
+  server: jp14.jsyjiedian8.com
+  skip-cert-verify: true
+  sni: jsygouer.weixin-baidu-qq.com
+  type: trojan
+  udp: true
+- name: MD_speednode_0012
+  password: strong-secret-pass-777
+  port: 4443
+  server: 103.231.73.181
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: NL_speednode_0013
+  network: ws
+  password: trojan
+  port: 82
+  server: 136.244.105.89
   skip-cert-verify: true
   sni: jflsjlaf.pages.dev
   type: trojan
@@ -357,71 +385,14 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
-- name: KR_speednode_0026
-  network: ws
-  password: trojan
-  port: 11434
-  server: 118.35.208.37
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
-- name: MD_speednode_0028
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 89.221.225.71
+- name: NL_speednode_0015
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: PL_speednode_0029
-  password: IL37892054
-  port: 443
-  server: outgoing-ladybird.rooster465.autos
-  skip-cert-verify: false
-  sni: outgoing-ladybird.rooster465.autos
-  type: trojan
-  udp: true
-- name: PL_speednode_0030
-  password: IL37892054
-  port: 443
-  server: fluent-stingray.crayfish192.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: PL_speednode_0031
-  password: IL37892054
-  port: 443
-  server: fluent-stingray.crayfish192.xyz
-  skip-cert-verify: true
-  sni: fluent-stingray.crayfish192.xyz
-  type: trojan
-  udp: true
-- name: PL_speednode_0032
-  password: IL37892054
-  port: 443
-  server: outgoing-ladybird.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: SG_speednode_0034
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 185.151.146.40
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: TW_speednode_0036
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 85.237.206.249
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: US_speednode_0039
+- name: US_speednode_0019
   network: ws
   password: trojan
   port: 8025
@@ -434,20 +405,19 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
-- name: US_speednode_0065
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 77.247.126.137
+- name: US_speednode_0026
+  network: ws
+  password: trojan
+  port: 28080
+  server: 38.83.41.89
   skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
   type: trojan
   udp: true
-- name: US_speednode_0068
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 194.33.45.157
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
 - name: _CN_中国-_JP_日本
   type: trojan
   server: 36.156.102.115
@@ -522,19 +492,14 @@ proxy-groups:
   - 美国2ripaojiedian
   - 美国3ripaojiedian
   - 香港ripaojiedian
-  - AU_speednode_0004
-  - KR_speednode_0021
-  - KR_speednode_0026
-  - MD_speednode_0028
-  - PL_speednode_0029
-  - PL_speednode_0030
-  - PL_speednode_0031
-  - PL_speednode_0032
-  - SG_speednode_0034
-  - TW_speednode_0036
-  - US_speednode_0039
-  - US_speednode_0065
-  - US_speednode_0068
+  - AT_speednode_0002
+  - CN_speednode_0004
+  - CN_speednode_0005
+  - MD_speednode_0012
+  - NL_speednode_0013
+  - NL_speednode_0015
+  - US_speednode_0019
+  - US_speednode_0026
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
@@ -577,19 +542,14 @@ proxy-groups:
   - 美国2ripaojiedian
   - 美国3ripaojiedian
   - 香港ripaojiedian
-  - AU_speednode_0004
-  - KR_speednode_0021
-  - KR_speednode_0026
-  - MD_speednode_0028
-  - PL_speednode_0029
-  - PL_speednode_0030
-  - PL_speednode_0031
-  - PL_speednode_0032
-  - SG_speednode_0034
-  - TW_speednode_0036
-  - US_speednode_0039
-  - US_speednode_0065
-  - US_speednode_0068
+  - AT_speednode_0002
+  - CN_speednode_0004
+  - CN_speednode_0005
+  - MD_speednode_0012
+  - NL_speednode_0013
+  - NL_speednode_0015
+  - US_speednode_0019
+  - US_speednode_0026
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
