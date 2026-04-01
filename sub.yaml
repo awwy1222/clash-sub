@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-03-31 03:20:18
-# EdgeGo: 11 个, 公共: 41 个
+# Clash 订阅 - 更新于 2026-04-01 03:33:18
+# EdgeGo: 11 个, 公共: 31 个
 
 proxies:
 - name: node_1
@@ -15,7 +15,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: dongtaiwangcom_0
+- name: githubcomAlvin9999-newpacfanqiang
   server: 163.172.116.154
   port: 33887
   type: tuic
@@ -28,7 +28,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: dongtaiwangcom_0_2
+- name: githubcomAlvin9999-newpacfanqiang_2
   server: 157.254.223.24
   port: 41122
   type: tuic
@@ -41,7 +41,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: dongtaiwangcom_0_3
+- name: githubcomAlvin9999-newpacfanqiang_3
   server: 157.254.223.48
   port: 11540
   type: tuic
@@ -54,7 +54,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: node_5
+- name: githubcomAlvin9999-newpacfanqiang_4
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -66,7 +66,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: node_6
+- name: githubcomAlvin9999-newpacfanqiang_5
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -230,87 +230,99 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: ' 香港3ripaojiedian'
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 921
-  server: 54.249.168.132
+- name: 香港3ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 21413
+  server: 43.207.198.5
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 香港4ripaojiedian'
+- name: 香港4ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 921
-  server: 95.40.61.187
+  port: 9211
+  server: 43.198.185.44
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: ' 香港5ripaojiedian'
+- name: 香港5ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 921
-  server: 16.162.47.158
+  port: 5823
+  server: 13.231.153.129
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: ' 日本ripaojiedian'
+- name: 日本ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 3122
-  server: 18.182.41.25
+  port: 3357
+  server: 13.231.153.129
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: ' 日本2ripaojiedian'
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 4380
-  server: 18.182.41.25
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: ' 日本3ripaojiedian'
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+- name: 日本2ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 34818
-  server: 153.121.45.139
+  server: 13.231.153.129
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 新加坡ripaojiedian'
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+- name: 日本3ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 34818
+  server: 52.195.170.179
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 160.16.130.21
+  server: 13.231.153.129
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 新加坡2ripaojiedian'
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+- name: 新加坡2ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 160.16.214.104
+  server: 160.16.124.17
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 新加坡3ripaojiedian'
+- name: 新加坡3ripaojiedian
+  network: tcp
   password: BxceQaOe
   port: 12070
-  server: 95.40.39.213
+  server: 95.40.68.20
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: ' 美国ripaojiedian'
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
+- name: 美国ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 29370
-  server: 3.112.241.30
+  server: 52.195.170.179
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 美国2ripaojiedian'
-  password: 6d29eb2f74293cb01a19b32cf08ad2e9
-  port: 3057
-  server: 13.230.185.120
+- name: 美国2ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 29370
+  server: 13.231.153.129
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 美国3ripaojiedian'
+- name: 美国3ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 14919
-  server: 95.40.107.15
+  port: 38692
+  server: 95.40.68.20
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -324,101 +336,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港3ripaojiedian
-  network: tcp
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 921
-  server: 52.192.141.223
-  sni: www.nintendogames.net
-  type: trojan
-- name: 香港4ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 22075
-  server: 43.199.33.41
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 香港5ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 6313
-  server: 3.112.217.47
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 日本ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 3357
-  server: 3.112.217.47
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 日本2ripaojiedian
-  network: tcp
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4937
-  server: 160.16.132.38
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本3ripaojiedian
-  network: tcp
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4380
-  server: 160.16.85.33
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡ripaojiedian
-  network: tcp
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4674
-  server: 160.16.85.33
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2ripaojiedian
-  network: tcp
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4674
-  server: 153.121.65.107
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡3ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 25675
-  server: 16.162.188.208
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 美国ripaojiedian
-  network: tcp
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 3057
-  server: 160.16.132.38
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2ripaojiedian
-  network: tcp
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 3700
-  server: 52.192.219.241
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 44386
-  server: 18.167.134.238
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: US_speednode_0028
+- name: AT_speednode_0001
   network: ws
   password: trojan
-  port: 7071
-  server: 154.17.234.78
-  skip-cert-verify: true
+  port: 8444
+  server: 152.53.60.198
+  skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   type: trojan
   udp: true
@@ -426,6 +349,21 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
+- name: NL_speednode_0029
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: NL_speednode_0030
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
+  skip-cert-verify: true
+  sni: 94.131.105.125
+  type: trojan
+  udp: true
 - name: _CN_中国-_JP_日本
   type: trojan
   server: 36.156.102.115
@@ -462,11 +400,11 @@ proxy-groups:
   type: select
   proxies:
   - node_1
-  - dongtaiwangcom_0
-  - dongtaiwangcom_0_2
-  - dongtaiwangcom_0_3
-  - node_5
-  - node_6
+  - githubcomAlvin9999-newpacfanqiang
+  - githubcomAlvin9999-newpacfanqiang_2
+  - githubcomAlvin9999-newpacfanqiang_3
+  - githubcomAlvin9999-newpacfanqiang_4
+  - githubcomAlvin9999-newpacfanqiang_5
   - hysteria_583129153
   - hysteria_583129153_2
   - hysteria_58312990
@@ -487,19 +425,6 @@ proxy-groups:
   - 防范境外势力渗透 9
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
-  - ' 香港3ripaojiedian'
-  - ' 香港4ripaojiedian'
-  - ' 香港5ripaojiedian'
-  - ' 日本ripaojiedian'
-  - ' 日本2ripaojiedian'
-  - ' 日本3ripaojiedian'
-  - ' 新加坡ripaojiedian'
-  - ' 新加坡2ripaojiedian'
-  - ' 新加坡3ripaojiedian'
-  - ' 美国ripaojiedian'
-  - ' 美国2ripaojiedian'
-  - ' 美国3ripaojiedian'
-  - 香港ripaojiedian
   - 香港3ripaojiedian
   - 香港4ripaojiedian
   - 香港5ripaojiedian
@@ -512,7 +437,10 @@ proxy-groups:
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
-  - US_speednode_0028
+  - 香港ripaojiedian
+  - AT_speednode_0001
+  - NL_speednode_0029
+  - NL_speednode_0030
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
@@ -520,11 +448,11 @@ proxy-groups:
   type: url-test
   proxies:
   - node_1
-  - dongtaiwangcom_0
-  - dongtaiwangcom_0_2
-  - dongtaiwangcom_0_3
-  - node_5
-  - node_6
+  - githubcomAlvin9999-newpacfanqiang
+  - githubcomAlvin9999-newpacfanqiang_2
+  - githubcomAlvin9999-newpacfanqiang_3
+  - githubcomAlvin9999-newpacfanqiang_4
+  - githubcomAlvin9999-newpacfanqiang_5
   - hysteria_583129153
   - hysteria_583129153_2
   - hysteria_58312990
@@ -542,19 +470,6 @@ proxy-groups:
   - 防范境外势力渗透 9
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
-  - ' 香港3ripaojiedian'
-  - ' 香港4ripaojiedian'
-  - ' 香港5ripaojiedian'
-  - ' 日本ripaojiedian'
-  - ' 日本2ripaojiedian'
-  - ' 日本3ripaojiedian'
-  - ' 新加坡ripaojiedian'
-  - ' 新加坡2ripaojiedian'
-  - ' 新加坡3ripaojiedian'
-  - ' 美国ripaojiedian'
-  - ' 美国2ripaojiedian'
-  - ' 美国3ripaojiedian'
-  - 香港ripaojiedian
   - 香港3ripaojiedian
   - 香港4ripaojiedian
   - 香港5ripaojiedian
@@ -567,7 +482,10 @@ proxy-groups:
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
-  - US_speednode_0028
+  - 香港ripaojiedian
+  - AT_speednode_0001
+  - NL_speednode_0029
+  - NL_speednode_0030
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
