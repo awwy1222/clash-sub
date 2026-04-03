@@ -1,4 +1,4 @@
-# Clash 订阅 - 更新于 2026-04-02 03:16:02
+# Clash 订阅 - 更新于 2026-04-03 03:18:03
 # EdgeGo: 11 个, 公共: 31 个
 
 proxies:
@@ -41,12 +41,12 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: githubcomAlvin9999-newpacfanqiang_3
-  server: 157.254.223.48
-  port: 11540
+- name: node_4
+  server: 5.178.101.117
+  port: 30006
   type: tuic
-  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -54,7 +54,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: githubcomAlvin9999-newpacfanqiang_4
+- name: githubcomAlvin9999-newpacfanqiang_3
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -66,7 +66,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: githubcomAlvin9999-newpacfanqiang_5
+- name: githubcomAlvin9999-newpacfanqiang_4
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -233,8 +233,8 @@ proxies:
 - name: 香港3ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 21413
-  server: 43.207.198.5
+  port: 921
+  server: 13.193.218.6
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -242,39 +242,39 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 9211
-  server: 43.198.185.44
+  server: 95.40.35.187
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 5823
-  server: 13.231.153.129
+  port: 6313
+  server: 3.112.236.46
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 3357
-  server: 13.231.153.129
+  port: 16919
+  server: 43.207.66.138
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 34818
-  server: 13.231.153.129
+  port: 4937
+  server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 34818
-  server: 52.195.170.179
+  port: 2001
+  server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -282,7 +282,7 @@ proxies:
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 13.231.153.129
+  server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -290,39 +290,39 @@ proxies:
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 160.16.124.17
+  server: 3.113.31.8
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 12070
-  server: 95.40.68.20
+  port: 30726
+  server: 16.163.147.176
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 29370
-  server: 52.195.170.179
+  port: 3057
+  server: 3.113.31.8
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 29370
-  server: 13.231.153.129
+  port: 3057
+  server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 38692
-  server: 95.40.68.20
+  port: 44386
+  server: 43.198.248.119
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -402,9 +402,9 @@ proxy-groups:
   - node_1
   - githubcomAlvin9999-newpacfanqiang
   - githubcomAlvin9999-newpacfanqiang_2
+  - node_4
   - githubcomAlvin9999-newpacfanqiang_3
   - githubcomAlvin9999-newpacfanqiang_4
-  - githubcomAlvin9999-newpacfanqiang_5
   - hysteria_583129153
   - hysteria_583129153_2
   - hysteria_58312990
@@ -450,9 +450,9 @@ proxy-groups:
   - node_1
   - githubcomAlvin9999-newpacfanqiang
   - githubcomAlvin9999-newpacfanqiang_2
+  - node_4
   - githubcomAlvin9999-newpacfanqiang_3
   - githubcomAlvin9999-newpacfanqiang_4
-  - githubcomAlvin9999-newpacfanqiang_5
   - hysteria_583129153
   - hysteria_583129153_2
   - hysteria_58312990
