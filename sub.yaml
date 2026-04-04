@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-04-03 03:18:03
-# EdgeGo: 11 个, 公共: 31 个
+# Clash 订阅 - 更新于 2026-04-04 02:50:42
+# EdgeGo: 11 个, 公共: 32 个
 
 proxies:
 - name: node_1
@@ -234,15 +234,15 @@ proxies:
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 921
-  server: 13.193.218.6
+  server: 16.162.33.118
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 9211
-  server: 95.40.35.187
+  port: 2001
+  server: 54.168.216.209
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -250,31 +250,31 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 6313
-  server: 3.112.236.46
+  server: 3.112.197.74
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 16919
-  server: 43.207.66.138
+  port: 3122
+  server: 54.238.193.143
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4937
-  server: 160.16.106.99
+  port: 2001
+  server: 54.168.216.209
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 2001
-  server: 160.16.106.99
+  port: 4937
+  server: 160.16.72.205
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -282,7 +282,7 @@ proxies:
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 160.16.106.99
+  server: 160.16.72.205
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -290,15 +290,15 @@ proxies:
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 3.113.31.8
+  server: 54.168.216.209
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 30726
-  server: 16.163.147.176
+  port: 28033
+  server: 18.162.169.141
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -306,23 +306,23 @@ proxies:
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 3057
-  server: 3.113.31.8
+  server: 54.168.216.209
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 3057
-  server: 160.16.106.99
+  port: 4019
+  server: 54.168.216.209
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 44386
-  server: 43.198.248.119
+  port: 23255
+  server: 13.114.26.172
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -339,8 +339,8 @@ proxies:
 - name: AT_speednode_0001
   network: ws
   password: trojan
-  port: 8444
-  server: 152.53.60.198
+  port: 8888
+  server: 152.53.45.251
   skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   type: trojan
@@ -349,14 +349,22 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
-- name: NL_speednode_0029
+- name: IN_speednode_0058
+  password: M7v%w11Se*
+  port: 443
+  server: tttyder.wsone.icu
+  skip-cert-verify: true
+  sni: tttyder.wsone.icu
+  type: trojan
+  udp: true
+- name: NL_speednode_0061
   password: strong-secret-pass-777
   port: 4443
   server: 94.131.105.125
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: NL_speednode_0030
+- name: NL_speednode_0062
   password: strong-secret-pass-777
   port: 4443
   server: 94.131.105.125
@@ -439,8 +447,9 @@ proxy-groups:
   - 美国3ripaojiedian
   - 香港ripaojiedian
   - AT_speednode_0001
-  - NL_speednode_0029
-  - NL_speednode_0030
+  - IN_speednode_0058
+  - NL_speednode_0061
+  - NL_speednode_0062
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
@@ -484,8 +493,9 @@ proxy-groups:
   - 美国3ripaojiedian
   - 香港ripaojiedian
   - AT_speednode_0001
-  - NL_speednode_0029
-  - NL_speednode_0030
+  - IN_speednode_0058
+  - NL_speednode_0061
+  - NL_speednode_0062
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
