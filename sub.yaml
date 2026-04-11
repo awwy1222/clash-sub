@@ -1,34 +1,8 @@
-# Clash 订阅 - 更新于 2026-04-10 03:31:47
-# EdgeGo: 11 个, 公共: 31 个
+# Clash 订阅 - 更新于 2026-04-11 02:55:48
+# EdgeGo: 9 个, 公共: 33 个
 
 proxies:
-- name: node_1
-  server: ip1.758733.xyz
-  port: 10088
-  type: tuic
-  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
-  password: dongtaiwang.com
-  sni: apple.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: githubcomAlvin9999-newpacfanqiang
-  server: 163.172.116.154
-  port: 33887
-  type: tuic
-  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
-  password: dongtaiwang.com
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
-- name: githubcomAlvin9999-newpacfanqiang_2
   server: 178.18.147.199
   port: 42487
   type: tuic
@@ -41,7 +15,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: node_4
+- name: node_2
   server: 5.178.101.117
   port: 30006
   type: tuic
@@ -54,7 +28,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: githubcomAlvin9999-newpacfanqiang_3
+- name: githubcomAlvin9999-newpacfanqiang_2
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -66,7 +40,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: githubcomAlvin9999-newpacfanqiang_4
+- name: githubcomAlvin9999-newpacfanqiang_3
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -233,10 +207,18 @@ proxies:
 - name: 香港3ripaojiedian
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
-  port: 21413
-  server: 57.180.63.46
+  port: 52687
+  server: 95.40.33.204
   skip-cert-verify: false
   sni: www.nintendogames.net
+  type: trojan
+- name: 香港4ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 9211
+  server: 13.193.220.142
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5ripaojiedian
   network: tcp
@@ -250,23 +232,31 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 4746
-  server: 57.180.63.46
+  server: 18.177.145.165
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本2ripaojiedian
+  network: tcp
+  password: 187dda4498be9ac4f28db939d5940185
+  port: 34818
+  server: 13.113.192.91
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - name: 日本3ripaojiedian
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
-  port: 4380
-  server: 13.193.223.51
-  skip-cert-verify: false
+  port: 2001
+  server: 18.177.145.165
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡ripaojiedian
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
   port: 4674
-  server: 13.193.223.51
+  server: 3.112.132.73
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -274,23 +264,23 @@ proxies:
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
   port: 4674
-  server: 57.180.66.105
+  server: 18.177.145.165
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 22045
-  server: 43.207.110.4
+  port: 25675
+  server: 43.199.69.64
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
-  port: 29370
-  server: 57.180.63.46
+  port: 3057
+  server: 18.177.145.165
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -298,15 +288,15 @@ proxies:
   network: tcp
   password: 187dda4498be9ac4f28db939d5940185
   port: 3057
-  server: 13.193.223.51
+  server: 13.113.192.91
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 49534
-  server: 18.162.52.201
+  port: 44386
+  server: 54.46.53.176
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -410,12 +400,10 @@ proxy-groups:
 - name: EdgeGo节点
   type: select
   proxies:
-  - node_1
   - githubcomAlvin9999-newpacfanqiang
+  - node_2
   - githubcomAlvin9999-newpacfanqiang_2
-  - node_4
   - githubcomAlvin9999-newpacfanqiang_3
-  - githubcomAlvin9999-newpacfanqiang_4
   - hysteria_583129153
   - hysteria_583129153_2
   - hysteria_58312990
@@ -437,8 +425,10 @@ proxy-groups:
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
   - 香港3ripaojiedian
+  - 香港4ripaojiedian
   - 香港5ripaojiedian
   - 日本ripaojiedian
+  - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
@@ -458,12 +448,10 @@ proxy-groups:
 - name: 🐢 延迟最低
   type: url-test
   proxies:
-  - node_1
   - githubcomAlvin9999-newpacfanqiang
+  - node_2
   - githubcomAlvin9999-newpacfanqiang_2
-  - node_4
   - githubcomAlvin9999-newpacfanqiang_3
-  - githubcomAlvin9999-newpacfanqiang_4
   - hysteria_583129153
   - hysteria_583129153_2
   - hysteria_58312990
@@ -482,8 +470,10 @@ proxy-groups:
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
   - 香港3ripaojiedian
+  - 香港4ripaojiedian
   - 香港5ripaojiedian
   - 日本ripaojiedian
+  - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
