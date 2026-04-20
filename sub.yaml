@@ -1,4 +1,4 @@
-# Clash 订阅 - 更新于 2026-04-19 03:40:07
+# Clash 订阅 - 更新于 2026-04-20 03:41:53
 # EdgeGo: 11 个, 公共: 29 个
 
 proxies:
@@ -241,24 +241,24 @@ proxies:
 - name: 香港4ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 6313
-  server: 54.46.52.70
+  port: 9211
+  server: 18.183.182.241
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 6313
-  server: 52.69.111.130
+  port: 50612
+  server: 18.183.182.241
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 1951
-  server: 13.112.73.166
+  port: 1783
+  server: 13.192.183.245
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -297,8 +297,8 @@ proxies:
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 12070
-  server: 95.40.68.160
+  port: 28033
+  server: 18.183.182.241
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -321,8 +321,8 @@ proxies:
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 23255
-  server: 54.46.52.234
+  port: 49534
+  server: 18.183.182.241
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
