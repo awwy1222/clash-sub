@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-04-20 03:41:53
-# EdgeGo: 11 个, 公共: 29 个
+# Clash 订阅 - 更新于 2026-04-21 03:34:24
+# EdgeGo: 11 个, 公共: 28 个
 
 proxies:
 - name: node_1
@@ -232,97 +232,97 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 香港3ripaojiedian
   network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
+  password: 1774240c00db2b77d5a99f6540c47b69
   port: 52687
-  server: 95.40.85.50
+  server: 18.167.20.54
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 9211
-  server: 18.183.182.241
+  port: 3685
+  server: 18.166.178.135
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 50612
-  server: 18.183.182.241
+  port: 39507
+  server: 18.181.203.85
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 1783
-  server: 13.192.183.245
+  port: 1951
+  server: 18.177.137.225
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2ripaojiedian
   network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 34818
-  server: 54.249.109.55
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 9201
+  server: 3.112.12.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3ripaojiedian
   network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 4380
-  server: 54.249.109.55
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 9201
+  server: 18.183.89.184
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡ripaojiedian
   network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 4674
-  server: 13.115.146.132
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 32876
+  server: 3.112.12.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2ripaojiedian
   network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 4674
-  server: 54.249.109.55
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 5594
+  server: 3.112.12.32
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 28033
-  server: 18.183.182.241
+  port: 30726
+  server: 18.162.96.8
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 4019
-  server: 54.249.109.55
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 3057
+  server: 18.166.177.72
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2ripaojiedian
   network: tcp
-  password: 868ecdaf6aed618ec98cf78585672b2b
-  port: 3057
-  server: 13.115.246.132
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 4019
+  server: 160.16.72.205
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 49534
-  server: 18.183.182.241
+  port: 23255
+  server: 18.166.177.72
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -336,19 +336,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: AT_speednode_0001
-  network: ws
-  password: trojan
-  port: 8888
-  server: 152.53.45.251
-  skip-cert-verify: false
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
 - name: _CN_中国-_JP_日本
   type: trojan
   server: 36.156.102.115
@@ -423,7 +410,6 @@ proxy-groups:
   - 美国2ripaojiedian
   - 美国3ripaojiedian
   - 香港ripaojiedian
-  - AT_speednode_0001
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
@@ -466,7 +452,6 @@ proxy-groups:
   - 美国2ripaojiedian
   - 美国3ripaojiedian
   - 香港ripaojiedian
-  - AT_speednode_0001
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
