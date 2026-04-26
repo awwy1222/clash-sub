@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-04-25 03:22:36
-# EdgeGo: 11 个, 公共: 92 个
+# Clash 订阅 - 更新于 2026-04-26 03:46:26
+# EdgeGo: 11 个, 公共: 141 个
 
 proxies:
 - name: node_1
@@ -215,12 +215,178 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- cipher: aes-256-cfb
-  name: tg频道ripaojiedian 1
-  password: amazonskr05
-  port: 443
-  server: 63.180.254.10
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: A -  HK 02 TG nodpai
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: A -  HK 03 TG nodpai
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: A -  HK 04 TG nodpai
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: B -  HK 05 TG nodpai
+  network: ws
+  port: 20010
+  server: 76c3.earthdraft.onezz.top
+  type: vmess
+  uuid: 7d81d7ed-03f4-331a-ab0d-e9a7425f05e0
+  ws-opts:
+    headers:
+      Host: ithome.com
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: B -  HK 09 TG nodpai
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: B -  HK 11 TG nodpai
+  network: ws
+  port: 16632
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-headers:
+    Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: B -  HK 14 TG nodpai
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: B -  HK 16 TG nodpai
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-headers:
+    Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: B -  HK 17 TG nodpai
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: HK_910MBs
+  network: ws
+  port: 16632
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: B -  HK 19 TG nodpai
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: B -  HK 21 TG nodpai
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
 - alterId: 2
   cipher: auto
   name: ' 香港ripaojiedian'
@@ -230,52 +396,495 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: ' 香港3ripaojiedian'
+- alterId: 0
+  cipher: auto
+  name: B -  TW 07 TG nodpai
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: B -  TW 10 TG nodpai
+  network: ws
+  port: 16616
+  server: planb.mojcn.com
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: B -  TW 12 TG nodpai
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-headers:
+    Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: B -  TW 13 TG nodpai
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: B -  TW 14 TG nodpai
+  network: ws
+  port: 16616
+  server: m.cnmjin.net
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: B -  TW 15 TG nodpai
+  network: ws
+  port: 16616
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: B -  TW 16 TG nodpai
+  network: ws
+  port: 16616
+  server: m.cnmjin.net
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: B -  TW 17 TG nodpai
+  network: ws
+  port: 16616
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: C -  TW 18 TG nodpai
+  network: ws
+  port: 16616
+  server: m.cnmjin.net
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-headers:
+    Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: C -  TW 19 TG nodpai
+  network: ws
+  port: 16616
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-headers:
+    Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: C -  TW 20 TG nodpai
+  network: ws
+  port: 16616
+  server: m.cnmjin.net
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: C -  TW 21 TG nodpai
+  network: ws
+  port: 16616
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: A -  JP 04 TG nodpai
+  network: ws
+  port: 22013
+  server: 76c3.earthdraft.onezz.top
+  type: vmess
+  uuid: 7d81d7ed-03f4-331a-ab0d-e9a7425f05e0
+  ws-opts:
+    headers:
+      Host: ithome.com
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: A -  JP 07 TG nodpai
+  network: ws
+  port: 16617
+  server: t.cnmjcn.cyou
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: B -  JP 12 TG nodpai
+  network: ws
+  port: 16617
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /ABCDE
+  name: B -  JP 17 TG nodpai
+  network: http
+  port: 58051
+  server: 103.127.243.55
+  tls: false
+  type: vmess
+  uuid: 8e5b521a-4a56-4bd7-baf1-bfcdf55d6cf1
+- alterId: 0
+  cipher: auto
+  delay: 2030
+  h2-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /ABCDE
+  name: C -  JP 21 TG nodpai
+  network: http
+  port: 53224
+  server: 103.127.243.49
+  type: vmess
+  uuid: 4f47e6cc-659d-4588-8155-21d2782f1b91
+- alterId: 0
+  cipher: auto
+  name: C -  JP 24 TG nodpai
+  network: h2
+  port: 55386
+  server: 103.127.243.60
+  tls: true
+  type: vmess
+  uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d
+- alterId: 0
+  cipher: auto
+  name: B -  SG 17 TG nodpai
+  network: ws
+  port: 16618
+  server: t.cnmjcn.cyou
+  type: vmess
+  uuid: 302457f5-6848-4e2b-be16-193131ab6374
+  ws-opts:
+    headers:
+      Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: B -  SG 18 TG nodpai
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: B -  SG 19 TG nodpai
+  network: ws
+  port: 16618
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  ws-headers:
+    Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: C -  SG 23 TG nodpai
+  network: ws
+  port: 16618
+  server: m.cnmjin.net
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: SG_222MBs
+  network: ws
+  port: 16618
+  server: m.cnmjin.net
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: C -  SG 26 TG nodpai
+  port: 51556
+  server: 103.181.164.145
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: B -  US 16 TG nodpai
+  network: ws
+  password: '1234567890'
+  port: 443
+  server: 109.120.134.104
+  sni: kfm-bn0.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: /
+- name: B -  US 17 TG nodpai
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 139.59.239.116
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- alterId: 2
+  cipher: auto
+  name: B -  US 18 TG nodpai
+  port: 30808
+  server: v8.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: C -  US 19 TG nodpai
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 195.26.230.99
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: C -  US 20 TG nodpai
+  network: ws
+  password: '1234567890'
+  port: 443
+  server: 77.110.96.220
+  sni: kfm-bn0.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- alterId: 2
+  cipher: auto
+  name: C -  US 23 TG nodpai
+  port: 30829
+  server: v29.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: C -  US 24 TG nodpai
+  network: ws
+  port: 16648
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 7927975e-9616-412b-b508-983ab960377d
+  ws-headers:
+    Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- cipher: aes-256-cfb
+  name: tg频道ripaojiedian 1
+  password: amazonskr05
+  port: 443
+  server: 63.180.254.10
+  type: ss
+- name: 香港2ripaojiedian
+  network: tcp
+  password: f792d9b5-c254-4756-a740-c314fa62f964
+  port: 32000
+  server: 0cfbd3c0-fdc0-4f26-82fb-5c8f8b6ce82b.bnsepserv.com
+  skip-cert-verify: false
+  sni: w1.ding-doc.com
+  type: trojan
+- name: 香港3ripaojiedian
+  network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 52687
-  server: 18.162.152.196
+  server: 43.199.33.45
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 香港4ripaojiedian'
+- name: 香港4ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 9211
+  server: 16.162.118.81
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 香港5ripaojiedian
+  network: tcp
   password: BxceQaOe
   port: 5823
-  server: 54.238.64.8
+  server: 43.198.80.162
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: ' 香港5ripaojiedian'
-  password: BxceQaOe
-  port: 22075
-  server: 43.199.67.80
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+- name: 台湾ripaojiedian
+  network: tcp
+  password: f792d9b5-c254-4756-a740-c314fa62f964
+  port: 32003
+  server: 0cfbd3c0-fdc0-4f26-82fb-5c8f8b6ce82b.bnsepserv.com
+  skip-cert-verify: false
+  sni: w1.ding-doc.com
   type: trojan
-- name: ' 日本ripaojiedian'
+- name: 日本ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 3022
-  server: 13.115.45.57
+  port: 3122
+  server: 18.183.73.62
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: ' 日本2ripaojiedian'
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 4937
-  server: 95.40.21.164
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: ' 日本3ripaojiedian'
+- name: 日本2ripaojiedian
+  network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 2001
-  server: 18.182.55.2
+  server: 18.183.73.62
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 新加坡ripaojiedian'
+- name: 日本3ripaojiedian
+  network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
-  port: 32876
-  server: 54.193.48.211
+  port: 9201
+  server: 18.183.73.62
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡ripaojiedian
+  network: tcp
+  password: 1774240c00db2b77d5a99f6540c47b69
+  port: 3057
+  server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -287,31 +896,35 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 新加坡3ripaojiedian'
+- name: 新加坡3ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 25675
-  server: 16.162.220.143
+  port: 30726
+  server: 43.198.80.162
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: ' 美国ripaojiedian'
+- name: 美国ripaojiedian
+  network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 4019
-  server: 52.193.48.211
+  server: 54.249.145.163
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 美国2ripaojiedian'
+- name: 美国2ripaojiedian
+  network: tcp
   password: 1774240c00db2b77d5a99f6540c47b69
   port: 3057
-  server: 18.182.55.2
+  server: 18.183.76.130
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: ' 美国3ripaojiedian'
+- name: 美国3ripaojiedian
+  network: tcp
   password: BxceQaOe
-  port: 23255
-  server: 18.166.61.147
+  port: 44386
+  server: 43.198.80.162
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -325,88 +938,216 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港3ripaojiedian
-  network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 52687
-  server: 13.230.190.29
-  sni: www.nintendogames.net
+- name: DE_121MBs
+  network: ws
+  password: '1234567890'
+  port: '443'
+  server: 159.195.44.151
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
   type: trojan
-- name: 香港4ripaojiedian
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: HK_125MBs
   network: tcp
-  password: BxceQaOe
-  port: 9211
-  server: 43.199.78.220
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 香港5ripaojiedian
+  port: '7754'
+  server: vm51544542.dns8656815.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: HK_216MBs
   network: tcp
-  password: BxceQaOe
-  port: 4886
-  server: 43.199.206.175
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  port: '7754'
+  server: vm51544542.dns8656815.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+  xudp: true
+- name: KR_118MBs
+  network: ws
+  password: '1234567890'
+  port: '18081'
+  server: 220.124.181.77
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
   type: trojan
-- name: 日本ripaojiedian
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: HK_314MBs
   network: tcp
-  password: BxceQaOe
-  port: 3022
-  server: 13.231.195.214
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 日本2ripaojiedian
+  port: '7754'
+  server: efan.dnsefan04881.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: HK_414MBs
   network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 4380
-  server: 13.231.195.214
-  sni: www.nintendogames.net
+  port: '7754'
+  server: efan.dnsefan04881.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+  xudp: true
+- name: KR_210MBs
+  network: ws
+  password: '1234567890'
+  port: '10911'
+  server: 220.77.136.79
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
   type: trojan
-- name: 日本3ripaojiedian
-  network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 4380
-  server: 160.16.132.38
-  sni: www.nintendogames.net
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- cipher: aes-128-gcm
+  name: SG_115MBs
+  password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: aoe.o.eoa.ccwu.cc
+    mode: websocket
+    mux: false
+    path: /?enc\=aes-128-gcm
+    tls: true
+  port: 443
+  server: cf.cloudflare.182682.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: HK_517MBs
+  port: 7754
+  server: vm51544542.dns8656815.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+- alterId: 0
+  cipher: auto
+  name: HK_61013KBs
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: HK_710MBs
+  network: ws
+  port: 16622
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: HK_812MBs
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  type: vmess
+  udp: true
+  uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441
+  ws-headers:
+    Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+  ws-opts:
+    headers:
+      Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com
+    path: /
+  ws-path: /
+- name: KR_311MBs
+  network: ws
+  password: '1234567890'
+  port: '25448'
+  server: 118.41.26.148
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
   type: trojan
-- name: 新加坡ripaojiedian
-  network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 3057
-  server: 160.16.106.99
-  sni: www.nintendogames.net
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- name: KR_414MBs
+  network: ws
+  password: '1234567890'
+  port: '24289'
+  server: 220.95.85.46
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
   type: trojan
-- name: 新加坡3ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 25675
-  server: 54.46.5.109
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 美国ripaojiedian
-  network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 4019
-  server: 13.231.195.214
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2ripaojiedian
-  network: tcp
-  password: 1774240c00db2b77d5a99f6540c47b69
-  port: 4019
-  server: 160.16.106.99
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 14919
-  server: 3.112.254.113
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: DE_316MBs
+  network: http
+  port: 80
+  server: 77.90.11.178
+  tls: false
+  type: vmess
+  uuid: b3cdfe2d-5eac-4b0d-a8eb-d3f6a647e13f
 - name: AT_speednode_0004
   network: ws
   password: '1234567890'
@@ -1155,32 +1896,81 @@ proxy-groups:
   - 防范境外势力渗透 7
   - 防范境外势力渗透 8
   - 防范境外势力渗透 9
-  - tg频道ripaojiedian 1
+  - A -  HK 02 TG nodpai
+  - A -  HK 03 TG nodpai
+  - A -  HK 04 TG nodpai
+  - B -  HK 05 TG nodpai
+  - B -  HK 09 TG nodpai
+  - B -  HK 11 TG nodpai
+  - B -  HK 14 TG nodpai
+  - B -  HK 16 TG nodpai
+  - B -  HK 17 TG nodpai
+  - HK_910MBs
+  - B -  HK 19 TG nodpai
+  - B -  HK 21 TG nodpai
   - ' 香港ripaojiedian'
-  - ' 香港3ripaojiedian'
-  - ' 香港4ripaojiedian'
-  - ' 香港5ripaojiedian'
-  - ' 日本ripaojiedian'
-  - ' 日本2ripaojiedian'
-  - ' 日本3ripaojiedian'
-  - ' 新加坡ripaojiedian'
-  - 新加坡2ripaojiedian
-  - ' 新加坡3ripaojiedian'
-  - ' 美国ripaojiedian'
-  - ' 美国2ripaojiedian'
-  - ' 美国3ripaojiedian'
-  - 香港ripaojiedian
+  - B -  TW 07 TG nodpai
+  - B -  TW 10 TG nodpai
+  - B -  TW 12 TG nodpai
+  - B -  TW 13 TG nodpai
+  - B -  TW 14 TG nodpai
+  - B -  TW 15 TG nodpai
+  - B -  TW 16 TG nodpai
+  - B -  TW 17 TG nodpai
+  - C -  TW 18 TG nodpai
+  - C -  TW 19 TG nodpai
+  - C -  TW 20 TG nodpai
+  - C -  TW 21 TG nodpai
+  - A -  JP 04 TG nodpai
+  - A -  JP 07 TG nodpai
+  - B -  JP 12 TG nodpai
+  - B -  JP 17 TG nodpai
+  - C -  JP 21 TG nodpai
+  - C -  JP 24 TG nodpai
+  - B -  SG 17 TG nodpai
+  - B -  SG 18 TG nodpai
+  - B -  SG 19 TG nodpai
+  - C -  SG 23 TG nodpai
+  - SG_222MBs
+  - C -  SG 26 TG nodpai
+  - B -  US 16 TG nodpai
+  - B -  US 17 TG nodpai
+  - B -  US 18 TG nodpai
+  - C -  US 19 TG nodpai
+  - C -  US 20 TG nodpai
+  - C -  US 23 TG nodpai
+  - C -  US 24 TG nodpai
+  - tg频道ripaojiedian 1
+  - 香港2ripaojiedian
   - 香港3ripaojiedian
   - 香港4ripaojiedian
   - 香港5ripaojiedian
+  - 台湾ripaojiedian
   - 日本ripaojiedian
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
   - 新加坡3ripaojiedian
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
+  - 香港ripaojiedian
+  - DE_121MBs
+  - HK_125MBs
+  - HK_216MBs
+  - KR_118MBs
+  - HK_314MBs
+  - HK_414MBs
+  - KR_210MBs
+  - SG_115MBs
+  - HK_517MBs
+  - HK_61013KBs
+  - HK_710MBs
+  - HK_812MBs
+  - KR_311MBs
+  - KR_414MBs
+  - DE_316MBs
   - AT_speednode_0004
   - AT_speednode_0005
   - BG_speednode_0008
@@ -1261,32 +2051,81 @@ proxy-groups:
   - 防范境外势力渗透 7
   - 防范境外势力渗透 8
   - 防范境外势力渗透 9
-  - tg频道ripaojiedian 1
+  - A -  HK 02 TG nodpai
+  - A -  HK 03 TG nodpai
+  - A -  HK 04 TG nodpai
+  - B -  HK 05 TG nodpai
+  - B -  HK 09 TG nodpai
+  - B -  HK 11 TG nodpai
+  - B -  HK 14 TG nodpai
+  - B -  HK 16 TG nodpai
+  - B -  HK 17 TG nodpai
+  - HK_910MBs
+  - B -  HK 19 TG nodpai
+  - B -  HK 21 TG nodpai
   - ' 香港ripaojiedian'
-  - ' 香港3ripaojiedian'
-  - ' 香港4ripaojiedian'
-  - ' 香港5ripaojiedian'
-  - ' 日本ripaojiedian'
-  - ' 日本2ripaojiedian'
-  - ' 日本3ripaojiedian'
-  - ' 新加坡ripaojiedian'
-  - 新加坡2ripaojiedian
-  - ' 新加坡3ripaojiedian'
-  - ' 美国ripaojiedian'
-  - ' 美国2ripaojiedian'
-  - ' 美国3ripaojiedian'
-  - 香港ripaojiedian
+  - B -  TW 07 TG nodpai
+  - B -  TW 10 TG nodpai
+  - B -  TW 12 TG nodpai
+  - B -  TW 13 TG nodpai
+  - B -  TW 14 TG nodpai
+  - B -  TW 15 TG nodpai
+  - B -  TW 16 TG nodpai
+  - B -  TW 17 TG nodpai
+  - C -  TW 18 TG nodpai
+  - C -  TW 19 TG nodpai
+  - C -  TW 20 TG nodpai
+  - C -  TW 21 TG nodpai
+  - A -  JP 04 TG nodpai
+  - A -  JP 07 TG nodpai
+  - B -  JP 12 TG nodpai
+  - B -  JP 17 TG nodpai
+  - C -  JP 21 TG nodpai
+  - C -  JP 24 TG nodpai
+  - B -  SG 17 TG nodpai
+  - B -  SG 18 TG nodpai
+  - B -  SG 19 TG nodpai
+  - C -  SG 23 TG nodpai
+  - SG_222MBs
+  - C -  SG 26 TG nodpai
+  - B -  US 16 TG nodpai
+  - B -  US 17 TG nodpai
+  - B -  US 18 TG nodpai
+  - C -  US 19 TG nodpai
+  - C -  US 20 TG nodpai
+  - C -  US 23 TG nodpai
+  - C -  US 24 TG nodpai
+  - tg频道ripaojiedian 1
+  - 香港2ripaojiedian
   - 香港3ripaojiedian
   - 香港4ripaojiedian
   - 香港5ripaojiedian
+  - 台湾ripaojiedian
   - 日本ripaojiedian
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
   - 新加坡3ripaojiedian
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
+  - 香港ripaojiedian
+  - DE_121MBs
+  - HK_125MBs
+  - HK_216MBs
+  - KR_118MBs
+  - HK_314MBs
+  - HK_414MBs
+  - KR_210MBs
+  - SG_115MBs
+  - HK_517MBs
+  - HK_61013KBs
+  - HK_710MBs
+  - HK_812MBs
+  - KR_311MBs
+  - KR_414MBs
+  - DE_316MBs
   - AT_speednode_0004
   - AT_speednode_0005
   - BG_speednode_0008
