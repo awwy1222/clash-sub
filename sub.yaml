@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-05-30 04:07:51
-# EdgeGo: 12 个, 公共: 138 个
+# Clash 订阅 - 更新于 2026-05-31 04:42:20
+# EdgeGo: 12 个, 公共: 53 个
 
 proxies:
 - name: githubcomAlvin9999-newpacfanqiang
@@ -222,986 +222,78 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: A -  HK 02 TG nodpai
+  name: B -  HK 04 TG nodpai
   port: 6001
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
   type: vmess
   uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
 - alterId: 0
   cipher: auto
-  name: B -  HK 06 TG nodpai
-  network: ws
-  port: 443
-  server: cf.scpnb.top
-  servername: graph-keep-beds-catalog.trycloudflare.com
-  tls: true
-  type: vmess
-  uuid: 7fd8d1db-96ec-4e46-80a8-74ad9472384e
-  ws-opts:
-    headers:
-      Host: graph-keep-beds-catalog.trycloudflare.com
-    path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
-- alterId: 2
-  cipher: auto
   name: C -  HK 07 TG nodpai
-  port: 30809
-  server: v9.hdacd.com
+  port: 51556
+  server: 103.181.164.145
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: B -  TW 01 TG nodpai
-  port: 30811
-  server: v11.zgtfqs.click
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: JP_224MBs
+  name: B -  TW 02 TG nodpai
+  network: ws
+  port: 33412
+  server: ct3.ainivp.com
+  tls: true
+  type: vmess
+  uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+  ws-opts:
+    headers:
+      Host: ct3.ainivp.com
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: A -  JP 04 TG nodpai
   port: 6003
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
 - alterId: 0
   cipher: auto
-  name: B -  JP 03 TG nodpai
-  network: ws
-  port: 17585
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: e1cc26b3-df0b-477b-afb0-53659a25e978
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 04 TG nodpai
-  network: ws
-  port: 30030
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 2
-  cipher: auto
-  name: B -  JP 05 TG nodpai
-  port: 30806
-  server: v6.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: B -  JP 06 TG nodpai
-  network: ws
-  port: 22749
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 07 TG nodpai
-  network: ws
-  port: 14651
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 08 TG nodpai
-  network: ws
-  port: 33587
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 09 TG nodpai
-  network: ws
-  port: 55850
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 10 TG nodpai
-  network: ws
-  port: 47571
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 11 TG nodpai
-  network: ws
-  port: 45228
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 12 TG nodpai
-  network: ws
-  port: 10028
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 13 TG nodpai
-  network: ws
-  port: 38404
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: e1cc26b3-df0b-477b-afb0-53659a25e978
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 14 TG nodpai
-  network: ws
-  port: 63666
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: b01d1e26-2f84-48da-88a1-1d06a77857f3
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 15 TG nodpai
-  network: ws
-  port: 36587
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 16 TG nodpai
-  network: ws
-  port: 10545
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: b2da9920-b0a7-4354-9e26-3833ab8d00d0
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 17 TG nodpai
-  network: ws
-  port: 20166
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 18 TG nodpai
-  network: ws
-  port: 60927
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: b01d1e26-2f84-48da-88a1-1d06a77857f3
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 19 TG nodpai
-  network: ws
-  port: 49865
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 20 TG nodpai
-  network: ws
-  port: 11841
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 21 TG nodpai
-  network: ws
-  port: 20936
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 22 TG nodpai
-  network: ws
-  port: 53196
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 12929592-a7bd-41eb-ab4d-d804f76c4ff9
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 23 TG nodpai
-  network: ws
-  port: 16268
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 4ec66d81-9565-4d8e-ae58-2bacfde95f48
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 24 TG nodpai
-  network: ws
-  port: 13822
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 25 TG nodpai
-  network: ws
-  port: 61328
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 26 TG nodpai
-  network: ws
-  port: 39953
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 27 TG nodpai
-  network: ws
-  port: 20075
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 28 TG nodpai
-  network: ws
-  port: 58102
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 29 TG nodpai
-  network: ws
-  port: 13473
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 30 TG nodpai
-  network: ws
-  port: 61034
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 31 TG nodpai
-  network: ws
-  port: 28633
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 32 TG nodpai
-  network: ws
-  port: 22303
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 33 TG nodpai
-  network: ws
-  port: 12706
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 34 TG nodpai
-  network: ws
-  port: 29030
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 35 TG nodpai
-  network: ws
-  port: 33680
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 36 TG nodpai
-  network: ws
-  port: 65440
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 37 TG nodpai
-  network: ws
-  port: 35298
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 38 TG nodpai
-  network: ws
-  port: 63500
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 39 TG nodpai
-  network: ws
-  port: 29913
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 40 TG nodpai
-  network: ws
-  port: 61402
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 6d600864-32da-49fd-baf4-7df051762454
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 41 TG nodpai
-  network: ws
-  port: 64366
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 9631096d-3032-4942-9446-bdf12665682b
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 42 TG nodpai
-  network: ws
-  port: 61989
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: c50f9480-2e1d-40db-9458-630e79636663
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 43 TG nodpai
-  network: ws
-  port: 56581
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 44 TG nodpai
-  network: ws
-  port: 13677
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 45 TG nodpai
-  network: ws
-  port: 49477
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3b475934-cb2a-4d96-b260-5e50cca5d430
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 46 TG nodpai
-  network: ws
-  port: 12328
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 12929592-a7bd-41eb-ab4d-d804f76c4ff9
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 47 TG nodpai
-  network: ws
-  port: 27492
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: e3cb685e-7840-45cb-9d64-b2028d9b635e
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 48 TG nodpai
-  network: ws
-  port: 10643
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 49 TG nodpai
-  network: ws
-  port: 20291
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 6d600864-32da-49fd-baf4-7df051762454
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 50 TG nodpai
-  network: ws
-  port: 12316
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: b2da9920-b0a7-4354-9e26-3833ab8d00d0
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 51 TG nodpai
-  network: ws
-  port: 20642
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 4f3cfda3-a255-40eb-8801-71f9fffb19d6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 52 TG nodpai
-  network: ws
-  port: 59696
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: b2da9920-b0a7-4354-9e26-3833ab8d00d0
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 53 TG nodpai
-  network: ws
-  port: 47022
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 3786e67a-41eb-4b92-b31e-417e89493b93
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 54 TG nodpai
-  network: ws
-  port: 56225
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: c09f13ce-2cca-49b6-ad1e-597566cc89c6
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 55 TG nodpai
-  network: ws
-  port: 31574
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 27104fae-f047-4993-902a-9368d8a3e9bc
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 56 TG nodpai
-  network: ws
-  port: 35240
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 57 TG nodpai
-  network: ws
-  port: 19241
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: B -  JP 58 TG nodpai
-  network: ws
-  port: 32818
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: C -  JP 59 TG nodpai
-  network: ws
-  port: 55885
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: C -  JP 60 TG nodpai
-  network: ws
-  port: 57967
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: d0e97ee2-c6de-48f8-bd4a-8e63a9cd9e89
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: C -  JP 61 TG nodpai
-  network: ws
-  port: 33991
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: b01d1e26-2f84-48da-88a1-1d06a77857f3
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: C -  JP 62 TG nodpai
-  network: ws
-  port: 28392
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: C -  JP 63 TG nodpai
-  network: ws
-  port: 11167
-  server: 109.61.109.204
-  servername: imafake.locker
-  tls: true
-  type: vmess
-  uuid: c50f9480-2e1d-40db-9458-630e79636663
-  ws-opts:
-    headers:
-      Host: imafake.locker
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: SG_114MBs
+  name: A -  SG 06 TG nodpai
   port: 6004
   server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  skip-cert-verify: false
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+- alterId: 2
+  cipher: auto
+  name: B -  SG 16 TG nodpai
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alpn:
-  - h2
-  - http/1.1
-  name: B -  SG 04 TG nodpai
-  network: ws
-  password: Mitivpn
-  port: 443
-  server: 104.17.121.37
-  skip-cert-verify: true
-  sni: my.hitgram.ir
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: my.hitgram.ir
-    path: /?ed=mitivpn
-- alterId: 2
-  cipher: auto
-  name: B -  SG 05 TG nodpai
-  port: 30845
-  server: v45.hdacd.com
-  type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - h2
-  - http/1.1
-  name: B -  SG 08 TG nodpai
+- alterId: 0
+  cipher: auto
+  name: B -  US 18 TG nodpai
+  port: 180
+  server: 82.198.246.37
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: B -  US 24 TG nodpai
   network: ws
-  password: Mitivpn
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   port: 443
-  server: 104.17.121.9
-  skip-cert-verify: true
-  sni: my.hitgram.ir
+  server: blackshadow.dpdns.org
+  sni: support.zoom.us.blackshadow.dpdns.org
   tls: true
   type: trojan
   ws-opts:
     headers:
-      Host: my.hitgram.ir
-    path: /?ed=mitivpn
-- alterId: 0
-  cipher: auto
-  name: A -  US 01 TG nodpai
-  port: 180
-  server: 82.198.246.214
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: ' 美国4ripaojiedian'
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: B -  US 11 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 12 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 13 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 14 TG nodpai
+      Host: support.zoom.us.blackshadow.dpdns.org
+    path: /195.123.218.174-443
+- name: B -  US 32 TG nodpai
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 90081bb25c.node.tro.cac.cab
@@ -1209,15 +301,31 @@ proxies:
   sni: ch.01.naiun.bilibili.com
   tls: true
   type: trojan
-- name: B -  US 15 TG nodpai
+- name: B -  US 33 TG nodpai
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
+  port: 41943
   server: 90081bb25c.node.tro.cac.cab
   skip-cert-verify: true
-  sni: fr.01.naiun.bilibili.com
+  sni: az.01.naiun.bilibili.com
   tls: true
   type: trojan
-- name: B -  US 16 TG nodpai
+- name: B -  US 34 TG nodpai
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+- name: B -  US 35 TG nodpai
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 48697
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+- name: B -  US 36 TG nodpai
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
   server: 90081bb25c.node.tro.cac.cab
@@ -1225,11 +333,19 @@ proxies:
   sni: is.01.naiun.bilibili.com
   tls: true
   type: trojan
-- name: B -  US 17 TG nodpai
+- name: B -  US 37 TG nodpai
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45619
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: fr.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+- name: B -  US 42 TG nodpai
   network: ws
   password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  port: 18080
-  server: 175.192.103.88
+  port: 18000
+  server: 121.154.96.50
   sni: vpn.rnmcnm.com
   tls: true
   type: trojan
@@ -1237,63 +353,14 @@ proxies:
     path: /trojan
 - alterId: 0
   cipher: auto
-  name: US_1024MBs
+  name: C -  US 46 TG nodpai
   network: ws
-  port: 443
-  server: cf.scpnb.top
-  servername: vienna-bread-threats-amendment.trycloudflare.com
-  tls: true
+  port: 52620
+  server: 38.60.176.80
   type: vmess
-  uuid: 7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed
+  uuid: d60c7a89-40d9-4f09-e8f8-591932ce79ef
   ws-opts:
-    headers:
-      Host: vienna-bread-threats-amendment.trycloudflare.com
-    path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
-- alterId: 2
-  cipher: auto
-  name: C -  US 26 TG nodpai
-  port: 30824
-  server: v24.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: C -  US 28 TG nodpai
-  port: 30829
-  server: v29.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: C -  US 30 TG nodpai
-  port: 30804
-  server: v4.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  alterId: 0
-  cipher: auto
-  name: A -  FR 01 TG nodpai
-  port: 2053
-  server: de5.taskflowhub.org
-  tls: true
-  type: vmess
-  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
-- alterId: 0
-  cipher: auto
-  name: A -  MY 02 TG nodpai
-  network: ws
-  port: 10004
-  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
-  type: vmess
-  uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
-  ws-opts:
-    headers:
-      Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
-    path: /
+    path: /8704a4ad
 - cipher: aes-256-cfb
   name: tg频道ripaojiedian 1
   password: amazonskr05
@@ -1312,16 +379,16 @@ proxies:
 - name: 香港3ripaojiedian
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 53018
-  server: 18.166.208.219
-  skip-cert-verify: true
+  port: 2008
+  server: 43.199.204.59
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 50712
-  server: 13.231.192.34
+  port: 32858
+  server: 16.162.24.151
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -1336,8 +403,8 @@ proxies:
 - name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 53307
-  server: 13.231.192.34
+  port: 4099
+  server: 3.112.60.98
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -1345,7 +412,7 @@ proxies:
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 24184
-  server: 18.163.128.27
+  server: 18.163.75.132
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -1353,7 +420,7 @@ proxies:
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 3135
-  server: 18.163.128.27
+  server: 43.199.160.155
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -1361,31 +428,31 @@ proxies:
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 4840
-  server: 18.163.128.27
+  server: 175.41.230.39
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2ripaojiedian
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 4840
-  server: 54.238.76.39
+  port: 3842
+  server: 54.178.81.79
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 7484
-  server: 18.166.59.84
+  port: 42710
+  server: 18.166.225.36
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 2663
-  server: 18.163.128.27
+  port: 6604
+  server: 175.41.230.39
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -1401,10 +468,19 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 17801
-  server: 43.199.229.84
+  server: 54.238.206.69
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: ' 美国4ripaojiedian'
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
   name: ' 美国5ripaojiedian'
@@ -1424,16 +500,19 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 美国4ripaojiedian
+  name: US_533MBs
   network: tcp
   port: '180'
   server: 82.198.246.250
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
 - alterId: 0
   cipher: auto
   name: 美国5ripaojiedian
@@ -1444,174 +523,44 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alpn:
-  - h2
-  - http/1.1
-  name: US_126MBs
-  network: ws
-  password: Mitivpn
-  port: '443'
-  server: 165.215.250.160
-  skip-cert-verify: true
-  sni: my.hitgram.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /?ed=mitivpn
-- alpn:
-  - h2
-  - http/1.1
-  alterId: '0'
-  cipher: auto
-  name: NL_125MBs
-  network: ws
-  port: '443'
-  server: 104.18.32.47
-  servername: sctest1.dr-ping.ir
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2f3aadae-66c6-4dca-a670-03c183f8024e
-  ws-opts:
-    headers:
-      Host: sctest1.dr-ping.ir
-    path: /kos-nanat-decoder
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: JP_125MBs
-  network: tcp
-  port: '6003'
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+- alterId: 0
+  cipher: aes-128-gcm
+  name: US_21016KBs
+  port: 180
+  server: 82.198.246.214
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  name: US_327MBs
-  network: ws
-  password: Mitivpn
-  port: '443'
-  server: 104.17.121.37
-  skip-cert-verify: true
-  sni: my.hitgram.ir
-  type: trojan
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: chacha20-ietf-poly1305
+  name: NL_117MBs
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: '8080'
+  server: 82.38.31.210
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /?ed=mitivpn
-- alterId: '0'
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: US_512MBs
+  name: US_722MBs
   network: tcp
   port: '180'
   server: 82.198.246.37
+  servername: <nil>
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   xudp: true
-- alterId: '0'
-  cipher: auto
-  name: HK_128MBs
-  network: tcp
-  port: '6001'
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  xudp: true
-- alterId: '2'
-  cipher: auto
-  name: US_626MBs
-  network: tcp
-  port: '30829'
-  server: v29.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: SG_213MBs
-  network: tcp
-  port: '6004'
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  name: US_726MBs
-  network: ws
-  password: Mitivpn
-  port: '443'
-  server: 104.17.121.9
-  skip-cert-verify: true
-  sni: my.hitgram.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /?ed=mitivpn
-- alpn:
-  - h2
-  - http/1.1
-  name: US_826MBs
-  network: ws
-  password: Mitivpn
-  port: '443'
-  server: 104.17.121.71
-  skip-cert-verify: true
-  sni: panel.hitgram.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /?ed=mitivpn
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: GB_322MBs
-  network: tcp
-  port: '2080'
-  server: 82.40.62.106
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cd682302-c9d7-4c0d-bada-52e7d652c22c
-  xudp: true
 - alterId: 0
   cipher: auto
-  name: US_919MBs
+  name: US_932MBs
   network: raw
   port: '180'
-  server: 82.198.246.37
+  server: 82.198.246.250
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1620,125 +569,14 @@ proxies:
   xudp: true
 - alterId: 2
   cipher: auto
-  name: SG_336MBs
-  network: tcp
+  name: SG_120MBs
   port: 30845
   server: v45.hdacd.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: US_1126MBs
-  network: tcp
-  password: 8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c
-  port: 8443
-  server: link.honghongai.top
-  sni: link.honghongai.top
-  type: trojan
-- name: US_1417MBs
-  network: raw
-  password: 8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c
-  port: '8443'
-  server: link.honghongai.top
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  name: US_1524MBs
-  network: ws
-  password: Mitivpn
-  port: '443'
-  server: 165.215.250.160
-  skip-cert-verify: true
-  sni: panel.hitgram.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/50.0.2661.102 Safari/537.36
-    path: /?ed=mitivpn
-- name: SC_speednode_0040
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 45.130.125.76
-  skip-cert-verify: true
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /?ed=2048
-- name: SC_speednode_0041
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 45.130.125.76
-  skip-cert-verify: true
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /
-- name: US_speednode_0045
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 104.18.20.213
-  skip-cert-verify: false
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /?ed=2048
-- name: US_speednode_0046
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 14.102.228.76
-  skip-cert-verify: true
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /?ed=2048
-- name: US_speednode_0048
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 14.102.228.76
-  skip-cert-verify: true
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /
-- name: US_speednode_0049
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 104.18.20.213
-  skip-cert-verify: false
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /
 - name: _CN_中国-_JP_日本
   type: trojan
   server: 36.156.102.115
@@ -1799,91 +637,22 @@ proxy-groups:
   - 防范境外势力渗透 7
   - 防范境外势力渗透 8
   - 防范境外势力渗透 9
-  - A -  HK 02 TG nodpai
-  - B -  HK 06 TG nodpai
+  - B -  HK 04 TG nodpai
   - C -  HK 07 TG nodpai
-  - B -  TW 01 TG nodpai
-  - JP_224MBs
-  - B -  JP 03 TG nodpai
-  - B -  JP 04 TG nodpai
-  - B -  JP 05 TG nodpai
-  - B -  JP 06 TG nodpai
-  - B -  JP 07 TG nodpai
-  - B -  JP 08 TG nodpai
-  - B -  JP 09 TG nodpai
-  - B -  JP 10 TG nodpai
-  - B -  JP 11 TG nodpai
-  - B -  JP 12 TG nodpai
-  - B -  JP 13 TG nodpai
-  - B -  JP 14 TG nodpai
-  - B -  JP 15 TG nodpai
-  - B -  JP 16 TG nodpai
-  - B -  JP 17 TG nodpai
-  - B -  JP 18 TG nodpai
-  - B -  JP 19 TG nodpai
-  - B -  JP 20 TG nodpai
-  - B -  JP 21 TG nodpai
-  - B -  JP 22 TG nodpai
-  - B -  JP 23 TG nodpai
-  - B -  JP 24 TG nodpai
-  - B -  JP 25 TG nodpai
-  - B -  JP 26 TG nodpai
-  - B -  JP 27 TG nodpai
-  - B -  JP 28 TG nodpai
-  - B -  JP 29 TG nodpai
-  - B -  JP 30 TG nodpai
-  - B -  JP 31 TG nodpai
-  - B -  JP 32 TG nodpai
-  - B -  JP 33 TG nodpai
-  - B -  JP 34 TG nodpai
-  - B -  JP 35 TG nodpai
-  - B -  JP 36 TG nodpai
-  - B -  JP 37 TG nodpai
-  - B -  JP 38 TG nodpai
-  - B -  JP 39 TG nodpai
-  - B -  JP 40 TG nodpai
-  - B -  JP 41 TG nodpai
-  - B -  JP 42 TG nodpai
-  - B -  JP 43 TG nodpai
-  - B -  JP 44 TG nodpai
-  - B -  JP 45 TG nodpai
-  - B -  JP 46 TG nodpai
-  - B -  JP 47 TG nodpai
-  - B -  JP 48 TG nodpai
-  - B -  JP 49 TG nodpai
-  - B -  JP 50 TG nodpai
-  - B -  JP 51 TG nodpai
-  - B -  JP 52 TG nodpai
-  - B -  JP 53 TG nodpai
-  - B -  JP 54 TG nodpai
-  - B -  JP 55 TG nodpai
-  - B -  JP 56 TG nodpai
-  - B -  JP 57 TG nodpai
-  - B -  JP 58 TG nodpai
-  - C -  JP 59 TG nodpai
-  - C -  JP 60 TG nodpai
-  - C -  JP 61 TG nodpai
-  - C -  JP 62 TG nodpai
-  - C -  JP 63 TG nodpai
-  - SG_114MBs
-  - B -  SG 04 TG nodpai
-  - B -  SG 05 TG nodpai
-  - B -  SG 08 TG nodpai
-  - A -  US 01 TG nodpai
-  - ' 美国4ripaojiedian'
-  - B -  US 11 TG nodpai
-  - B -  US 12 TG nodpai
-  - B -  US 13 TG nodpai
-  - B -  US 14 TG nodpai
-  - B -  US 15 TG nodpai
-  - B -  US 16 TG nodpai
-  - B -  US 17 TG nodpai
-  - US_1024MBs
-  - C -  US 26 TG nodpai
-  - C -  US 28 TG nodpai
-  - C -  US 30 TG nodpai
-  - A -  FR 01 TG nodpai
-  - A -  MY 02 TG nodpai
+  - B -  TW 02 TG nodpai
+  - A -  JP 04 TG nodpai
+  - A -  SG 06 TG nodpai
+  - B -  SG 16 TG nodpai
+  - B -  US 18 TG nodpai
+  - B -  US 24 TG nodpai
+  - B -  US 32 TG nodpai
+  - B -  US 33 TG nodpai
+  - B -  US 34 TG nodpai
+  - B -  US 35 TG nodpai
+  - B -  US 36 TG nodpai
+  - B -  US 37 TG nodpai
+  - B -  US 42 TG nodpai
+  - C -  US 46 TG nodpai
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
   - 香港3ripaojiedian
@@ -1898,32 +667,16 @@ proxy-groups:
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
+  - ' 美国4ripaojiedian'
   - ' 美国5ripaojiedian'
   - 香港ripaojiedian
-  - 美国4ripaojiedian
+  - US_533MBs
   - 美国5ripaojiedian
-  - US_126MBs
-  - NL_125MBs
-  - JP_125MBs
-  - US_327MBs
-  - US_512MBs
-  - HK_128MBs
-  - US_626MBs
-  - SG_213MBs
-  - US_726MBs
-  - US_826MBs
-  - GB_322MBs
-  - US_919MBs
-  - SG_336MBs
-  - US_1126MBs
-  - US_1417MBs
-  - US_1524MBs
-  - SC_speednode_0040
-  - SC_speednode_0041
-  - US_speednode_0045
-  - US_speednode_0046
-  - US_speednode_0048
-  - US_speednode_0049
+  - US_21016KBs
+  - NL_117MBs
+  - US_722MBs
+  - US_932MBs
+  - SG_120MBs
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
@@ -1952,91 +705,22 @@ proxy-groups:
   - 防范境外势力渗透 7
   - 防范境外势力渗透 8
   - 防范境外势力渗透 9
-  - A -  HK 02 TG nodpai
-  - B -  HK 06 TG nodpai
+  - B -  HK 04 TG nodpai
   - C -  HK 07 TG nodpai
-  - B -  TW 01 TG nodpai
-  - JP_224MBs
-  - B -  JP 03 TG nodpai
-  - B -  JP 04 TG nodpai
-  - B -  JP 05 TG nodpai
-  - B -  JP 06 TG nodpai
-  - B -  JP 07 TG nodpai
-  - B -  JP 08 TG nodpai
-  - B -  JP 09 TG nodpai
-  - B -  JP 10 TG nodpai
-  - B -  JP 11 TG nodpai
-  - B -  JP 12 TG nodpai
-  - B -  JP 13 TG nodpai
-  - B -  JP 14 TG nodpai
-  - B -  JP 15 TG nodpai
-  - B -  JP 16 TG nodpai
-  - B -  JP 17 TG nodpai
-  - B -  JP 18 TG nodpai
-  - B -  JP 19 TG nodpai
-  - B -  JP 20 TG nodpai
-  - B -  JP 21 TG nodpai
-  - B -  JP 22 TG nodpai
-  - B -  JP 23 TG nodpai
-  - B -  JP 24 TG nodpai
-  - B -  JP 25 TG nodpai
-  - B -  JP 26 TG nodpai
-  - B -  JP 27 TG nodpai
-  - B -  JP 28 TG nodpai
-  - B -  JP 29 TG nodpai
-  - B -  JP 30 TG nodpai
-  - B -  JP 31 TG nodpai
-  - B -  JP 32 TG nodpai
-  - B -  JP 33 TG nodpai
-  - B -  JP 34 TG nodpai
-  - B -  JP 35 TG nodpai
-  - B -  JP 36 TG nodpai
-  - B -  JP 37 TG nodpai
-  - B -  JP 38 TG nodpai
-  - B -  JP 39 TG nodpai
-  - B -  JP 40 TG nodpai
-  - B -  JP 41 TG nodpai
-  - B -  JP 42 TG nodpai
-  - B -  JP 43 TG nodpai
-  - B -  JP 44 TG nodpai
-  - B -  JP 45 TG nodpai
-  - B -  JP 46 TG nodpai
-  - B -  JP 47 TG nodpai
-  - B -  JP 48 TG nodpai
-  - B -  JP 49 TG nodpai
-  - B -  JP 50 TG nodpai
-  - B -  JP 51 TG nodpai
-  - B -  JP 52 TG nodpai
-  - B -  JP 53 TG nodpai
-  - B -  JP 54 TG nodpai
-  - B -  JP 55 TG nodpai
-  - B -  JP 56 TG nodpai
-  - B -  JP 57 TG nodpai
-  - B -  JP 58 TG nodpai
-  - C -  JP 59 TG nodpai
-  - C -  JP 60 TG nodpai
-  - C -  JP 61 TG nodpai
-  - C -  JP 62 TG nodpai
-  - C -  JP 63 TG nodpai
-  - SG_114MBs
-  - B -  SG 04 TG nodpai
-  - B -  SG 05 TG nodpai
-  - B -  SG 08 TG nodpai
-  - A -  US 01 TG nodpai
-  - ' 美国4ripaojiedian'
-  - B -  US 11 TG nodpai
-  - B -  US 12 TG nodpai
-  - B -  US 13 TG nodpai
-  - B -  US 14 TG nodpai
-  - B -  US 15 TG nodpai
-  - B -  US 16 TG nodpai
-  - B -  US 17 TG nodpai
-  - US_1024MBs
-  - C -  US 26 TG nodpai
-  - C -  US 28 TG nodpai
-  - C -  US 30 TG nodpai
-  - A -  FR 01 TG nodpai
-  - A -  MY 02 TG nodpai
+  - B -  TW 02 TG nodpai
+  - A -  JP 04 TG nodpai
+  - A -  SG 06 TG nodpai
+  - B -  SG 16 TG nodpai
+  - B -  US 18 TG nodpai
+  - B -  US 24 TG nodpai
+  - B -  US 32 TG nodpai
+  - B -  US 33 TG nodpai
+  - B -  US 34 TG nodpai
+  - B -  US 35 TG nodpai
+  - B -  US 36 TG nodpai
+  - B -  US 37 TG nodpai
+  - B -  US 42 TG nodpai
+  - C -  US 46 TG nodpai
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
   - 香港3ripaojiedian
@@ -2051,32 +735,16 @@ proxy-groups:
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
+  - ' 美国4ripaojiedian'
   - ' 美国5ripaojiedian'
   - 香港ripaojiedian
-  - 美国4ripaojiedian
+  - US_533MBs
   - 美国5ripaojiedian
-  - US_126MBs
-  - NL_125MBs
-  - JP_125MBs
-  - US_327MBs
-  - US_512MBs
-  - HK_128MBs
-  - US_626MBs
-  - SG_213MBs
-  - US_726MBs
-  - US_826MBs
-  - GB_322MBs
-  - US_919MBs
-  - SG_336MBs
-  - US_1126MBs
-  - US_1417MBs
-  - US_1524MBs
-  - SC_speednode_0040
-  - SC_speednode_0041
-  - US_speednode_0045
-  - US_speednode_0046
-  - US_speednode_0048
-  - US_speednode_0049
+  - US_21016KBs
+  - NL_117MBs
+  - US_722MBs
+  - US_932MBs
+  - SG_120MBs
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
