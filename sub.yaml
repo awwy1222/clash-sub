@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-05-31 04:42:20
-# EdgeGo: 12 个, 公共: 53 个
+# Clash 订阅 - 更新于 2026-06-01 05:04:19
+# EdgeGo: 12 个, 公共: 44 个
 
 proxies:
 - name: githubcomAlvin9999-newpacfanqiang
@@ -220,147 +220,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: B -  HK 04 TG nodpai
-  port: 6001
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alterId: 0
-  cipher: auto
-  name: C -  HK 07 TG nodpai
-  port: 51556
-  server: 103.181.164.145
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: B -  TW 02 TG nodpai
-  network: ws
-  port: 33412
-  server: ct3.ainivp.com
-  tls: true
-  type: vmess
-  uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-  ws-opts:
-    headers:
-      Host: ct3.ainivp.com
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: A -  JP 04 TG nodpai
-  port: 6003
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alterId: 0
-  cipher: auto
-  name: A -  SG 06 TG nodpai
-  port: 6004
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alterId: 2
-  cipher: auto
-  name: B -  SG 16 TG nodpai
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: B -  US 18 TG nodpai
-  port: 180
-  server: 82.198.246.37
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: B -  US 24 TG nodpai
-  network: ws
-  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  port: 443
-  server: blackshadow.dpdns.org
-  sni: support.zoom.us.blackshadow.dpdns.org
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: support.zoom.us.blackshadow.dpdns.org
-    path: /195.123.218.174-443
-- name: B -  US 32 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: ch.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 33 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 34 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 35 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 36 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: is.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 37 TG nodpai
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: fr.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: B -  US 42 TG nodpai
-  network: ws
-  password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  port: 18000
-  server: 121.154.96.50
-  sni: vpn.rnmcnm.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /trojan
-- alterId: 0
-  cipher: auto
-  name: C -  US 46 TG nodpai
-  network: ws
-  port: 52620
-  server: 38.60.176.80
-  type: vmess
-  uuid: d60c7a89-40d9-4f09-e8f8-591932ce79ef
-  ws-opts:
-    path: /8704a4ad
 - cipher: aes-256-cfb
   name: tg频道ripaojiedian 1
   password: amazonskr05
@@ -378,17 +237,17 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 香港3ripaojiedian
   network: tcp
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  password: d84665c37878196ecf983cf6910e3b44
   port: 2008
-  server: 43.199.204.59
+  server: 13.115.175.169
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 32858
-  server: 16.162.24.151
+  port: 50712
+  server: 13.231.249.183
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -403,62 +262,54 @@ proxies:
 - name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 4099
-  server: 3.112.60.98
+  port: 47655
+  server: 43.199.61.178
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2ripaojiedian
-  network: tcp
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 24184
-  server: 18.163.75.132
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - name: 日本3ripaojiedian
   network: tcp
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 3135
-  server: 43.199.160.155
+  password: d84665c37878196ecf983cf6910e3b44
+  port: 11541
+  server: 13.115.175.169
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡ripaojiedian
   network: tcp
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
-  port: 4840
-  server: 175.41.230.39
+  password: d84665c37878196ecf983cf6910e3b44
+  port: 1180
+  server: 16.163.157.108
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2ripaojiedian
   network: tcp
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  password: d84665c37878196ecf983cf6910e3b44
   port: 3842
-  server: 54.178.81.79
+  server: 16.163.157.108
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 42710
-  server: 18.166.225.36
+  port: 29440
+  server: 52.69.79.73
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  password: d84665c37878196ecf983cf6910e3b44
   port: 6604
-  server: 175.41.230.39
+  server: 16.163.157.108
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2ripaojiedian
   network: tcp
-  password: f6d3aa07a52dbcedcb4731029e2fb6ae
+  password: d84665c37878196ecf983cf6910e3b44
   port: 6604
   server: 54.238.76.39
   skip-cert-verify: true
@@ -467,19 +318,20 @@ proxies:
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 17801
-  server: 54.238.206.69
+  port: 2520
+  server: 95.40.4.37
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
   cipher: auto
-  name: ' 美国4ripaojiedian'
+  name: US_115MBs
   port: 180
   server: 82.198.246.250
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
@@ -500,19 +352,16 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: US_533MBs
+  name: 美国4ripaojiedian
   network: tcp
   port: '180'
   server: 82.198.246.250
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
 - alterId: 0
   cipher: auto
   name: 美国5ripaojiedian
@@ -523,30 +372,67 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: aes-128-gcm
-  name: US_21016KBs
-  port: 180
-  server: 82.198.246.214
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - cipher: chacha20-ietf-poly1305
-  name: NL_117MBs
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: '8080'
-  server: 82.38.31.210
+  name: TW_125MBs
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: '50099'
+  server: r3mrcg00129437x.cybervena.com
+  type: ss
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  name: FR_120MBs
+  network: ws
+  password: 7p52vhn9vs4naimm
+  port: '443'
+  server: freealireza3.nscl.ir
+  skip-cert-verify: true
+  sni: freealireza3.nscl.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /dashboard
+- cipher: aes-256-cfb
+  name: AT_124MBs
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 51.15.23.63
   type: ss
   udp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: US_722MBs
+  name: US_335MBs
   network: tcp
   port: '180'
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: US_531MBs
+  network: raw
+  port: '180'
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: US_719MBs
+  port: 180
   server: 82.198.246.37
   servername: <nil>
   skip-cert-verify: false
@@ -554,29 +440,70 @@ proxies:
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
+- name: AZ_111MBs
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 41943
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: az.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: KR_111MBs
+  password: a9d727cd-330b-4edd-8911-7c224df6afd5
+  port: 22386
+  server: 43.164.128.196
+  type: ss
+  udp: true
+- alterId: 1
+  cipher: auto
+  name: JP_148MBs
+  port: 444
+  server: 7gqt4-g01.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+- alterId: 1
+  cipher: auto
+  name: JP_234MBs
+  port: 46482
+  server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+- alterId: 1
+  cipher: auto
+  name: JP_350MBs
+  port: 21581
+  server: 01eb6-g01.jp03-7d22-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
 - alterId: 0
   cipher: auto
-  name: US_932MBs
-  network: raw
-  port: '180'
-  server: 82.198.246.250
-  skip-cert-verify: false
+  flow: ''
+  name: US_835MBs
+  network: tcp
+  port: 20001
+  server: vpnicp.xyc.hk.cn
   tls: false
   type: vmess
   udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- alterId: 2
-  cipher: auto
-  name: SG_120MBs
-  port: 30845
-  server: v45.hdacd.com
+  uuid: 7f5f0705-3dfb-4f56-9657-c95cade2ba83
+- name: HK_speednode_0007
+  password: 65fQmPHHbPcBCfvSHt
+  port: 443
+  server: au-4.tr202605.com
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  type: trojan
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: _CN_中国-_JP_日本
   type: trojan
   server: 36.156.102.115
@@ -637,29 +564,12 @@ proxy-groups:
   - 防范境外势力渗透 7
   - 防范境外势力渗透 8
   - 防范境外势力渗透 9
-  - B -  HK 04 TG nodpai
-  - C -  HK 07 TG nodpai
-  - B -  TW 02 TG nodpai
-  - A -  JP 04 TG nodpai
-  - A -  SG 06 TG nodpai
-  - B -  SG 16 TG nodpai
-  - B -  US 18 TG nodpai
-  - B -  US 24 TG nodpai
-  - B -  US 32 TG nodpai
-  - B -  US 33 TG nodpai
-  - B -  US 34 TG nodpai
-  - B -  US 35 TG nodpai
-  - B -  US 36 TG nodpai
-  - B -  US 37 TG nodpai
-  - B -  US 42 TG nodpai
-  - C -  US 46 TG nodpai
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
   - 香港3ripaojiedian
   - 香港4ripaojiedian
   - 香港5ripaojiedian
   - 日本ripaojiedian
-  - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
@@ -667,16 +577,24 @@ proxy-groups:
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
-  - ' 美国4ripaojiedian'
+  - US_115MBs
   - ' 美国5ripaojiedian'
   - 香港ripaojiedian
-  - US_533MBs
+  - 美国4ripaojiedian
   - 美国5ripaojiedian
-  - US_21016KBs
-  - NL_117MBs
-  - US_722MBs
-  - US_932MBs
-  - SG_120MBs
+  - TW_125MBs
+  - FR_120MBs
+  - AT_124MBs
+  - US_335MBs
+  - US_531MBs
+  - US_719MBs
+  - AZ_111MBs
+  - KR_111MBs
+  - JP_148MBs
+  - JP_234MBs
+  - JP_350MBs
+  - US_835MBs
+  - HK_speednode_0007
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
@@ -705,29 +623,12 @@ proxy-groups:
   - 防范境外势力渗透 7
   - 防范境外势力渗透 8
   - 防范境外势力渗透 9
-  - B -  HK 04 TG nodpai
-  - C -  HK 07 TG nodpai
-  - B -  TW 02 TG nodpai
-  - A -  JP 04 TG nodpai
-  - A -  SG 06 TG nodpai
-  - B -  SG 16 TG nodpai
-  - B -  US 18 TG nodpai
-  - B -  US 24 TG nodpai
-  - B -  US 32 TG nodpai
-  - B -  US 33 TG nodpai
-  - B -  US 34 TG nodpai
-  - B -  US 35 TG nodpai
-  - B -  US 36 TG nodpai
-  - B -  US 37 TG nodpai
-  - B -  US 42 TG nodpai
-  - C -  US 46 TG nodpai
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
   - 香港3ripaojiedian
   - 香港4ripaojiedian
   - 香港5ripaojiedian
   - 日本ripaojiedian
-  - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
@@ -735,16 +636,24 @@ proxy-groups:
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
-  - ' 美国4ripaojiedian'
+  - US_115MBs
   - ' 美国5ripaojiedian'
   - 香港ripaojiedian
-  - US_533MBs
+  - 美国4ripaojiedian
   - 美国5ripaojiedian
-  - US_21016KBs
-  - NL_117MBs
-  - US_722MBs
-  - US_932MBs
-  - SG_120MBs
+  - TW_125MBs
+  - FR_120MBs
+  - AT_124MBs
+  - US_335MBs
+  - US_531MBs
+  - US_719MBs
+  - AZ_111MBs
+  - KR_111MBs
+  - JP_148MBs
+  - JP_234MBs
+  - JP_350MBs
+  - US_835MBs
+  - HK_speednode_0007
   - _CN_中国-_JP_日本
   - _CN_中国-_US_美国
   - _MD_摩尔多瓦-_RU_俄罗斯
