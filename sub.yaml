@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-06-04 04:53:54
-# EdgeGo: 12 个, 公共: 32 个
+# Clash 订阅 - 更新于 2026-06-05 04:37:58
+# EdgeGo: 12 个, 公共: 65 个
 
 proxies:
 - name: githubcomAlvin9999-newpacfanqiang
@@ -132,34 +132,317 @@ proxies:
   skip-cert-verify: true
 - alterId: 0
   cipher: auto
-  name: 敏感时期更新暂停
+  name: 防范境外势力渗透
   network: tcp
-  port: '1'
-  server: 0.0.0.0
-  servername: web.51.la
+  port: '80'
+  server: 127.0.0.53
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: 如有需要自行搭建
+  name: 防范境外势力渗透 1
   network: tcp
-  port: '2'
-  server: 0.0.0.0
-  servername: web.51.la
+  port: '81'
+  server: 127.0.0.53
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: 庆祝中华人民共和国成立76周年
+  name: 防范境外势力渗透 2
   network: tcp
-  port: '3'
-  server: 0.0.0.0
-  servername: web.51.la
+  port: '82'
+  server: 127.0.0.53
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 防范境外势力渗透 3
+  network: tcp
+  port: '83'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 防范境外势力渗透 4
+  network: tcp
+  port: '84'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 防范境外势力渗透 5
+  network: tcp
+  port: '85'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 防范境外势力渗透 6
+  network: tcp
+  port: '86'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 防范境外势力渗透 7
+  network: tcp
+  port: '87'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 防范境外势力渗透 8
+  network: tcp
+  port: '88'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 防范境外势力渗透 9
+  network: tcp
+  port: '89'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- cipher: aes-256-cfb
+  name: tg频道ripaojiedian 1
+  password: amazonskr05
+  port: 443
+  server: 63.180.254.10
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: ' 香港ripaojiedian'
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 香港3ripaojiedian
+  network: tcp
+  password: d84665c37878196ecf983cf6910e3b44
+  port: 2008
+  server: 16.162.93.34
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 香港4ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 40748
+  server: 95.40.84.43
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 香港5ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 50712
+  server: 18.183.163.141
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 日本ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 24370
+  server: 95.40.84.43
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本2ripaojiedian
+  network: tcp
+  password: d84665c37878196ecf983cf6910e3b44
+  port: 31351
+  server: 16.162.93.34
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 日本3ripaojiedian
+  network: tcp
+  password: d84665c37878196ecf983cf6910e3b44
+  port: 2511
+  server: 16.162.32.32
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡ripaojiedian
+  network: tcp
+  password: d84665c37878196ecf983cf6910e3b44
+  port: 48402
+  server: 16.162.93.34
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2ripaojiedian
+  network: tcp
+  password: d84665c37878196ecf983cf6910e3b44
+  port: 2511
+  server: 18.167.173.1
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 42710
+  server: 54.46.44.219
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国2ripaojiedian
+  network: tcp
+  password: d84665c37878196ecf983cf6910e3b44
+  port: 5224
+  server: 16.162.93.34
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 2520
+  server: 95.40.84.43
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: ' 美国4ripaojiedian'
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 2
+  cipher: auto
+  name: 香港ripaojiedian
+  network: tcp
+  port: '30807'
+  server: v10.hdacd.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 美国4ripaojiedian
+  network: tcp
+  port: '180'
+  server: 82.198.246.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-128-gcm
+  name: CH_120MBs
+  password: phizo046s4oqsm33sfvm
+  port: '13265'
+  server: 86.106.84.198
+  type: ss
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: US_220MBs
+  network: tcp
+  port: '180'
+  server: 82.198.246.37
+  servername: <nil>
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: US_419MBs
+  port: 180
+  server: 82.198.246.37
+  servername: <nil>
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: HK_112MBs
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 48697
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: CA_112MBs
+  password: amazonskr05
+  port: 443
+  server: 15.223.63.40
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: aes-256-cfb
+  name: DE_327MBs
+  password: amazonskr05
+  port: 443
+  server: 18.159.210.129
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: aes-128-gcm
+  name: US_1021MBs
+  password: 3px0wmx0e81145g568ga
+  port: '10880'
+  server: 69.164.240.86
+  type: ss
+  udp: true
+- name: CZ_111MBs
+  network: tcp
+  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
+  port: '443'
+  server: ch-2.bexum.fun
+  skip-cert-verify: false
+  sni: ch-2.bexum.fun
+  type: trojan
+  udp: true
+- name: KZ_114MBs
+  network: tcp
+  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
+  port: '5443'
+  server: kz-1.bexum.fun
+  skip-cert-verify: false
+  sni: kz-1.bexum.fun
+  type: trojan
+  udp: true
+- name: DE_speednode_0011
+  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
+  port: 9443
+  server: de-1.hysteria.ltd
+  skip-cert-verify: false
+  sni: de-1.hysteria.ltd
+  type: trojan
+  udp: true
 - name: _HK_中国香港-_US_美国
   type: trojan
   server: 95.40.68.192
@@ -474,9 +757,42 @@ proxy-groups:
 - name: 公共节点
   type: select
   proxies:
-  - 敏感时期更新暂停
-  - 如有需要自行搭建
-  - 庆祝中华人民共和国成立76周年
+  - 防范境外势力渗透
+  - 防范境外势力渗透 1
+  - 防范境外势力渗透 2
+  - 防范境外势力渗透 3
+  - 防范境外势力渗透 4
+  - 防范境外势力渗透 5
+  - 防范境外势力渗透 6
+  - 防范境外势力渗透 7
+  - 防范境外势力渗透 8
+  - 防范境外势力渗透 9
+  - tg频道ripaojiedian 1
+  - ' 香港ripaojiedian'
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国2ripaojiedian
+  - 美国3ripaojiedian
+  - ' 美国4ripaojiedian'
+  - 香港ripaojiedian
+  - 美国4ripaojiedian
+  - CH_120MBs
+  - US_220MBs
+  - US_419MBs
+  - HK_112MBs
+  - CA_112MBs
+  - DE_327MBs
+  - US_1021MBs
+  - CZ_111MBs
+  - KZ_114MBs
+  - DE_speednode_0011
   - _HK_中国香港-_US_美国
   - _US_美国-_DE_德国
   - _TW_中国台湾-_SG_新加坡
@@ -521,9 +837,42 @@ proxy-groups:
   - hysteria_58312990_2
   - hysteria2_6221010108
   - hysteria2_622101472
-  - 敏感时期更新暂停
-  - 如有需要自行搭建
-  - 庆祝中华人民共和国成立76周年
+  - 防范境外势力渗透
+  - 防范境外势力渗透 1
+  - 防范境外势力渗透 2
+  - 防范境外势力渗透 3
+  - 防范境外势力渗透 4
+  - 防范境外势力渗透 5
+  - 防范境外势力渗透 6
+  - 防范境外势力渗透 7
+  - 防范境外势力渗透 8
+  - 防范境外势力渗透 9
+  - tg频道ripaojiedian 1
+  - ' 香港ripaojiedian'
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
+  - 香港5ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - 新加坡3ripaojiedian
+  - 美国2ripaojiedian
+  - 美国3ripaojiedian
+  - ' 美国4ripaojiedian'
+  - 香港ripaojiedian
+  - 美国4ripaojiedian
+  - CH_120MBs
+  - US_220MBs
+  - US_419MBs
+  - HK_112MBs
+  - CA_112MBs
+  - DE_327MBs
+  - US_1021MBs
+  - CZ_111MBs
+  - KZ_114MBs
+  - DE_speednode_0011
   - _HK_中国香港-_US_美国
   - _US_美国-_DE_德国
   - _TW_中国台湾-_SG_新加坡
