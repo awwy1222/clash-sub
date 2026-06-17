@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-06-16 05:20:51
-# EdgeGo: 12 个, 公共: 61 个
+# Clash 订阅 - 更新于 2026-06-17 05:00:17
+# EdgeGo: 12 个, 公共: 62 个
 
 proxies:
 - name: githubcomAlvin9999-newpacfanqiang
@@ -113,13 +113,13 @@ proxies:
   obfs: ''
   sni: apple.com
   skip-cert-verify: true
-- name: hysteria2_6221010108
+- name: hysteria2_www838491xyz
   type: hysteria2
-  server: 62.210.10.108
-  port: 22000
+  server: www.838491.xyz
+  port: 13377
   password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  sni: www.838491.xyz
+  skip-cert-verify: false
 - name: hysteria2_622101472
   type: hysteria2
   server: 62.210.147.2
@@ -236,7 +236,7 @@ proxies:
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
   port: 53018
-  server: 43.207.198.215
+  server: 54.199.232.104
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -244,7 +244,7 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 11035
-  server: 18.163.84.233
+  server: 16.162.109.208
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -252,7 +252,7 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 11035
-  server: 16.163.107.220
+  server: 43.199.65.165
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -260,23 +260,23 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 4099
-  server: 18.181.78.148
+  server: 13.158.2.187
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2ripaojiedian
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 37973
-  server: 35.75.4.144
+  port: 5701
+  server: 18.163.33.247
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3ripaojiedian
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 5701
-  server: 95.40.125.63
+  port: 37973
+  server: 52.195.19.90
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -284,59 +284,50 @@ proxies:
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
   port: 6357
-  server: 95.40.125.63
+  server: 16.162.88.46
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2ripaojiedian
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 29642
-  server: 95.40.125.63
+  port: 48738
+  server: 16.162.88.46
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 9149
-  server: 18.163.84.233
+  port: 41421
+  server: 18.163.84.26
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 17005
-  server: 43.198.107.157
+  port: 49277
+  server: 18.163.33.247
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2ripaojiedian
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
-  port: 49277
-  server: 43.207.198.215
+  port: 17005
+  server: 52.195.19.90
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 41889
-  server: 18.162.213.254
+  port: 22057
+  server: 54.46.123.9
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: ' 美国4ripaojiedian'
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 2
   cipher: auto
   name: 香港ripaojiedian
@@ -347,45 +338,103 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 美国4ripaojiedian
-  network: tcp
-  port: '180'
-  server: 82.198.246.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: aes-256-cfb
-  name: DE_1741MBs
-  password: amazonskr05
-  port: 443
-  server: 63.183.200.172
+- alpn:
+  - http/1.1
+  name: JP_111MBs
+  network: ws
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  port: '443'
+  server: saas.sin.fan
   skip-cert-verify: false
-  type: ss
-  udp: false
-- cipher: aes-256-gcm
-  name: GB_213MBs
-  password: dada1203
-  port: '80'
-  server: 13.135.172.147
-  type: ss
+  sni: jy.hhllfly.kdns.fr
+  type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: AU_110MBs
-  password: dada1203
-  port: '80'
-  server: 3.27.212.11
-  type: ss
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /
+- name: JP_213MBs
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 8443
+  server: 156.231.113.141
+  sni: hhcm.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+    path: /
+- name: JP_312MBs
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 45.77.21.104
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+    path: /
+- name: US_213MBs
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 154.17.26.148
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+    path: /
+- alpn:
+  - http/1.1
+  name: JP_546MBs
+  network: ws
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  port: '443'
+  server: 13.231.33.243
+  skip-cert-verify: false
+  sni: jy.hhllfly.kdns.fr
+  type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: GB_322MBs
-  password: dada1203
-  port: '80'
-  server: 35.176.239.59
-  type: ss
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /?ed=2048
+- alpn:
+  - http/1.1
+  name: JP_619MBs
+  network: ws
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  port: '443'
+  server: 35.72.81.216
+  skip-cert-verify: false
+  sni: jy.hhllfly.kdns.fr
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.109 Safari/537.36
+    path: /?ed=2048
+- alpn:
+  - http/1.1
+  name: JP_734MBs
+  network: ws
+  password: 4c3164ee-abcf-4091-abea-d1cd4937a68d
+  port: '443'
+  server: 154.83.95.129
+  skip-cert-verify: false
+  sni: jy.hhllfly.kdns.fr
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /?ed=2048
 - name: DE_speednode_0001
   password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
   port: 9443
@@ -703,7 +752,7 @@ proxy-groups:
   - hysteria_583129153_2
   - hysteria_58312990
   - hysteria_58312990_2
-  - hysteria2_6221010108
+  - hysteria2_www838491xyz
   - hysteria2_622101472
 - name: 公共节点
   type: select
@@ -732,13 +781,14 @@ proxy-groups:
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
-  - ' 美国4ripaojiedian'
   - 香港ripaojiedian
-  - 美国4ripaojiedian
-  - DE_1741MBs
-  - GB_213MBs
-  - AU_110MBs
-  - GB_322MBs
+  - JP_111MBs
+  - JP_213MBs
+  - JP_312MBs
+  - US_213MBs
+  - JP_546MBs
+  - JP_619MBs
+  - JP_734MBs
   - DE_speednode_0001
   - _HK_中国香港-_US_美国
   - _US_美国-_DE_德国
@@ -782,7 +832,7 @@ proxy-groups:
   - hysteria_583129153_2
   - hysteria_58312990
   - hysteria_58312990_2
-  - hysteria2_6221010108
+  - hysteria2_www838491xyz
   - hysteria2_622101472
   - 防范境外势力渗透
   - 防范境外势力渗透 1
@@ -808,13 +858,14 @@ proxy-groups:
   - 美国ripaojiedian
   - 美国2ripaojiedian
   - 美国3ripaojiedian
-  - ' 美国4ripaojiedian'
   - 香港ripaojiedian
-  - 美国4ripaojiedian
-  - DE_1741MBs
-  - GB_213MBs
-  - AU_110MBs
-  - GB_322MBs
+  - JP_111MBs
+  - JP_213MBs
+  - JP_312MBs
+  - US_213MBs
+  - JP_546MBs
+  - JP_619MBs
+  - JP_734MBs
   - DE_speednode_0001
   - _HK_中国香港-_US_美国
   - _US_美国-_DE_德国
