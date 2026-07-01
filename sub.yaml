@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-06-30 04:16:30
-# EdgeGo: 12 个, 公共: 51 个
+# Clash 订阅 - 更新于 2026-07-01 04:44:59
+# EdgeGo: 12 个, 公共: 31 个
 
 proxies:
 - name: githubcomAlvin9999-newpacfanqiang
@@ -129,452 +129,63 @@ proxies:
   skip-cert-verify: true
 - alterId: 0
   cipher: auto
-  name: 防范境外势力渗透
+  name: 敏感时期更新暂停
   network: tcp
-  port: '80'
-  server: 127.0.0.53
+  port: '1'
+  server: 0.0.0.0
+  servername: web.51.la
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: 防范境外势力渗透 1
+  name: 如有需要自行搭建
   network: tcp
-  port: '81'
-  server: 127.0.0.53
+  port: '2'
+  server: 0.0.0.0
+  servername: web.51.la
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: 防范境外势力渗透 2
+  name: 庆祝中国共产党成立105周年
   network: tcp
-  port: '82'
-  server: 127.0.0.53
+  port: '3'
+  server: 0.0.0.0
+  servername: web.51.la
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 防范境外势力渗透 3
-  network: tcp
-  port: '83'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 防范境外势力渗透 4
-  network: tcp
-  port: '84'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 防范境外势力渗透 5
-  network: tcp
-  port: '85'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 防范境外势力渗透 6
-  network: tcp
-  port: '86'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 防范境外势力渗透 7
-  network: tcp
-  port: '87'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 防范境外势力渗透 8
-  network: tcp
-  port: '88'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 防范境外势力渗透 9
-  network: tcp
-  port: '89'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- cipher: aes-256-cfb
-  name: tg频道ripaojiedian 1
-  password: amazonskr05
-  port: 443
-  server: 63.180.254.10
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: ' 香港ripaojiedian'
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港3ripaojiedian
-  network: tcp
-  password: 82c038b55e40ca2613b76bb98c7f6d1f
-  port: 2008
-  server: 16.163.56.164
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 香港4ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 11035
-  server: 43.199.35.162
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 香港5ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 29449
-  server: 54.46.43.201
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 日本ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 27826
-  server: 52.197.219.28
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 日本2ripaojiedian
-  network: tcp
-  password: 82c038b55e40ca2613b76bb98c7f6d1f
-  port: 55973
-  server: 18.166.64.127
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本3ripaojiedian
-  network: tcp
-  password: 82c038b55e40ca2613b76bb98c7f6d1f
-  port: 37973
-  server: 43.199.41.146
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡ripaojiedian
-  network: tcp
-  password: 82c038b55e40ca2613b76bb98c7f6d1f
-  port: 48738
-  server: 35.77.44.189
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡2ripaojiedian
-  network: tcp
-  password: 82c038b55e40ca2613b76bb98c7f6d1f
-  port: 6357
-  server: 43.199.41.146
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 新加坡3ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 9149
-  server: 43.198.17.28
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 美国ripaojiedian
-  network: tcp
-  password: 82c038b55e40ca2613b76bb98c7f6d1f
-  port: 17005
-  server: 35.77.44.189
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2ripaojiedian
-  network: tcp
-  password: 82c038b55e40ca2613b76bb98c7f6d1f
-  port: 49277
-  server: 52.195.226.156
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国3ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 11993
-  server: 43.199.36.29
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 香港ripaojiedian
-  network: tcp
-  port: '30807'
-  server: v10.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: AE_speednode_0001
-  network: ws
-  password: MITIVPN
-  port: 443
-  server: 94.140.0.100
-  skip-cert-verify: false
-  sni: 95r.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 95r.ir
-    path: /MiTiVPN=Usa
-- name: GB_speednode_0005
-  network: ws
-  password: MITIVPN
-  port: 443
-  server: 164.38.155.135
-  skip-cert-verify: false
-  sni: 95r.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 95r.ir
-    path: /MiTiVPN=De
-- name: NL_speednode_0016
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 45.131.4.118
-  skip-cert-verify: false
-  sni: 95r.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 95r.ir
-    path: /MiTiVPN=Se
-- name: US_speednode_0063
-  network: ws
-  password: Mitivpn
-  port: 443
-  server: iranpoems.ir
-  skip-cert-verify: false
-  sni: www.gamingdll.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.gamingdll.ir
-    path: /usa=mitivpn
-- name: _US_美国
+- name: _RU_俄罗斯-_NL_荷兰
   type: vless
-  server: 216.128.140.253
-  port: 26376
-  uuid: 05f7b98c-3cd4-4f15-cb80-ac38e1c08a96
-  network: ws
-  servername: us2.wxgqlfx.icu
+  server: 158.160.191.91
+  port: 443
+  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
+  servername: rezerv8.yunus.guru
   tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /TG@wxgqlfx
-    headers:
-      Host: us2.wxgqlfx.icu
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE
+    short-id: 34256b39b4ebb864
   skip-cert-verify: true
   udp: true
 - name: _CA_加拿大
   type: trojan
   server: 103.177.136.42
-  port: 45553
+  port: 46424
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: ch.01.naiun.bilibili.com
+  sni: de.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
   udp: true
 - name: _CA_加拿大_1
   type: trojan
-  server: 103.177.136.42
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _CN_中国
-  type: ss
-  server: 61.171.92.202
-  port: 1001
-  cipher: aes-256-gcm
-  password: '123'
-  skip-cert-verify: true
-  udp: true
-- name: _CA_加拿大_2
-  type: trojan
-  server: 103.177.136.42
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _CA_加拿大_3
-  type: trojan
-  server: 103.177.136.42
-  port: 41943
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: az.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _CA_加拿大_4
-  type: trojan
   server: 103.177.136.45
-  port: 41943
+  port: 45553
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: az.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _CA_加拿大_5
-  type: trojan
-  server: 103.177.136.42
-  port: 45619
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: fr.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _NL_荷兰
-  type: vless
-  server: 88.218.248.195
-  port: 443
-  uuid: 05f7b98c-3cd4-4f15-cb80-ac38e1c08a96
-  network: ws
-  servername: us2.wxgqlfx.icu
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /TG@wxgqlfx
-    headers:
-      Host: us2.wxgqlfx.icu
-  skip-cert-verify: true
-  udp: true
-- name: _CA_加拿大_6
-  type: trojan
-  server: 103.177.136.45
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _CA_加拿大_7
-  type: trojan
-  server: 103.177.136.45
-  port: 45619
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: fr.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _IR_伊朗-_DE_德国
-  type: vless
-  server: 45.134.97.33
-  port: 50070
-  uuid: bef4c9ac-908d-4ff2-97b3-4ca70f232881
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _LT_立陶宛
-  type: vless
-  server: 45.194.10.92
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-  skip-cert-verify: true
-  udp: true
-- name: _NL_荷兰_1
-  type: vless
-  server: 87.199.210.215
-  port: 443
-  uuid: def62c86-e2f2-4d13-b1f1-b3c197ed4873
-  network: ws
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: _CA_加拿大_8
-  type: trojan
-  server: 103.177.136.45
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _HK_中国香港
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _VN_越南
-  type: hysteria2
-  server: vn2.yuntong.click
-  port: 443
-  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-  sni: vn2.yuntong.click
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-  udp: true
-- name: _CA_加拿大_9
-  type: trojan
-  server: 103.177.136.42
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _CA_加拿大_10
-  type: trojan
-  server: 103.177.136.45
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
+  sni: ch.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
   udp: true
@@ -592,6 +203,89 @@ proxies:
     short-id: 0123456789abcdef
   skip-cert-verify: true
   udp: true
+- name: _BG_保加利亚-_DE_德国
+  type: vless
+  server: 79.124.7.236
+  port: 444
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  servername: vpn47.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: _CA_加拿大_2
+  type: trojan
+  server: 103.177.136.45
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: _CN_中国
+  type: ss
+  server: 61.171.92.202
+  port: 1001
+  cipher: aes-256-gcm
+  password: '123'
+  skip-cert-verify: true
+  udp: true
+- name: _CA_加拿大_3
+  type: trojan
+  server: 103.177.136.42
+  port: 45553
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: ch.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: _SG_新加坡
+  type: trojan
+  server: 188.253.12.95
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _CA_加拿大_4
+  type: trojan
+  server: 103.177.136.45
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: _HK_中国香港
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14005
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  servername: apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: sKWozGVep6wrIm63253QviGBtMLVrGB_W1JJHLEHi0s
+    short-id: 97a01dfaef
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港_1
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: _US_美国-_SG_新加坡
   type: vless
   server: support.zoom.us
@@ -607,12 +301,161 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
-- name: _CA_加拿大_11
+- name: _CA_加拿大_5
+  type: trojan
+  server: 103.177.136.42
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: _SG_新加坡_1
+  type: trojan
+  server: 188.253.12.97
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _VN_越南
+  type: hysteria2
+  server: vn2.yuntong.click
+  port: 443
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  sni: vn2.yuntong.click
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+  udp: true
+- name: _BG_保加利亚-_DE_德国_1
+  type: vless
+  server: 185.177.59.153
+  port: 2053
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  servername: vpn47.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港_2
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14007
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  servername: apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: wybFjQzLnkKIaaTEhwp_N9UXU8miqds9U__P971YHlU
+    short-id: 1d89ebb78c
+  skip-cert-verify: true
+  udp: true
+- name: _CA_加拿大_6
+  type: trojan
+  server: 103.177.136.42
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: _CN_中国_1
+  type: vless
+  server: 47.93.235.180
+  port: 443
+  uuid: Telegram🇨🇳 @WangCai2
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: _SG_新加坡_2
+  type: trojan
+  server: 188.253.12.95
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _DE_德国
+  type: vless
+  server: 93.127.160.203
+  port: 610
+  uuid: e39491dd-33f2-4544-9890-19f12da7cdd4
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _CA_加拿大_7
+  type: trojan
+  server: 103.177.136.42
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: _NL_荷兰
+  type: hysteria2
+  server: 198.105.112.118
+  port: 443
+  password: EsimHy2Game_7xK9mPq2
+  sni: nl.esimpson.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: EsimObfs_9mK2x7
+  udp: true
+- name: _DE_德国_1
+  type: vless
+  server: de-t2.vinnypuxtomoon.today
+  port: 2053
+  uuid: 1ee0c3d2-9c42-463f-8497-ee05f76b84e5
+  servername: de-t2.vinnypuxtomoon.today
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
+    short-id: c0d1d1776fed0f6d
+  skip-cert-verify: true
+  udp: true
+- name: _CA_加拿大_8
   type: trojan
   server: 103.177.136.45
-  port: 45553
+  port: 48697
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: ch.01.naiun.bilibili.com
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: _SG_新加坡_3
+  type: trojan
+  server: 188.253.12.95
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _CA_加拿大_9
+  type: trojan
+  server: 103.177.136.45
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
   udp: true
@@ -641,57 +484,37 @@ proxy-groups:
 - name: 公共节点
   type: select
   proxies:
-  - 防范境外势力渗透
-  - 防范境外势力渗透 1
-  - 防范境外势力渗透 2
-  - 防范境外势力渗透 3
-  - 防范境外势力渗透 4
-  - 防范境外势力渗透 5
-  - 防范境外势力渗透 6
-  - 防范境外势力渗透 7
-  - 防范境外势力渗透 8
-  - 防范境外势力渗透 9
-  - tg频道ripaojiedian 1
-  - ' 香港ripaojiedian'
-  - 香港3ripaojiedian
-  - 香港4ripaojiedian
-  - 香港5ripaojiedian
-  - 日本ripaojiedian
-  - 日本2ripaojiedian
-  - 日本3ripaojiedian
-  - 新加坡ripaojiedian
-  - 新加坡2ripaojiedian
-  - 新加坡3ripaojiedian
-  - 美国ripaojiedian
-  - 美国2ripaojiedian
-  - 美国3ripaojiedian
-  - 香港ripaojiedian
-  - AE_speednode_0001
-  - GB_speednode_0005
-  - NL_speednode_0016
-  - US_speednode_0063
-  - _US_美国
+  - 敏感时期更新暂停
+  - 如有需要自行搭建
+  - 庆祝中国共产党成立105周年
+  - _RU_俄罗斯-_NL_荷兰
   - _CA_加拿大
   - _CA_加拿大_1
-  - _CN_中国
-  - _CA_加拿大_2
-  - _CA_加拿大_3
-  - _CA_加拿大_4
-  - _CA_加拿大_5
-  - _NL_荷兰
-  - _CA_加拿大_6
-  - _CA_加拿大_7
-  - _IR_伊朗-_DE_德国
-  - _LT_立陶宛
-  - _NL_荷兰_1
-  - _CA_加拿大_8
-  - _HK_中国香港
-  - _VN_越南
-  - _CA_加拿大_9
-  - _CA_加拿大_10
   - _RU_俄罗斯
+  - _BG_保加利亚-_DE_德国
+  - _CA_加拿大_2
+  - _CN_中国
+  - _CA_加拿大_3
+  - _SG_新加坡
+  - _CA_加拿大_4
+  - _HK_中国香港
+  - _HK_中国香港_1
   - _US_美国-_SG_新加坡
-  - _CA_加拿大_11
+  - _CA_加拿大_5
+  - _SG_新加坡_1
+  - _VN_越南
+  - _BG_保加利亚-_DE_德国_1
+  - _HK_中国香港_2
+  - _CA_加拿大_6
+  - _CN_中国_1
+  - _SG_新加坡_2
+  - _DE_德国
+  - _CA_加拿大_7
+  - _NL_荷兰
+  - _DE_德国_1
+  - _CA_加拿大_8
+  - _SG_新加坡_3
+  - _CA_加拿大_9
 - name: 🐢 延迟最低
   type: url-test
   proxies:
@@ -707,57 +530,37 @@ proxy-groups:
   - hysteria_58312990_2
   - hysteria2_www838491xyz
   - hysteria2_622101472
-  - 防范境外势力渗透
-  - 防范境外势力渗透 1
-  - 防范境外势力渗透 2
-  - 防范境外势力渗透 3
-  - 防范境外势力渗透 4
-  - 防范境外势力渗透 5
-  - 防范境外势力渗透 6
-  - 防范境外势力渗透 7
-  - 防范境外势力渗透 8
-  - 防范境外势力渗透 9
-  - tg频道ripaojiedian 1
-  - ' 香港ripaojiedian'
-  - 香港3ripaojiedian
-  - 香港4ripaojiedian
-  - 香港5ripaojiedian
-  - 日本ripaojiedian
-  - 日本2ripaojiedian
-  - 日本3ripaojiedian
-  - 新加坡ripaojiedian
-  - 新加坡2ripaojiedian
-  - 新加坡3ripaojiedian
-  - 美国ripaojiedian
-  - 美国2ripaojiedian
-  - 美国3ripaojiedian
-  - 香港ripaojiedian
-  - AE_speednode_0001
-  - GB_speednode_0005
-  - NL_speednode_0016
-  - US_speednode_0063
-  - _US_美国
+  - 敏感时期更新暂停
+  - 如有需要自行搭建
+  - 庆祝中国共产党成立105周年
+  - _RU_俄罗斯-_NL_荷兰
   - _CA_加拿大
   - _CA_加拿大_1
-  - _CN_中国
-  - _CA_加拿大_2
-  - _CA_加拿大_3
-  - _CA_加拿大_4
-  - _CA_加拿大_5
-  - _NL_荷兰
-  - _CA_加拿大_6
-  - _CA_加拿大_7
-  - _IR_伊朗-_DE_德国
-  - _LT_立陶宛
-  - _NL_荷兰_1
-  - _CA_加拿大_8
-  - _HK_中国香港
-  - _VN_越南
-  - _CA_加拿大_9
-  - _CA_加拿大_10
   - _RU_俄罗斯
+  - _BG_保加利亚-_DE_德国
+  - _CA_加拿大_2
+  - _CN_中国
+  - _CA_加拿大_3
+  - _SG_新加坡
+  - _CA_加拿大_4
+  - _HK_中国香港
+  - _HK_中国香港_1
   - _US_美国-_SG_新加坡
-  - _CA_加拿大_11
+  - _CA_加拿大_5
+  - _SG_新加坡_1
+  - _VN_越南
+  - _BG_保加利亚-_DE_德国_1
+  - _HK_中国香港_2
+  - _CA_加拿大_6
+  - _CN_中国_1
+  - _SG_新加坡_2
+  - _DE_德国
+  - _CA_加拿大_7
+  - _NL_荷兰
+  - _DE_德国_1
+  - _CA_加拿大_8
+  - _SG_新加坡_3
+  - _CA_加拿大_9
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
