@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-07-11 03:28:43
-# EdgeGo: 12 个, 公共: 57 个
+# Clash 订阅 - 更新于 2026-07-12 03:40:01
+# EdgeGo: 12 个, 公共: 58 个
 
 proxies:
 - name: node_1
@@ -132,102 +132,92 @@ proxies:
   cipher: auto
   name: 防范境外势力渗透
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '80'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888880
+  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 1
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '81'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888881
+  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 2
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '82'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888882
+  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 3
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '83'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888883
+  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 4
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '84'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888884
+  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 5
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '85'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888885
+  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 6
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '86'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888886
+  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 7
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '87'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888887
+  uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 8
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '88'
+  server: 127.0.0.53
+  tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
   name: 防范境外势力渗透 9
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '89'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888889
+  uuid: 88888888-8888-8888-8888-888888888888
 - cipher: aes-256-cfb
   name: tg频道ripaojiedian 1
   password: amazonskr05
@@ -245,97 +235,97 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 香港3ripaojiedian
   network: tcp
-  password: b1a42ca60884057bf527d8d38b618cfb
+  password: b490740312aedb5f9f6b84c7aebd08c0
   port: 32583
-  server: 54.46.117.102
+  server: 16.163.109.165
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 香港4ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 27161
-  server: 54.46.14.230
+  port: 39411
+  server: 16.163.129.148
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 29443
-  server: 43.199.252.80
+  port: 11035
+  server: 18.162.245.50
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 10624
-  server: 43.199.31.196
+  port: 54411
+  server: 43.199.29.120
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2ripaojiedian
   network: tcp
-  password: b1a42ca60884057bf527d8d38b618cfb
+  password: b490740312aedb5f9f6b84c7aebd08c0
   port: 40138
-  server: 16.163.56.186
+  server: 16.163.109.165
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3ripaojiedian
   network: tcp
-  password: b1a42ca60884057bf527d8d38b618cfb
-  port: 40138
-  server: 18.166.63.229
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 24370
+  server: 16.163.109.165
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡ripaojiedian
   network: tcp
-  password: b1a42ca60884057bf527d8d38b618cfb
+  password: b490740312aedb5f9f6b84c7aebd08c0
   port: 48738
-  server: 18.166.63.229
+  server: 18.162.125.197
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2ripaojiedian
   network: tcp
-  password: b1a42ca60884057bf527d8d38b618cfb
+  password: b490740312aedb5f9f6b84c7aebd08c0
   port: 6357
-  server: 16.163.56.186
+  server: 16.163.109.165
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 41421
-  server: 43.199.31.196
+  port: 45744
+  server: 16.162.191.181
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
-  password: b1a42ca60884057bf527d8d38b618cfb
-  port: 17005
-  server: 18.163.105.231
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 18.162.115.77
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2ripaojiedian
   network: tcp
-  password: b1a42ca60884057bf527d8d38b618cfb
-  port: 17005
-  server: 18.166.63.229
-  skip-cert-verify: false
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  port: 49277
+  server: 18.163.192.100
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 44265
-  server: 18.163.115.109
+  port: 34638
+  server: 95.40.54.118
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -349,61 +339,67 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: '0'
+- cipher: aes-256-cfb
+  name: FR_137MBs
+  password: amazonskr05
+  port: 443
+  server: 35.180.122.124
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: NL_134MBs
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.57
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: US_136MBs
+  password: amazonskr05
+  port: 443
+  server: 3.16.130.237
+  type: ss
+  udp: true
+- alterId: 2
   cipher: auto
-  name: FR_219MBs
+  name: US_646MBs
   network: tcp
-  port: '50000'
-  server: d1.trapxan.ir
+  port: 30845
+  server: v45.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 294517f3-11cf-4add-8c82-e7d498e4139e
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   xudp: true
-- cipher: aes-256-cfb
-  name: JP_155MBs
-  password: amazonskr05
-  port: '443'
-  server: 35.77.98.65
-  type: ss
+- name: HK_134MBs
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  port: 39001
+  server: 114.80.8.128
+  skip-cert-verify: true
+  sni: 114.80.8.128
+  tls: true
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: FR_338MBs
-  password: amazonskr05
-  port: '443'
-  server: 35.180.199.237
-  type: ss
-  udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: US_433MBs
+- name: HK_225MBs
   network: ws
-  port: '30080'
-  server: 143.198.235.98
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  password: 13d29042-ab82-4195-9cd4-2bafc518e201
+  port: 443
+  server: 23.227.38.178
+  skip-cert-verify: true
+  sni: q6clkp794liy3y90.hktimecsgo.xyz
+  type: trojan
   udp: true
-  uuid: d76c0edb-8097-4371-8d97-722723756012
   ws-opts:
-    headers: {}
-    path: /vm
-  xudp: true
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/36.0.1985.125 Safari/537.36
+    path: /images
 - cipher: aes-256-cfb
-  name: US_532MBs
+  name: US_1032MBs
   password: amazonskr05
   port: '443'
-  server: 18.189.145.175
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: US_633MBs
-  password: amazonskr05
-  port: '443'
-  server: 18.119.164.101
+  server: 3.145.46.201
   type: ss
   udp: true
 - name: AE_speednode_0001
@@ -458,93 +454,83 @@ proxies:
     headers:
       Host: www.gamingdll.ir
     path: /usa=mitivpn
-- name: _FR_法国
-  type: trojan
-  server: intense-basilisk.rooster465.autos
+- name: _HK_中国香港
+  type: vmess
+  server: n1747624260.4u9ma.icu
   port: 443
-  password: XG59623478
-  sni: intense-basilisk.rooster465.autos
+  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
-  tls: false
+  network: ws
   udp: true
-- name: _JP_日本
-  type: trojan
-  server: happy-monkfish.rooster465.autos
-  port: 443
-  password: HW85960347
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: _US_美国
+- name: _NL_荷兰
   type: ss
-  server: 3.14.255.108
+  server: 82.38.31.57
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
   udp: true
 - name: _CN_中国-_SG_新加坡
-  type: trojan
-  server: 106.75.160.27
-  port: 39001
-  password: ef73ca2cf3d9cd0f04c8f448da8125c6
-  sni: www.yrtok.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _HK_中国香港
-  type: vmess
-  server: 47.76.127.88
-  port: 5566
-  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_1
   type: vless
-  server: 162.159.16.154
+  server: 120.55.183.176
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   network: ws
-  servername: t1s1.rittbo.kdns.fr
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /sg-melbi
     headers:
-      Host: t1s1.rittbo.kdns.fr
+      Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
-- name: _HK_中国香港_1
+- name: _US_美国
   type: vmess
-  server: 47.83.221.185
-  port: 80
-  uuid: 771a590c-5eac-5732-b796-17251132f8d2
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: gw.alicdn.com
+  udp: true
+- name: _CN_中国-_GB_英国
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _JP_日本_1
-  type: ss
-  server: 35.77.98.65
+- name: _PL_波兰
+  type: vless
+  server: 82.40.62.17
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  uuid: 7499f0a0-3670-4cf6-a31c-ad4cd943cf18
+  servername: pl.hagrid-connected.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q
+    short-id: 305570274c0c72cc
   skip-cert-verify: true
   udp: true
-- name: _US_美国_2
-  type: vless
-  server: using.neobo-tooth.ru
-  port: 2083
-  uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
-  network: grpc
-  servername: using.neobo-tooth.ru
-  tls: true
-  grpc-opts:
-    grpc-service-name: grpc
+- name: _HK_中国香港-_US_美国
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: _DE_德国
@@ -558,6 +544,56 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+  udp: true
+- name: _KR_韩国
+  type: ss
+  server: 27.255.82.134
+  port: 2078
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  skip-cert-verify: true
+  udp: true
+- name: _SG_新加坡
+  type: vless
+  server: 69.48.229.50
+  port: 40443
+  uuid: ab51054f-de76-4a0f-9f3a-b44c8df86a6c
+  servername: deepl.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_HK_中国香港
+  type: trojan
+  server: 114.80.8.128
+  port: 39001
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  sni: www.yrtok.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _VN_越南
+  type: hysteria2
+  server: vn2.yuntong.click
+  port: 443
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  sni: vn2.yuntong.click
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+  udp: true
+- name: _HK_中国香港-_US_美国_1
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   udp: true
 - name: _US_美国-_DE_德国
   type: vless
@@ -574,18 +610,23 @@ proxies:
       Host: octopusss5.info
   skip-cert-verify: true
   udp: true
-- name: _US_美国_3
-  type: vless
-  server: 162.159.36.53
+- name: _HK_中国香港_1
+  type: vmess
+  server: n1747624274.4u9ma.icu
   port: 443
-  uuid: c416332e-2bde-4806-ac02-8f021c6e8f68
-  network: ws
-  servername: bbc.zjxc.de5.net
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  alterId: 0
+  cipher: auto
   tls: true
-  ws-opts:
-    path: /?proxyip=proxyip.oracle.fxxk.dedyn.io
-    headers:
-      Host: bbc.zjxc.de5.net
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: _FR_法国
+  type: ss
+  server: 35.180.122.124
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
   skip-cert-verify: true
   udp: true
 - name: _CN_中国-_FR_法国
@@ -599,85 +640,47 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: _FR_法国_1
+  type: ss
+  server: 13.36.168.114
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: _US_美国_1
+  type: ss
+  server: 3.16.130.237
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: _DE_德国_1
+  type: hysteria2
+  server: ff2.yuntong.click
+  port: 443
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  sni: ff2.yuntong.click
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+  udp: true
+- name: _HK_中国香港_2
   type: vmess
-  server: d1.trapxan.ir
-  port: 50000
-  uuid: 294517f3-11cf-4add-8c82-e7d498e4139e
-  alterId: 0
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _FR_法国_2
-  type: ss
-  server: 15.237.218.22
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_4
+- name: _HK_中国香港_3
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  server: 47.76.127.88
+  port: 5566
+  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
   alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: gw.alicdn.com
-  udp: true
-- name: _FR_法国_3
-  type: ss
-  server: 35.180.199.237
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_5
-  type: ss
-  server: 18.191.132.3
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: _NL_荷兰
-  type: vless
-  server: nl1.appcodes.ir
-  port: 2026
-  uuid: f8cae104-2eaa-4b16-b258-65be28281b70
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 484wYbkS2hs2WSdXmk2-bOeKZkdBbzdD7uZ1WmRIEj8
-    short-id: ca930e5d4a603c6a
-  skip-cert-verify: true
-  udp: true
-- name: _FR_法国_4
-  type: ss
-  server: 35.180.210.199
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: _JP_日本_2
-  type: ss
-  server: 13.192.184.199
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国-_US_美国
-  type: vmess
-  server: v8.hdacd.com
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
@@ -732,38 +735,39 @@ proxy-groups:
   - 美国2ripaojiedian
   - 美国3ripaojiedian
   - 香港ripaojiedian
-  - FR_219MBs
-  - JP_155MBs
-  - FR_338MBs
-  - US_433MBs
-  - US_532MBs
-  - US_633MBs
+  - FR_137MBs
+  - NL_134MBs
+  - US_136MBs
+  - US_646MBs
+  - HK_134MBs
+  - HK_225MBs
+  - US_1032MBs
   - AE_speednode_0001
   - GB_speednode_0005
   - NL_speednode_0016
   - US_speednode_0063
-  - _FR_法国
-  - _JP_日本
-  - _US_美国
-  - _CN_中国-_SG_新加坡
   - _HK_中国香港
-  - _US_美国_1
-  - _HK_中国香港_1
-  - _JP_日本_1
-  - _US_美国_2
+  - _NL_荷兰
+  - _CN_中国-_SG_新加坡
+  - _US_美国
+  - _CN_中国-_GB_英国
+  - _PL_波兰
+  - _HK_中国香港-_US_美国
   - _DE_德国
+  - _KR_韩国
+  - _SG_新加坡
+  - _CN_中国-_HK_中国香港
+  - _VN_越南
+  - _HK_中国香港-_US_美国_1
   - _US_美国-_DE_德国
-  - _US_美国_3
+  - _HK_中国香港_1
+  - _FR_法国
   - _CN_中国-_FR_法国
   - _FR_法国_1
-  - _FR_法国_2
-  - _US_美国_4
-  - _FR_法国_3
-  - _US_美国_5
-  - _NL_荷兰
-  - _FR_法国_4
-  - _JP_日本_2
-  - _CN_中国-_US_美国
+  - _US_美国_1
+  - _DE_德国_1
+  - _HK_中国香港_2
+  - _HK_中国香港_3
 - name: 🐢 延迟最低
   type: url-test
   proxies:
@@ -804,38 +808,39 @@ proxy-groups:
   - 美国2ripaojiedian
   - 美国3ripaojiedian
   - 香港ripaojiedian
-  - FR_219MBs
-  - JP_155MBs
-  - FR_338MBs
-  - US_433MBs
-  - US_532MBs
-  - US_633MBs
+  - FR_137MBs
+  - NL_134MBs
+  - US_136MBs
+  - US_646MBs
+  - HK_134MBs
+  - HK_225MBs
+  - US_1032MBs
   - AE_speednode_0001
   - GB_speednode_0005
   - NL_speednode_0016
   - US_speednode_0063
-  - _FR_法国
-  - _JP_日本
-  - _US_美国
-  - _CN_中国-_SG_新加坡
   - _HK_中国香港
-  - _US_美国_1
-  - _HK_中国香港_1
-  - _JP_日本_1
-  - _US_美国_2
+  - _NL_荷兰
+  - _CN_中国-_SG_新加坡
+  - _US_美国
+  - _CN_中国-_GB_英国
+  - _PL_波兰
+  - _HK_中国香港-_US_美国
   - _DE_德国
+  - _KR_韩国
+  - _SG_新加坡
+  - _CN_中国-_HK_中国香港
+  - _VN_越南
+  - _HK_中国香港-_US_美国_1
   - _US_美国-_DE_德国
-  - _US_美国_3
+  - _HK_中国香港_1
+  - _FR_法国
   - _CN_中国-_FR_法国
   - _FR_法国_1
-  - _FR_法国_2
-  - _US_美国_4
-  - _FR_法国_3
-  - _US_美国_5
-  - _NL_荷兰
-  - _FR_法国_4
-  - _JP_日本_2
-  - _CN_中国-_US_美国
+  - _US_美国_1
+  - _DE_德国_1
+  - _HK_中国香港_2
+  - _HK_中国香港_3
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
