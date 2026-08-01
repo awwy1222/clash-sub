@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-07-31 03:39:05
-# EdgeGo: 12 个, 公共: 56 个
+# Clash 订阅 - 更新于 2026-08-01 03:38:25
+# EdgeGo: 12 个, 公共: 60 个
 
 proxies:
 - name: node_1
@@ -233,87 +233,79 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: HK_136MBs
+- name: 香港3ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 13118
-  server: 18.167.20.3
-  skip-cert-verify: false
+  port: 14684
+  server: 18.166.178.12
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: HK_226MBs
+- name: 香港5ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 27161
-  server: 43.198.187.59
+  port: 29443
+  server: 35.76.126.253
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: HK_334MBs
+- name: JP_153MBs
   network: tcp
   password: BxceQaOe
-  port: 25982
-  server: 16.162.109.217
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 日本ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 49811
-  server: 43.198.187.59
+  port: 9408
+  server: 35.76.126.253
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 38937
-  server: 3.114.9.167
+  port: 44229
+  server: 18.163.100.58
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: JP_154MBs
+- name: 日本3ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 40138
-  server: 3.114.9.167
+  port: 44229
+  server: 18.166.178.12
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: SG_239MBs
+- name: 新加坡ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 6357
-  server: 18.167.20.3
-  skip-cert-verify: false
+  port: 45744
+  server: 188.163.100.58
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 48738
-  server: 18.167.20.3
+  port: 32434
+  server: 18.166.178.12
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: SG_323MBs
+- name: SG_242MBs
   network: tcp
   password: BxceQaOe
-  port: 32434
-  server: 43.198.187.59
+  port: 45744
+  server: 43.198.98.22
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: US_921MBs
+- name: 美国ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 17005
-  server: 18.167.20.3
+  port: 12680
+  server: 18.163.100.58
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: US_1021MBs
+- name: HK_speednode_0007
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 49277
@@ -321,11 +313,12 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: US_1127MBs
+  udp: true
+- name: US_633MBs
   network: tcp
   password: BxceQaOe
-  port: 38961
-  server: 16.162.122.119
+  port: 35966
+  server: 43.198.98.22
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -339,138 +332,89 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: DE_120MBs
+- name: DE_125MBs
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: hkdcrtc-e.catcat321.com
   skip-cert-verify: true
   sni: de.catxstar.com
   type: trojan
-- name: DE_220MBs
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: '20041'
-  server: hkdcrtc-e.catcat321.com
+- name: NL_111MBs
+  network: ws
+  password: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  port: 2096
+  server: jumao91.shop
   skip-cert-verify: true
+  sni: jumao91.shop
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: GB_420MBs
-  password: MGU4ZjVkMGNhY2Y3YzM0NmIxMDgyNDQ5OGVjZjY2Y2Y=
-  port: '61312'
-  server: 129.151.75.220
+  ws-opts:
+    headers:
+      Host: jumao91.shop
+    path: /proxyip=45.207.156.255
+- cipher: aes-256-cfb
+  name: SE_242MBs
+  password: amazonskr05
+  port: 443
+  server: 13.51.233.2
+  type: ss
+- cipher: aes-256-cfb
+  name: SE_321MBs
+  password: amazonskr05
+  port: 443
+  server: 13.53.38.71
   type: ss
   udp: true
-- name: _HK_中国香港-_IN_印度
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20035
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: _HK_中国香港
-  type: vmess
-  server: 47.86.167.194
-  port: 800
-  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: http
-  http-opts:
-    path:
-    - /x
-    headers:
-      Host:
-      - sjskendn.dingtalk.com
-  udp: true
-- name: _CN_中国-_IE_爱尔兰
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港-_DE_德国
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _HK_中国香港_1
-  type: vmess
-  server: 7timuei1uufoixbf.v.3dns.vip
+- cipher: aes-256-cfb
+  name: SE_434MBs
+  password: amazonskr05
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
+  server: 13.62.20.75
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: RU_125MBs
+  password: d99c422199e62b6b
+  port: '10910'
+  server: 176.32.34.152
+  type: ss
+  udp: true
+- alterId: '0'
   cipher: auto
-  tls: true
-  skip-cert-verify: true
+  name: US_1645MBs
   network: ws
-  ws-opts:
-    path: /ws-vmess
+  port: '24187'
+  server: 23.236.69.39
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- name: _US_美国
-  type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  skip-cert-verify: true
-  udp: true
-- name: _NL_荷兰-_FI_芬兰
-  type: vless
-  server: 103.54.16.230
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  network: ws
-  servername: forfreeuse.sub-flow.online
-  tls: true
+  uuid: 12a8ee36-5936-4449-90bd-b5eac6db4c1d
   ws-opts:
+    headers: {}
     path: /
-    headers:
-      Host: forfreeuse.sub-flow.online
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港-_JP_日本
+  xudp: true
+- name: HK_speednode_0005
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 6357
+  server: 18.167.20.3
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  tls: true
   udp: true
-- name: _HK_中国香港-_DE_德国_1
+- name: HK_speednode_0006
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 17005
+  server: 18.167.20.3
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
-  server: Hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: false
   udp: true
-- name: _CN_中国-_HK_中国香港
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+- name: _CZ_捷克
+  type: vless
+  server: 141.133.172.222
+  port: 20342
+  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
   tls: false
   skip-cert-verify: true
   udp: true
@@ -484,78 +428,56 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _DE_德国-_FI_芬兰
+- name: _FI_芬兰
   type: vless
-  server: 51.89.23.94
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  network: ws
-  servername: forfreeuse.sub-flow.online
+  server: 45.88.13.3
+  port: 993
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  servername: download.nvidia.com
   tls: true
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: forfreeuse.sub-flow.online
+  reality-opts:
+    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
   skip-cert-verify: true
   udp: true
-- name: _US_美国_1
+- name: _HK_中国香港
   type: vmess
-  server: guanwang.awsno.com
+  server: 7timuei1uufoixbf.v.3dns.vip
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
   udp: true
-- name: _DE_德国
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  up: '11'
-  down: '55'
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  udp: true
-- name: _SG_新加坡
-  type: ss
-  server: ss.049.node-for-bigairport.win
-  port: 19000
-  cipher: chacha20-ietf-poly1305
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港_2
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国
+- name: _DE_德国-_TH_泰国
   type: vless
-  server: 120.227.1.43
-  port: 12528
-  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
+  server: www.true.th
+  port: 80
+  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
+  network: ws
+  servername: d2pwbkmfr5lxa4.cloudfront.net
   tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: d2pwbkmfr5lxa4.cloudfront.net
   skip-cert-verify: true
   udp: true
-- name: _US_美国-_MX_墨西哥
-  type: hysteria2
-  server: 23.95.75.151
-  port: 8080
-  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
-  sni: hopp-us.yyuyy.com
+- name: _HK_中国香港-_DE_德国
+  type: trojan
+  server: Hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
   skip-cert-verify: true
+  tls: false
   udp: true
-- name: _US_美国_2
+- name: _US_美国
   type: vless
   server: 88.218.44.4
   port: 8443
@@ -570,59 +492,83 @@ proxies:
     public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
   skip-cert-verify: true
   udp: true
-- name: _CN_中国-_FR_法国
+- name: _HK_中国香港-_IN_印度
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20035
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _CN_中国-_HK_中国香港
   type: vmess
-  server: v35.hdacd.com
-  port: 30835
+  server: v9.hdacd.com
+  port: 30809
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _RU_俄罗斯-_FI_芬兰
-  type: vless
-  server: 80.78.247.239
-  port: 9893
-  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
-  network: grpc
-  servername: dl.google.com
+- name: _HK_中国香港-_DE_德国_1
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
+  skip-cert-verify: true
   tls: true
-  client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aa
-  skip-cert-verify: true
   udp: true
-- name: _CN_中国-_US_美国
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_3
+- name: _HK_中国香港_1
   type: vless
-  server: 180.178.60.252
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _CZ_捷克
-  type: vless
-  server: 141.133.172.222
-  port: 20342
-  uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
+  server: 47.240.80.220
+  port: 5100
+  uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
   tls: false
   skip-cert-verify: true
   udp: true
 - name: _RU_俄罗斯
+  type: vless
+  server: status.netraidly.ru
+  port: 40443
+  uuid: 28d0edc6-93c9-4465-bac9-720274d8b8c4
+  servername: deepl.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: WRveYv8IuUyvai4jgnQ6nWCL971-wKboe8evES5arlg
+    short-id: 69d4
+  skip-cert-verify: true
+  udp: true
+- name: _DE_德国
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '11'
+  down: '55'
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: _TH_泰国
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: f55ce6cc-3f6b-40fc-9e3b-abe26db17009
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  skip-cert-verify: true
+  udp: true
+- name: _RU_俄罗斯_1
   type: vless
   server: 45.155.52.231
   port: 443
@@ -645,31 +591,129 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _US_美国_4
+- name: _HK_中国香港_2
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港_3
+  type: vmess
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: _US_美国_1
   type: vless
   server: 88.218.44.4
   port: 993
   uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  servername: swcdn.apple.com
+  servername: dl.google.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
   skip-cert-verify: true
   udp: true
-- name: _DE_德国-_TH_泰国
-  type: vless
-  server: www.true.th
-  port: 80
-  uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
-  network: ws
-  servername: d2pwbkmfr5lxa4.cloudfront.net
+- name: _CN_中国-_IE_爱尔兰
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
   tls: false
-  ws-opts:
-    path: /
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_US_美国
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港-_JP_日本
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _HK_中国香港_4
+  type: vmess
+  server: 47.86.167.194
+  port: 800
+  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: http
+  http-opts:
+    path:
+    - /x
     headers:
-      Host: d2pwbkmfr5lxa4.cloudfront.net
+      Host:
+      - sjskendn.dingtalk.com
+  udp: true
+- name: _GB_英国-_DE_德国
+  type: vless
+  server: 194.242.129.183
+  port: 2550
+  uuid: d8b42cd5-a149-4356-9e61-000000000000
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _US_美国-_MX_墨西哥
+  type: hysteria2
+  server: 23.95.75.151
+  port: 8080
+  password: VB92_Ka9qwef143K_L23K1hz3_bF_Hz62uT_Bn1_sC
+  sni: hopp-us.yyuyy.com
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港_5
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: _US_美国_2
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  servername: storage.yandex.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -709,50 +753,54 @@ proxy-groups:
   - 防范境外势力渗透 9
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
-  - HK_136MBs
-  - HK_226MBs
-  - HK_334MBs
-  - 日本ripaojiedian
+  - 香港3ripaojiedian
+  - 香港5ripaojiedian
+  - JP_153MBs
   - 日本2ripaojiedian
-  - JP_154MBs
-  - SG_239MBs
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - SG_323MBs
-  - US_921MBs
-  - US_1021MBs
-  - US_1127MBs
+  - SG_242MBs
+  - 美国ripaojiedian
+  - HK_speednode_0007
+  - US_633MBs
   - 香港ripaojiedian
-  - DE_120MBs
-  - DE_220MBs
-  - GB_420MBs
-  - _HK_中国香港-_IN_印度
-  - _HK_中国香港
-  - _CN_中国-_IE_爱尔兰
-  - _HK_中国香港-_DE_德国
-  - _HK_中国香港_1
-  - _US_美国
-  - _NL_荷兰-_FI_芬兰
-  - _HK_中国香港-_JP_日本
-  - _HK_中国香港-_DE_德国_1
-  - _CN_中国-_HK_中国香港
-  - _IR_伊朗-_NL_荷兰
-  - _DE_德国-_FI_芬兰
-  - _US_美国_1
-  - _DE_德国
-  - _SG_新加坡
-  - _HK_中国香港_2
-  - _CN_中国
-  - _US_美国-_MX_墨西哥
-  - _US_美国_2
-  - _CN_中国-_FR_法国
-  - _RU_俄罗斯-_FI_芬兰
-  - _CN_中国-_US_美国
-  - _US_美国_3
+  - DE_125MBs
+  - NL_111MBs
+  - SE_242MBs
+  - SE_321MBs
+  - SE_434MBs
+  - RU_125MBs
+  - US_1645MBs
+  - HK_speednode_0005
+  - HK_speednode_0006
   - _CZ_捷克
-  - _RU_俄罗斯
-  - _CN_中国-_DE_德国
-  - _US_美国_4
+  - _IR_伊朗-_NL_荷兰
+  - _FI_芬兰
+  - _HK_中国香港
   - _DE_德国-_TH_泰国
+  - _HK_中国香港-_DE_德国
+  - _US_美国
+  - _HK_中国香港-_IN_印度
+  - _CN_中国-_HK_中国香港
+  - _HK_中国香港-_DE_德国_1
+  - _HK_中国香港_1
+  - _RU_俄罗斯
+  - _DE_德国
+  - _TH_泰国
+  - _RU_俄罗斯_1
+  - _CN_中国-_DE_德国
+  - _HK_中国香港_2
+  - _HK_中国香港_3
+  - _US_美国_1
+  - _CN_中国-_IE_爱尔兰
+  - _CN_中国-_US_美国
+  - _HK_中国香港-_JP_日本
+  - _HK_中国香港_4
+  - _GB_英国-_DE_德国
+  - _US_美国-_MX_墨西哥
+  - _HK_中国香港_5
+  - _US_美国_2
 - name: 🐢 延迟最低
   type: url-test
   proxies:
@@ -780,50 +828,54 @@ proxy-groups:
   - 防范境外势力渗透 9
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
-  - HK_136MBs
-  - HK_226MBs
-  - HK_334MBs
-  - 日本ripaojiedian
+  - 香港3ripaojiedian
+  - 香港5ripaojiedian
+  - JP_153MBs
   - 日本2ripaojiedian
-  - JP_154MBs
-  - SG_239MBs
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - SG_323MBs
-  - US_921MBs
-  - US_1021MBs
-  - US_1127MBs
+  - SG_242MBs
+  - 美国ripaojiedian
+  - HK_speednode_0007
+  - US_633MBs
   - 香港ripaojiedian
-  - DE_120MBs
-  - DE_220MBs
-  - GB_420MBs
-  - _HK_中国香港-_IN_印度
-  - _HK_中国香港
-  - _CN_中国-_IE_爱尔兰
-  - _HK_中国香港-_DE_德国
-  - _HK_中国香港_1
-  - _US_美国
-  - _NL_荷兰-_FI_芬兰
-  - _HK_中国香港-_JP_日本
-  - _HK_中国香港-_DE_德国_1
-  - _CN_中国-_HK_中国香港
-  - _IR_伊朗-_NL_荷兰
-  - _DE_德国-_FI_芬兰
-  - _US_美国_1
-  - _DE_德国
-  - _SG_新加坡
-  - _HK_中国香港_2
-  - _CN_中国
-  - _US_美国-_MX_墨西哥
-  - _US_美国_2
-  - _CN_中国-_FR_法国
-  - _RU_俄罗斯-_FI_芬兰
-  - _CN_中国-_US_美国
-  - _US_美国_3
+  - DE_125MBs
+  - NL_111MBs
+  - SE_242MBs
+  - SE_321MBs
+  - SE_434MBs
+  - RU_125MBs
+  - US_1645MBs
+  - HK_speednode_0005
+  - HK_speednode_0006
   - _CZ_捷克
-  - _RU_俄罗斯
-  - _CN_中国-_DE_德国
-  - _US_美国_4
+  - _IR_伊朗-_NL_荷兰
+  - _FI_芬兰
+  - _HK_中国香港
   - _DE_德国-_TH_泰国
+  - _HK_中国香港-_DE_德国
+  - _US_美国
+  - _HK_中国香港-_IN_印度
+  - _CN_中国-_HK_中国香港
+  - _HK_中国香港-_DE_德国_1
+  - _HK_中国香港_1
+  - _RU_俄罗斯
+  - _DE_德国
+  - _TH_泰国
+  - _RU_俄罗斯_1
+  - _CN_中国-_DE_德国
+  - _HK_中国香港_2
+  - _HK_中国香港_3
+  - _US_美国_1
+  - _CN_中国-_IE_爱尔兰
+  - _CN_中国-_US_美国
+  - _HK_中国香港-_JP_日本
+  - _HK_中国香港_4
+  - _GB_英国-_DE_德国
+  - _US_美国-_MX_墨西哥
+  - _HK_中国香港_5
+  - _US_美国_2
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
