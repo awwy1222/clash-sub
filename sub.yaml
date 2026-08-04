@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-08-03 03:40:41
-# EdgeGo: 12 个, 公共: 69 个
+# Clash 订阅 - 更新于 2026-08-04 03:25:24
+# EdgeGo: 12 个, 公共: 60 个
 
 proxies:
 - name: node_1
@@ -233,43 +233,43 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: HK_246MBs
+- name: 香港3ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 39412
-  server: 16.162.191.180
+  port: 50887
+  server: 18.163.100.58
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: HK_345MBs
+- name: 香港4ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 39412
-  server: 16.162.191.180
+  port: 11035
+  server: 18.166.225.67
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 香港5ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 27161
-  server: 16.162.191.180
+  port: 29443
+  server: 16.163.150.174
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: JP_230MBs
+- name: 日本ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 49811
-  server: 16.162.191.180
+  port: 9408
+  server: 18.166.225.67
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 日本2ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 3415
-  server: 18.166.178.12
+  port: 44229
+  server: 18.163.100.58
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -284,8 +284,8 @@ proxies:
 - name: 新加坡ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 51396
-  server: 18.166.178.12
+  port: 32434
+  server: 18.163.100.58
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -293,39 +293,39 @@ proxies:
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 51396
-  server: 95.40.107.76
+  server: 18.166.178.12
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: SG_140MBs
+- name: 新加坡3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 9149
-  server: 16.162.22.218
+  port: 45744
+  server: 16.163.150.174
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: 美国ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 28051
-  server: 18.163.100.58
+  port: 39024
+  server: 18.166.178.12
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: 美国2ripaojiedian
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 28051
-  server: 95.40.107.76
+  port: 39024
+  server: 18.163.100.58
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: US_833MBs
+- name: 美国3ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 29085
-  server: 16.162.164.238
+  port: 15775
+  server: 18.163.193.0
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -339,259 +339,107 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: US_116MBs
-  password: bSOOjTnIutwmTb9nTnIKm3
-  port: 5223
-  server: creativeboxde2.zanity.net
-  type: ss
-- name: US_speednode_0277
-  network: tcp
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20041
-  server: hkdcrtc-e.catcat321.com
+- name: DE_123MBs
+  network: ws
+  password: 82dd5d38-1a65-42b9-835e-497b5b51eb84
+  port: 443
+  server: 172.67.78.22
   skip-cert-verify: true
-  sni: de.catxstar.com
+  sni: kamonka.eu.org
   type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: kamonka.eu.org
+    path: /
+- name: LU_124MBs
+  network: tcp
+  password: ND91608427
+  port: 443
+  server: relaxed-gull.rooster465.autos
+  skip-cert-verify: true
+  sni: relaxed-gull.rooster465.autos
+  type: trojan
+- cipher: aes-256-cfb
+  name: US_225MBs
+  password: amazonskr05
+  port: 443
+  server: 98.93.33.57
+  type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: US_621MBs
+  name: US_335MBs
   password: amazonskr05
-  port: '443'
-  server: 54.196.207.151
+  port: 443
+  server: 54.163.196.142
   type: ss
   udp: true
-- name: US_speednode_0243
-  network: tcp
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20041
-  server: Hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: de.catxstar.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: US_919MBs
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @VPNine1)7eb777f:123571
-    mode: tls
-  port: 2377
-  server: 88.210.36.106
-  skip-cert-verify: true
-  type: ss
-  udp: true
-- grpc-opts:
-    grpc-service-name: /43588/G43plZahWW
-  name: NL_316MBs
-  network: grpc
-  password: 32b2m2w7hsdd93z7
-  port: '443'
-  server: 2.26.96.251
-  skip-cert-verify: false
-  sni: titandarkness.mooo.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /43588/G43plZahWW
-  name: NL_419MBs
-  network: grpc
-  password: 581e14a5fcc14107b9326cc54f047891
-  port: '443'
-  server: 2.26.96.251
-  skip-cert-verify: false
-  sni: titandarkness.mooo.com
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  name: NL_522MBs
-  network: ws
-  password: MITIVPN
-  port: '443'
-  server: 188.114.98.0
-  skip-cert-verify: true
-  sni: Ddee2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S-s-S.iR
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.102 Safari/537.36
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de2---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- alpn:
-  - http/1.1
-  name: NL_620MBs
-  network: ws
-  password: MiTiVPN
-  port: '443'
-  server: 188.114.97.6
-  skip-cert-verify: true
-  sni: dde1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S88r.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.76 Safari/537.36
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- cipher: chacha20-ietf-poly1305
-  name: TW_142MBs
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-  port: '40028'
-  server: xunlinknode.csdjhajkshdjkas.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: DE_924MBs
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  port: '59924'
-  server: 152.70.26.250
-  type: ss
-  udp: true
-- grpc-opts:
-    grpc-service-name: /50779/NQmry9z8yR
-  name: GB_speednode_0033
-  network: grpc
-  password: 581e14a5fcc14107b9326cc54f047891
-  port: 443
-  server: 31.76.11.46.cdn-one.org
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /50779/NQmry9z8yR
-  name: GB_speednode_0034
-  network: grpc
-  password: 581e14a5fcc14107b9326cc54f047891
-  port: 443
-  server: 31.76.11.46.cdn-one.org
-  skip-cert-verify: false
-  sni: 31.76.11.46.cdn-one.org
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /50779/NQmry9z8yR
-  name: GB_speednode_0035
-  network: grpc
-  password: 32b2m2w7hsdd93z7
-  port: 443
-  server: 31.76.11.46.cdn-one.org
-  skip-cert-verify: false
-  sni: 31.76.11.46.cdn-one.org
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /50779/NQmry9z8yR
-  name: GB_speednode_0036
-  network: grpc
-  password: 32b2m2w7hsdd93z7
-  port: 443
-  server: 31.76.11.46.cdn-one.org
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /28786/4U7gXXHftA
-  name: GB_speednode_0037
-  network: grpc
-  password: 581e14a5fcc14107b9326cc54f047891
-  port: 443
-  server: 31.76.251.127.cdn-one.org
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: HK_speednode_0050
+- name: HK_speednode_0007
   password: BxceQaOe
-  port: 29443
-  server: 18.166.249.45
+  port: 9149
+  server: 16.162.22.218
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
+- name: HK_speednode_0008
+  password: BxceQaOe
+  port: 9149
+  server: 16.162.22.218
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: HK_speednode_0009
+  password: BxceQaOe
+  port: 9149
+  server: 16.162.22.218
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
   udp: true
-- name: HK_speednode_0051
-  password: BxceQaOe
-  port: 29443
-  server: 18.166.249.45
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
-- name: HK_speednode_0052
-  password: BxceQaOe
-  port: 29085
-  server: 18.163.90.221
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /56227/rSnUrv2yXU
-  name: NL_speednode_0078
-  network: grpc
-  password: 581e14a5fcc14107b9326cc54f047891
+- name: JP_speednode_0010
+  password: ND91608427
   port: 443
-  server: 83.143.112.140.cdn-one.org
-  skip-cert-verify: false
-  sni: 83.143.112.140.cdn-one.org
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /56227/rSnUrv2yXU
-  name: NL_speednode_0079
-  network: grpc
-  password: 581e14a5fcc14107b9326cc54f047891
-  port: 443
-  server: 83.143.112.140.cdn-one.org
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /56227/rSnUrv2yXU
-  name: NL_speednode_0080
-  network: grpc
-  password: 32b2m2w7hsdd93z7
-  port: 443
-  server: 83.143.112.140.cdn-one.org
-  skip-cert-verify: false
-  sni: 83.143.112.140.cdn-one.org
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: /56227/rSnUrv2yXU
-  name: NL_speednode_0081
-  network: grpc
-  password: 32b2m2w7hsdd93z7
-  port: 443
-  server: 83.143.112.140.cdn-one.org
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: US_speednode_0262
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20041
-  server: hkdcrtc-e.catcat321.com
+  server: definite-sturgeon.rooster465.autos
   skip-cert-verify: true
-  sni: hkdcrtc-e.catcat321.com
+  sni: definite-sturgeon.rooster465.autos
   type: trojan
   udp: true
-- name: _US_美国
-  type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  servername: download.nvidia.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
+- name: JP_speednode_0011
+  password: ND91608427
+  port: 443
+  server: upright-impala.rooster465.autos
   skip-cert-verify: true
+  sni: upright-impala.rooster465.autos
+  type: trojan
+  udp: true
+- name: KR_speednode_0012
+  password: ND91608427
+  port: 443
+  server: definite-malamute.rooster465.autos
+  skip-cert-verify: true
+  sni: definite-malamute.rooster465.autos
+  type: trojan
+  udp: true
+- name: KR_speednode_0013
+  password: ND91608427
+  port: 443
+  server: moved-meerkat.rooster465.autos
+  skip-cert-verify: true
+  sni: moved-meerkat.rooster465.autos
+  type: trojan
+  udp: true
+- name: NL_speednode_0017
+  password: 1BARPLkaLl
+  port: 32914
+  server: 45.130.22.70
+  skip-cert-verify: true
+  sni: 45.130.22.70
+  type: trojan
   udp: true
 - name: _HK_中国香港
   type: vmess
-  server: u2frxj0g13vdi0wo.v.3dns.vip
+  server: ejomsxptp19apygl.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -602,147 +450,15 @@ proxies:
   ws-opts:
     path: /ws-vmess
   udp: true
-- name: _NL_荷兰
-  type: vless
-  server: ne.tunnelx.space
-  port: 443
-  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-  servername: ne.tunnelx.space
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: z0sVn6TJzORVJQX_vhS-ucGnJCKhDMD6eqnOdQrjrUQ
-    short-id: f3a9d2b1c7e4f608
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港-_DE_德国
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _DE_德国
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  auth_str: dongtaiwang.com
-  up: '11'
-  down: '55'
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  udp: true
-- name: _HK_中国香港_1
-  type: vmess
-  server: 7timuei1uufoixbf.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-  udp: true
-- name: _HK_中国香港-_DE_德国_1
-  type: trojan
-  server: Hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: _US_美国_1
+- name: _RU_俄罗斯
   type: ss
-  server: 88.210.36.106
-  port: 2377
-  cipher: chacha20-ietf-poly1305
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: (TG @VPNine1)7eb777f:123571
+  server: 176.32.35.51
+  port: 10916
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
   skip-cert-verify: true
   udp: true
-- name: _TR_土耳其
-  type: vless
-  server: tr.tunnelx.space
-  port: 443
-  uuid: ab7d5ea9-6eca-47c3-b14b-67378fc2d7c2
-  servername: tr.tunnelx.space
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: zvbLa6BrfAeAKIg4TZ2AASiEZ9ntYCSEFhgkbqWwkQg
-    short-id: 4e9b5c2d1a3f5728
-  skip-cert-verify: true
-  udp: true
-- name: _DE_德国_1
-  type: vless
-  server: 159.195.201.235
-  port: 25310
-  uuid: 6af3672b-8994-4cf1-aa15-23ce6574ebf0
-  network: grpc
-  servername: cloudflare.com
-  tls: true
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: auragrpc
-  reality-opts:
-    public-key: 3Ow1WhWHN1nUEkOR4kThVpzEuvlcB5ZrqoBcHtJGyiY
-    short-id: a3d8f1e9b2c7d4e6
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港_2
-  type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-  udp: true
-- name: _DE_德国_2
-  type: vless
-  server: 31.76.11.46.cdn-one.org
-  port: 443
-  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
-  network: ws
-  servername: 31.76.11.46.cdn-one.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /52872/BNzG4FvIAr
-    headers:
-      Host: 31.76.11.46.cdn-one.org
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港_3
-  type: vmess
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-  udp: true
-- name: _US_美国_2
+- name: _US_美国
   type: vless
   server: 88.218.44.4
   port: 8443
@@ -757,13 +473,202 @@ proxies:
     public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
   skip-cert-verify: true
   udp: true
-- name: _SG_新加坡-_KR_韩国
-  type: ss
-  server: epnbiaynh2yw.cdn000.com
-  port: 30302
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:YmU0ZDQzODMtYWFhZi00Yg==
+- name: _CN_中国-_HK_中国香港
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
+  udp: true
+- name: _IR_伊朗-_DE_德国
+  type: vless
+  server: ddc-akn.astralweb.tech
+  port: 443
+  uuid: 04b9e828-43ed-4faf-8952-41069ec08355
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: _KR_韩国
+  type: trojan
+  server: uncommon-feline.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: uncommon-feline.rooster465.autos
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _US_美国_1
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  servername: download.nvidia.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港-_UA_乌克兰
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20066
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _RU_俄罗斯_1
+  type: ss
+  server: 195.133.5.207
+  port: 20188
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+  skip-cert-verify: true
+  udp: true
+- name: _RU_俄罗斯_2
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  servername: ru2.skydrgn-online.online
+  tls: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_SG_新加坡
+  type: vmess
+  server: v45.hdacd.com
+  port: 30845
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _PL_波兰
+  type: vless
+  server: 31.76.251.127.cdn-one.org
+  port: 443
+  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
+  network: ws
+  servername: 31.76.251.127.cdn-one.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /10336/2GCOqG7bvA
+    headers:
+      Host: 31.76.251.127.cdn-one.org
+  skip-cert-verify: true
+  udp: true
+- name: _FI_芬兰-_TR_土耳其
+  type: vless
+  server: 170.168.97.3
+  port: 8443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  network: grpc
+  servername: download.nvidia.com
+  tls: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: TunService
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  skip-cert-verify: true
+  udp: true
+- name: _RU_俄罗斯-_DE_德国
+  type: vless
+  server: 62.152.56.243
+  port: 443
+  uuid: 65761043-f5c1-4e7b-8c16-b72c7a3fa4b7
+  servername: smartcaptcha.yandexcloud.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bwuT_tpimT_uUeWpSn-HbRztfol4o4uCcUHcdvkeFx0
+    short-id: 27e53bbcab7593d7
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港_1
+  type: vmess
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: _IR_伊朗-_DE_德国_1
+  type: vless
+  server: 217.60.193.1
+  port: 443
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+  servername: ddc-akn.astralweb.tech
+  tls: true
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: _DE_德国
+  type: vless
+  server: 31.76.11.46.cdn-one.org
+  port: 443
+  uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
+  network: ws
+  servername: 31.76.11.46.cdn-one.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /52872/BNzG4FvIAr
+    headers:
+      Host: 31.76.11.46.cdn-one.org
+  skip-cert-verify: true
+  udp: true
+- name: _PL_波兰_1
+  type: trojan
+  server: discrete-basilisk.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: discrete-basilisk.rooster465.autos
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _HK_中国香港_2
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+  udp: true
+- name: _HK_中国香港_3
+  type: vmess
+  server: 7timuei1uufoixbf.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
   udp: true
 - name: _HK_中国香港_4
   type: vmess
@@ -778,49 +683,24 @@ proxies:
   ws-opts:
     path: /ws-vmess
   udp: true
-- name: _FI_芬兰
-  type: vless
-  server: 83.143.112.140.cdn-one.org
-  port: 443
-  uuid: 2a6b708e-6799-473e-85e9-d4b116c5eedc
-  network: ws
-  servername: 83.143.112.140.cdn-one.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /29378/wQYeoLE7LS
-    headers:
-      Host: 83.143.112.140.cdn-one.org
+- name: _DE_德国_1
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  auth_str: dongtaiwang.com
+  up: '11'
+  down: '55'
+  sni: bing.com
   skip-cert-verify: true
+  alpn:
+  - h3
   udp: true
-- name: _SG_新加坡-_JP_日本
-  type: ss
-  server: epnbiaynh2yw.cdn000.com
-  port: 30204
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:YmU0ZDQzODMtYWFhZi00Yg==
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_3
+- name: _US_美国-_TH_泰国
   type: vless
-  server: 64.49.38.6
-  port: 993
-  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
-  servername: dl.google.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE
-  skip-cert-verify: true
-  udp: true
-- name: _DE_德国-_TH_泰国
-  type: vless
-  server: www.true.th
+  server: 3.170.185.91
   port: 80
   uuid: 89c3b66f-c849-4602-a5a8-84b6f06af478
   network: ws
-  servername: d2pwbkmfr5lxa4.cloudfront.net
   tls: false
   ws-opts:
     path: /
@@ -865,63 +745,54 @@ proxy-groups:
   - 防范境外势力渗透 9
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
-  - HK_246MBs
-  - HK_345MBs
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
   - 香港5ripaojiedian
-  - JP_230MBs
+  - 日本ripaojiedian
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - SG_140MBs
+  - 新加坡3ripaojiedian
   - 美国ripaojiedian
   - 美国2ripaojiedian
-  - US_833MBs
+  - 美国3ripaojiedian
   - 香港ripaojiedian
-  - US_116MBs
-  - US_speednode_0277
-  - US_621MBs
-  - US_speednode_0243
-  - US_919MBs
-  - NL_316MBs
-  - NL_419MBs
-  - NL_522MBs
-  - NL_620MBs
-  - TW_142MBs
-  - DE_924MBs
-  - GB_speednode_0033
-  - GB_speednode_0034
-  - GB_speednode_0035
-  - GB_speednode_0036
-  - GB_speednode_0037
-  - HK_speednode_0050
-  - HK_speednode_0051
-  - HK_speednode_0052
-  - NL_speednode_0078
-  - NL_speednode_0079
-  - NL_speednode_0080
-  - NL_speednode_0081
-  - US_speednode_0262
-  - _US_美国
+  - DE_123MBs
+  - LU_124MBs
+  - US_225MBs
+  - US_335MBs
+  - HK_speednode_0007
+  - HK_speednode_0008
+  - HK_speednode_0009
+  - JP_speednode_0010
+  - JP_speednode_0011
+  - KR_speednode_0012
+  - KR_speednode_0013
+  - NL_speednode_0017
   - _HK_中国香港
-  - _NL_荷兰
-  - _HK_中国香港-_DE_德国
-  - _DE_德国
-  - _HK_中国香港_1
-  - _HK_中国香港-_DE_德国_1
+  - _RU_俄罗斯
+  - _US_美国
+  - _CN_中国-_HK_中国香港
+  - _IR_伊朗-_DE_德国
+  - _KR_韩国
   - _US_美国_1
-  - _TR_土耳其
-  - _DE_德国_1
+  - _HK_中国香港-_UA_乌克兰
+  - _RU_俄罗斯_1
+  - _RU_俄罗斯_2
+  - _CN_中国-_SG_新加坡
+  - _PL_波兰
+  - _FI_芬兰-_TR_土耳其
+  - _RU_俄罗斯-_DE_德国
+  - _HK_中国香港_1
+  - _IR_伊朗-_DE_德国_1
+  - _DE_德国
+  - _PL_波兰_1
   - _HK_中国香港_2
-  - _DE_德国_2
   - _HK_中国香港_3
-  - _US_美国_2
-  - _SG_新加坡-_KR_韩国
   - _HK_中国香港_4
-  - _FI_芬兰
-  - _SG_新加坡-_JP_日本
-  - _US_美国_3
-  - _DE_德国-_TH_泰国
+  - _DE_德国_1
+  - _US_美国-_TH_泰国
 - name: 🐢 延迟最低
   type: url-test
   proxies:
@@ -949,63 +820,54 @@ proxy-groups:
   - 防范境外势力渗透 9
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
-  - HK_246MBs
-  - HK_345MBs
+  - 香港3ripaojiedian
+  - 香港4ripaojiedian
   - 香港5ripaojiedian
-  - JP_230MBs
+  - 日本ripaojiedian
   - 日本2ripaojiedian
   - 日本3ripaojiedian
   - 新加坡ripaojiedian
   - 新加坡2ripaojiedian
-  - SG_140MBs
+  - 新加坡3ripaojiedian
   - 美国ripaojiedian
   - 美国2ripaojiedian
-  - US_833MBs
+  - 美国3ripaojiedian
   - 香港ripaojiedian
-  - US_116MBs
-  - US_speednode_0277
-  - US_621MBs
-  - US_speednode_0243
-  - US_919MBs
-  - NL_316MBs
-  - NL_419MBs
-  - NL_522MBs
-  - NL_620MBs
-  - TW_142MBs
-  - DE_924MBs
-  - GB_speednode_0033
-  - GB_speednode_0034
-  - GB_speednode_0035
-  - GB_speednode_0036
-  - GB_speednode_0037
-  - HK_speednode_0050
-  - HK_speednode_0051
-  - HK_speednode_0052
-  - NL_speednode_0078
-  - NL_speednode_0079
-  - NL_speednode_0080
-  - NL_speednode_0081
-  - US_speednode_0262
-  - _US_美国
+  - DE_123MBs
+  - LU_124MBs
+  - US_225MBs
+  - US_335MBs
+  - HK_speednode_0007
+  - HK_speednode_0008
+  - HK_speednode_0009
+  - JP_speednode_0010
+  - JP_speednode_0011
+  - KR_speednode_0012
+  - KR_speednode_0013
+  - NL_speednode_0017
   - _HK_中国香港
-  - _NL_荷兰
-  - _HK_中国香港-_DE_德国
-  - _DE_德国
-  - _HK_中国香港_1
-  - _HK_中国香港-_DE_德国_1
+  - _RU_俄罗斯
+  - _US_美国
+  - _CN_中国-_HK_中国香港
+  - _IR_伊朗-_DE_德国
+  - _KR_韩国
   - _US_美国_1
-  - _TR_土耳其
-  - _DE_德国_1
+  - _HK_中国香港-_UA_乌克兰
+  - _RU_俄罗斯_1
+  - _RU_俄罗斯_2
+  - _CN_中国-_SG_新加坡
+  - _PL_波兰
+  - _FI_芬兰-_TR_土耳其
+  - _RU_俄罗斯-_DE_德国
+  - _HK_中国香港_1
+  - _IR_伊朗-_DE_德国_1
+  - _DE_德国
+  - _PL_波兰_1
   - _HK_中国香港_2
-  - _DE_德国_2
   - _HK_中国香港_3
-  - _US_美国_2
-  - _SG_新加坡-_KR_韩国
   - _HK_中国香港_4
-  - _FI_芬兰
-  - _SG_新加坡-_JP_日本
-  - _US_美国_3
-  - _DE_德国-_TH_泰国
+  - _DE_德国_1
+  - _US_美国-_TH_泰国
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
