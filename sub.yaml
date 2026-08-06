@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-08-05 03:20:29
-# EdgeGo: 12 个, 公共: 60 个
+# Clash 订阅 - 更新于 2026-08-06 03:23:17
+# EdgeGo: 12 个, 公共: 50 个
 
 proxies:
 - name: node_1
@@ -339,99 +339,168 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: DE_528MBs
-  network: ws
-  password: ersi13mjahoao8e6
-  port: 443
-  server: hyperon.site
+- alterId: 2
+  cipher: auto
+  name: US_136MBs
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: MO_112MBs
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  port: 20068
+  server: oplosgru-c.catcat321.com
   skip-cert-verify: true
-  sni: ramz.xuithree.dpdns.org
+  sni: hk.catxstar.com
+  tls: true
   type: trojan
-  ws-opts:
-    headers:
-      Host: ramz.xuithree.dpdns.org
-    path: /dksk
-- name: SG_116MBs
+  udp: true
+- name: SG_250MBs
+  network: tcp
   password: 55354c2b8ee339571bd657a9bb9858cc
-  port: 40783
+  port: '29072'
   server: 106.75.132.91
   skip-cert-verify: true
   type: trojan
-- alpn:
-  - http/1.1
-  name: DE_928MBs
+  udp: true
+- name: _US_美国-_FR_法国
+  type: vless
+  server: paul.ns.cloudflare.com
+  port: 443
+  uuid: f028a8c0-6763-4558-aee3-2563db9d7825
   network: ws
-  password: ersi13mjahoao8e6
-  port: '443'
-  server: cctvhikvision.center
-  skip-cert-verify: false
-  sni: ramz.xuithree.dpdns.org
-  type: trojan
-  udp: true
+  servername: ziro.skin
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
+    path: /xxvclws
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /dksk
-- name: TW_228MBs
-  network: tcp
-  password: 55354c2b8ee339571bd657a9bb9858cc
-  port: '39221'
-  server: speed-01.aliyun-web-tracker.cn
+      Host: ziro.skin
   skip-cert-verify: true
-  sni: speed-01.aliyun-web-tracker.cn
-  type: trojan
   udp: true
-- name: UA_136MBs
-  network: tcp
-  password: 41c406e2-12b5-41f2-a329-d0621052d675
-  port: 20066
+- name: _IT_意大利
+  type: ss
+  server: 62.76.234.75
+  port: 10901
+  cipher: aes-256-gcm
+  password: d1fa2f4b98a38bc8
+  skip-cert-verify: true
+  udp: true
+- name: _US_美国
+  type: ss
+  server: 23.185.200.135
+  port: 57841
+  cipher: aes-128-gcm
+  password: xo6k84l7b00n2hJp
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港-_KR_韩国
+  type: trojan
   server: oplosgru-c.catcat321.com
+  port: 20088
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
   sni: hk.catxstar.com
-  type: trojan
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: HK_118MBs
-  network: grpc
-  password: 29db38f0-e302-3768-8867-0b9bf00c77e4cmynw
-  port: '443'
-  server: kaizen-hk-3.gocmydns.com
-  skip-cert-verify: false
-  sni: www.zueuqnpjvcllc.co
-  type: trojan
-  udp: true
-- name: HK_speednode_0008
-  password: ND91608427
-  port: 443
-  server: upright-hamster.rooster465.autos
   skip-cert-verify: true
-  sni: upright-hamster.rooster465.autos
-  type: trojan
+  tls: true
   udp: true
-- name: IE_speednode_0009
-  password: ND91608427
-  port: 443
-  server: skilled-lioness.rooster465.autos
+- name: _CN_中国
+  type: vless
+  server: 120.227.1.43
+  port: 12528
+  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
+  tls: false
   skip-cert-verify: true
-  sni: skilled-lioness.rooster465.autos
-  type: trojan
   udp: true
-- name: LU_speednode_0012
-  password: ND91608427
-  port: 443
-  server: eager-louse.rooster465.autos
+- name: _US_美国_1
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  servername: download.nvidia.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
   skip-cert-verify: true
-  sni: eager-louse.rooster465.autos
-  type: trojan
   udp: true
-- name: _HK_中国香港
-  type: trojan
-  server: upright-hamster.rooster465.autos
+- name: _CN_中国-_PL_波兰
+  type: vless
+  server: 77.105.163.46
   port: 443
-  password: ND91608427
-  sni: upright-hamster.rooster465.autos
+  uuid: 3e37ef76-835d-4ad2-a1d3-414ef90532bf
+  network: ws
+  servername: ov186.ochmaybrooooo.online
+  tls: true
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+    headers:
+      Host: ov186.ochmaybrooooo.online
+  skip-cert-verify: true
+  udp: true
+- name: _IR_伊朗-_DE_德国
+  type: vless
+  server: 217.60.193.1
+  port: 443
+  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
+  servername: ddc-akn.astralweb.tech
+  tls: true
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港-_MO_中国澳门
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20068
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _HK_中国香港-_DE_德国
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20041
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: de.catxstar.com
+  skip-cert-verify: true
+  tls: false
+  udp: true
+- name: _US_美国_2
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: _FI_芬兰-_TR_土耳其
+  type: vless
+  server: 170.168.97.3
+  port: 993
+  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
+  servername: download.nvidia.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港-_IN_印度
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20034
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
   skip-cert-verify: true
   tls: true
   udp: true
@@ -447,98 +516,70 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: _HK_中国香港_1
-  type: ss
-  server: 260323.1.0.l3.unclemanco.com
-  port: 9022
-  cipher: aes-128-gcm
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 2fce243671.download.windowsupdate.com
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港-_DE_德国
-  type: trojan
-  server: hkdcrtc-e.catcat321.com
-  port: 20041
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: de.catxstar.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _US_美国
-  type: trojan
-  server: devoted-tapir.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: devoted-tapir.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _HK_中国香港-_JP_日本
-  type: ss
-  server: 260323.1.0.l3.unclemanco.com
-  port: 819
-  cipher: aes-128-gcm
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 2fce243671.download.windowsupdate.com
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国-_US_美国
+- name: _CN_中国-_JP_日本
   type: vmess
-  server: v24.hdacd.com
-  port: 30824
+  server: v6.hdacd.com
+  port: 30806
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _HK_中国香港-_JP_日本_1
-  type: ss
-  server: 260323.1.0.l3.unclemanco.com
-  port: 1313
-  cipher: aes-128-gcm
-  password: fjlfjafl231303831
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 2fce243671.download.windowsupdate.com
+- name: _IR_伊朗-_DE_德国_1
+  type: vless
+  server: parsiran.amirrezamydamane.info
+  port: 42951
+  uuid: 954e582b-339e-482f-91ca-62a021469766
+  encryption: mlkem768x25519plus.native.0rtt.hr_B27q0XLj8gjJlo_IFJOwOV8R8R3h6IK5EjNw7Exk
+  tls: true
   skip-cert-verify: true
   udp: true
-- name: _IR_伊朗-_DE_德国
+- name: _CN_中国-_IE_爱尔兰
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _FI_芬兰
+  type: hysteria2
+  server: musicclips.videolinks.ru
+  port: 8443
+  password: 22j0d00lev7mq0yv
+  sni: musicclips.videolinks.ru
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 8zzng75tz4tf82pj
+  udp: true
+- name: _FI_芬兰-_TR_土耳其_1
   type: vless
-  server: 217.60.193.1
-  port: 443
-  uuid: 5c192fd7-ef98-4112-a20c-129108fcd7e9
-  servername: ddc-akn.astralweb.tech
+  server: 170.168.97.3
+  port: 8443
+  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
+  network: grpc
+  servername: download.nvidia.com
   tls: true
   client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: TunService
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
   skip-cert-verify: true
   udp: true
-- name: _FR_法国
+- name: _HK_中国香港-_JP_日本
   type: trojan
-  server: careful-tadpole.rooster465.autos
-  port: 443
-  password: ND91608427
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: _FR_法国_1
-  type: trojan
-  server: classic-gator.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: classic-gator.rooster465.autos
+  server: hkdcrtc-e.catcat321.com
+  port: 20129
+  password: 41c406e2-12b5-41f2-a329-d0621052d675
+  sni: hk.catxstar.com
   skip-cert-verify: true
   tls: true
   udp: true
-- name: _JP_日本-_FR_法国
+- name: _CN_中国-_FR_法国
   type: vmess
   server: v35.hdacd.com
   port: 30835
@@ -548,153 +589,14 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _HK_中国香港-_US_美国
-  type: ss
-  server: 260323.1.0.l3.unclemanco.com
-  port: 911
-  cipher: aes-128-gcm
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 2fce243671.download.windowsupdate.com
-  skip-cert-verify: true
-  udp: true
-- name: _DE_德国_1
-  type: trojan
-  server: next-turkey.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: next-turkey.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _HK_中国香港_2
-  type: trojan
-  server: ace-starling.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: ace-starling.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _DE_德国_2
-  type: trojan
-  server: gentle-raptor.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: gentle-raptor.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _US_美国_1
-  type: vless
-  server: 88.218.44.4
-  port: 8443
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  network: grpc
-  servername: download.nvidia.com
-  tls: true
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: TunService
-  reality-opts:
-    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_2
-  type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  servername: download.nvidia.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_3
+- name: _CN_中国-_DE_德国
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港_3
-  type: ss
-  server: 260323.1.0.l3.unclemanco.com
-  port: 9052
-  cipher: aes-128-gcm
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 2fce243671.download.windowsupdate.com
-  skip-cert-verify: true
-  udp: true
-- name: _DE_德国_3
-  type: trojan
-  server: rapid-firefly.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: rapid-firefly.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _US_美国_4
-  type: trojan
-  server: fleet-bonefish.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: fleet-bonefish.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _HK_中国香港_4
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
+  server: v33.hdacd.com
+  port: 30833
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港-_US_美国_1
-  type: ss
-  server: 260323.1.0.l3.unclemanco.com
-  port: 906
-  cipher: aes-128-gcm
-  password: ay2loud1
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 2fce243671.download.windowsupdate.com
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国
-  type: vless
-  server: 120.227.1.43
-  port: 12528
-  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港_5
-  type: ss
-  server: 260323.1.0.l3.unclemanco.com
-  port: 20012
-  cipher: aes-128-gcm
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 2fce243671.download.windowsupdate.com
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -747,41 +649,31 @@ proxy-groups:
   - 美国2ripaojiedian
   - 美国3ripaojiedian
   - 香港ripaojiedian
-  - DE_528MBs
-  - SG_116MBs
-  - DE_928MBs
-  - TW_228MBs
-  - UA_136MBs
-  - HK_118MBs
-  - HK_speednode_0008
-  - IE_speednode_0009
-  - LU_speednode_0012
-  - _HK_中国香港
-  - _DE_德国
-  - _HK_中国香港_1
-  - _HK_中国香港-_DE_德国
+  - US_136MBs
+  - MO_112MBs
+  - SG_250MBs
+  - _US_美国-_FR_法国
+  - _IT_意大利
   - _US_美国
-  - _HK_中国香港-_JP_日本
-  - _CN_中国-_US_美国
-  - _HK_中国香港-_JP_日本_1
-  - _IR_伊朗-_DE_德国
-  - _FR_法国
-  - _FR_法国_1
-  - _JP_日本-_FR_法国
-  - _HK_中国香港-_US_美国
-  - _DE_德国_1
-  - _HK_中国香港_2
-  - _DE_德国_2
-  - _US_美国_1
-  - _US_美国_2
-  - _US_美国_3
-  - _HK_中国香港_3
-  - _DE_德国_3
-  - _US_美国_4
-  - _HK_中国香港_4
-  - _HK_中国香港-_US_美国_1
+  - _HK_中国香港-_KR_韩国
   - _CN_中国
-  - _HK_中国香港_5
+  - _US_美国_1
+  - _CN_中国-_PL_波兰
+  - _IR_伊朗-_DE_德国
+  - _HK_中国香港-_MO_中国澳门
+  - _HK_中国香港-_DE_德国
+  - _US_美国_2
+  - _FI_芬兰-_TR_土耳其
+  - _HK_中国香港-_IN_印度
+  - _DE_德国
+  - _CN_中国-_JP_日本
+  - _IR_伊朗-_DE_德国_1
+  - _CN_中国-_IE_爱尔兰
+  - _FI_芬兰
+  - _FI_芬兰-_TR_土耳其_1
+  - _HK_中国香港-_JP_日本
+  - _CN_中国-_FR_法国
+  - _CN_中国-_DE_德国
 - name: 🐢 延迟最低
   type: url-test
   proxies:
@@ -822,41 +714,31 @@ proxy-groups:
   - 美国2ripaojiedian
   - 美国3ripaojiedian
   - 香港ripaojiedian
-  - DE_528MBs
-  - SG_116MBs
-  - DE_928MBs
-  - TW_228MBs
-  - UA_136MBs
-  - HK_118MBs
-  - HK_speednode_0008
-  - IE_speednode_0009
-  - LU_speednode_0012
-  - _HK_中国香港
-  - _DE_德国
-  - _HK_中国香港_1
-  - _HK_中国香港-_DE_德国
+  - US_136MBs
+  - MO_112MBs
+  - SG_250MBs
+  - _US_美国-_FR_法国
+  - _IT_意大利
   - _US_美国
-  - _HK_中国香港-_JP_日本
-  - _CN_中国-_US_美国
-  - _HK_中国香港-_JP_日本_1
-  - _IR_伊朗-_DE_德国
-  - _FR_法国
-  - _FR_法国_1
-  - _JP_日本-_FR_法国
-  - _HK_中国香港-_US_美国
-  - _DE_德国_1
-  - _HK_中国香港_2
-  - _DE_德国_2
-  - _US_美国_1
-  - _US_美国_2
-  - _US_美国_3
-  - _HK_中国香港_3
-  - _DE_德国_3
-  - _US_美国_4
-  - _HK_中国香港_4
-  - _HK_中国香港-_US_美国_1
+  - _HK_中国香港-_KR_韩国
   - _CN_中国
-  - _HK_中国香港_5
+  - _US_美国_1
+  - _CN_中国-_PL_波兰
+  - _IR_伊朗-_DE_德国
+  - _HK_中国香港-_MO_中国澳门
+  - _HK_中国香港-_DE_德国
+  - _US_美国_2
+  - _FI_芬兰-_TR_土耳其
+  - _HK_中国香港-_IN_印度
+  - _DE_德国
+  - _CN_中国-_JP_日本
+  - _IR_伊朗-_DE_德国_1
+  - _CN_中国-_IE_爱尔兰
+  - _FI_芬兰
+  - _FI_芬兰-_TR_土耳其_1
+  - _HK_中国香港-_JP_日本
+  - _CN_中国-_FR_法国
+  - _CN_中国-_DE_德国
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
