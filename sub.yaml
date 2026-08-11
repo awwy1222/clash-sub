@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-08-10 02:23:29
-# EdgeGo: 12 个, 公共: 54 个
+# Clash 订阅 - 更新于 2026-08-11 02:15:40
+# EdgeGo: 12 个, 公共: 68 个
 
 proxies:
 - name: node_1
@@ -233,40 +233,35 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港3ripaojiedian
-  network: tcp
+- name: ' 香港3ripaojiedian'
   password: 6ec301428255a78a1d826988d86cc87e
   port: 39412
   server: 57.183.7.187
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 香港4ripaojiedian
-  network: tcp
+- name: ' 香港4ripaojiedian'
   password: BxceQaOe
   port: 35151
   server: 16.162.190.25
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 香港5ripaojiedian
-  network: tcp
+- name: ' 香港5ripaojiedian'
   password: BxceQaOe
   port: 35151
   server: 18.167.76.203
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 日本ripaojiedian
-  network: tcp
+- name: ' 日本ripaojiedian'
   password: BxceQaOe
   port: 4099
   server: 18.167.76.203
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2ripaojiedian
-  network: tcp
+- name: ' 日本2ripaojiedian'
   password: 6ec301428255a78a1d826988d86cc87e
   port: 7630
   server: 18.166.178.12
@@ -297,8 +292,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡3ripaojiedian
-  network: tcp
+- name: ' 新加坡3ripaojiedian'
   password: BxceQaOe
   port: 32434
   server: 18.163.120.239
@@ -313,8 +307,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3ripaojiedian
-  network: tcp
+- name: ' 美国3ripaojiedian'
   password: BxceQaOe
   port: 10418
   server: 18.167.76.203
@@ -331,98 +324,353 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: _RU_俄罗斯
+- name: 香港3ripaojiedian
+  network: tcp
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 50887
+  server: 57.183.7.187
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 香港4ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 27161
+  server: 16.162.3.11
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 香港5ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 29444
+  server: 18.162.120.21
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 日本ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 9408
+  server: 16.162.92.128
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 日本2ripaojiedian
+  network: tcp
+  password: 6ec301428255a78a1d826988d86cc87e
+  port: 18617
+  server: 57.183.7.187
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡3ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 41421
+  server: 95.40.53.193
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: 美国3ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 39024
+  server: 18.166.226.204
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: HK_218MBs
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  ws-opts:
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: HK_356MBs
+  network: ws
+  port: 16632
+  server: m.cnmjin.net.xiaoyan.io
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  ws-opts:
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: IN_132MBs
+  network: ws
+  port: 16626
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  ws-opts:
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: TR_142MBs
+  password: LHZzf4y0j2WQlZsTh0NzPxVmTYufR-TA
+  port: 1080
+  server: sub.almavpn.shop
+  type: ss
+  udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: US_117MBs
+  network: ws
+  port: 2054
+  server: 132.145.200.43
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ceeaee0b-89af-40b1-aa14-577cbde03a89
+  ws-opts:
+    path: /p
+- alterId: 0
+  cipher: auto
+  name: US_238MBs
+  network: ws
+  port: 16648
+  server: m.cnmjin.net.xiaoyan.io
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  ws-opts:
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+    path: /
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: PL_143MBs
+  network: tcp
+  port: '80'
+  server: 168.222.49.188
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2571f762-03af-4c30-8eb9-6652102e7cd3
+  xudp: true
+- client-fingerprint: chrome
+  name: FR_121MBs
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.108
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: FR_211MBs
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.72
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /assignment
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: FR_317MBs
+  network: ws
+  password: humanity
+  port: '443'
+  server: 188.114.97.6
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: FR_412MBs
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.46
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: FR_525MBs
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.50
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: FR_614MBs
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.17.177.143
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+    path: /assignment
+- alterId: 0
+  cipher: auto
+  name: JP_351MBs
+  network: ws
+  port: 16617
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b02552e1-524c-4d4e-ac8a-ceba8e31cb8e
+  ws-opts:
+    headers:
+      Host: 84879cab658d49d9a985aa85c9f1a362.mobgslb.tbcache.com
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: TW_127MBs
+  network: tcp
+  port: 27120
+  server: 366-1095.rabbitpro-in-3.com
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: FR_1122MBs
+  network: ws
+  password: humanity
+  port: '443'
+  server: 162.159.136.234
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /assignment
+- alterId: '0'
+  cipher: auto
+  name: TW_253MBs
+  network: tcp
+  port: '27118'
+  server: 366-1095.rabbitpro-in-3.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+  xudp: true
+- name: _CN_中国
   type: vless
-  server: 45.131.212.45
-  port: 443
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  servername: sellflow.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 120.227.1.43
+  port: 12528
+  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: _US_美国
-  type: vless
-  server: 172.67.169.143
-  port: 443
-  uuid: e35a5ad5-0175-4cd6-b654-1eb220ff28f0
-  network: ws
-  servername: infra-services-c8-2.21491204-f13b-4977-9cc9-5275edd68fd8.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /Wvf67jc5MgASmsb9Qsr0
-    headers:
-      Host: infra-services-c8-2.21491204-f13b-4977-9cc9-5275edd68fd8.kdns.fr
+  type: hysteria2
+  server: 3x.aweijll.cf
+  port: 40001
+  password: 7wzl2lj2fy956inb
+  sni: 3x.aweijll.cf
   skip-cert-verify: true
   udp: true
-- name: _IR_伊朗-_DE_德国
-  type: vless
-  server: ddc-akn.astralweb.tech
-  port: 443
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  tls: true
+- name: _IT_意大利
+  type: ss
+  server: 62.76.234.188
+  port: 10901
+  cipher: aes-256-gcm
+  password: d1fa2f4b98a38bc8
   skip-cert-verify: true
   udp: true
-- name: _US_美国_1
+- name: _US_美国-_TH_泰国
   type: vless
-  server: 180.178.60.253
-  port: 10000
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _SE_瑞典
-  type: vless
-  server: sw1-chr.astralweb.tech
-  port: 443
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: _GB_英国
-  type: vless
-  server: 191.215.37.90
-  port: 443
-  uuid: SoonTeam
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国-_FR_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _IR_伊朗-_DE_德国_1
-  type: vless
-  server: parsiran.amirrezamydamane.info
-  port: 42951
-  uuid: 54dfa74e-aa91-4f12-80d3-edcb3626439b
-  encryption: mlkem768x25519plus.native.0rtt.hr_B27q0XLj8gjJlo_IFJOwOV8R8R3h6IK5EjNw7Exk
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: _TH_泰国
-  type: vless
-  server: 18.239.134.69
+  server: 18.244.214.27
   port: 80
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  uuid: 63ae5b68-f6f8-432e-b440-d975053cfbc2
   network: ws
   tls: false
-  client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /than
     headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+      Host: d16l6nb4do0zu4.cloudfront.net
   skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港-_JP_日本
+  type: trojan
+  server: oplosgru-c.catcat321.com
+  port: 20004
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: _FR_法国
+  type: trojan
+  server: great-krill.rooster465.autos
+  port: 443
+  password: QV31589740
+  skip-cert-verify: true
+  tls: false
   udp: true
 - name: _CN_中国-_JP_日本
   type: vmess
@@ -432,58 +680,6 @@ proxies:
   alterId: 2
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _NL_荷兰
-  type: vless
-  server: 84.32.101.222
-  port: 443
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
-  servername: ddc-chr.astralweb.tech
-  tls: true
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  udp: true
-- name: _RU_俄罗斯-_FR_法国
-  type: vless
-  server: 193.233.255.14
-  port: 443
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  servername: fr.sellflow.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  skip-cert-verify: true
-  udp: true
-- name: _TR_土耳其
-  type: vless
-  server: 201.50.115.23
-  port: 443
-  uuid: fc1b3bda-b226-452a-8c5c-b0e36a1f8f88
-  servername: eu-central.cendora.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: 00bca5982f82d083
-  skip-cert-verify: true
-  udp: true
-- name: _FI_芬兰-_TR_土耳其
-  type: vless
-  server: 170.168.97.5
-  port: 8443
-  uuid: c6f220ed-41f2-21ba-438c-80f05ebbf92a
-  network: grpc
-  servername: download.nvidia.com
-  tls: true
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: TunService
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
   skip-cert-verify: true
   udp: true
 - name: _DE_德国
@@ -498,83 +694,38 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: _SG_新加坡
-  type: hysteria2
-  server: sg3.xiaoliyu.cyou
-  port: 4466
-  password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
-  skip-cert-verify: true
-  udp: true
-- name: _RU_俄罗斯-_NL_荷兰
-  type: vless
-  server: 201.24.114.29
-  port: 88
-  uuid: 91748616-e778-464c-bbda-be0df3dbf166
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_2
+- name: _CN_中国-_US_美国
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: _RU_俄罗斯_1
-  type: vless
-  server: 45.131.212.44
-  port: 443
-  uuid: 8fdf6dde-a1ca-456d-9b18-86b74d5768e6
-  servername: sellflow.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国
-  type: vless
-  server: 120.227.1.43
-  port: 12528
-  uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国-_IE_爱尔兰
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
+  server: v24.hdacd.com
+  port: 30824
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _US_美国_3
-  type: hysteria2
-  server: 3x.aweijll.cf
-  port: 40001
-  password: 7wzl2lj2fy956inb
-  sni: 3x.aweijll.cf
+- name: _FI_芬兰
+  type: ss
+  server: autodiscover.fuzzyaytor.cyou
+  port: 42982
+  cipher: chacha20-ietf-poly1305
+  password: yTEXWB6XBHyv9SfQJzCSRWCnRYutFdUXg1wbcbutxPwZE6Uxcurka3GkoatgEdX483XZSHeJp3jXcTShLCRM8rPgMF3vYNfS
   skip-cert-verify: true
   udp: true
-- name: _HK_中国香港-_JP_日本
-  type: trojan
-  server: oplosgru-c.catcat321.com
-  port: 20004
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: _CN_中国-_US_美国
+- name: _HK_中国香港
   type: vmess
-  server: v29.hdacd.com
-  port: 30829
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_FR_法国
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
@@ -591,13 +742,39 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _CN_中国-_US_美国_1
+- name: _CN_中国-_SG_新加坡
   type: vmess
-  server: v24.hdacd.com
-  port: 30824
+  server: v45.hdacd.com
+  port: 30845
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _US_美国_1
+  type: vless
+  server: 180.178.60.253
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_IE_爱尔兰
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _TR_土耳其
+  type: vless
+  server: tur2.ilia.iranstoresf.ir
+  port: 37992
+  uuid: d14b7d3c-bdda-40ab-8e5e-ee1b67ef0357
   tls: false
   skip-cert-verify: true
   udp: true
@@ -611,33 +788,22 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _US_美国_4
-  type: vless
-  server: 206.72.205.152
-  port: 40296
-  uuid: 3d0135ce-97f0-4b2f-90c3-e8aaa01be795
-  tls: false
+- name: _US_美国_2
+  type: ss
+  server: 98.89.48.191
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
   skip-cert-verify: true
   udp: true
-- name: _NL_荷兰_1
-  type: vless
-  server: ddc-chr.astralweb.tech
+- name: _US_美国_3
+  type: vmess
+  server: guanwang.awsno.com
   port: 443
-  uuid: 5dc56757-458e-4df2-9e71-2a14ce47e8af
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
   tls: true
-  skip-cert-verify: true
-  udp: true
-- name: _RU_俄罗斯_2
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  servername: ru2.skydrgn-online.online
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -677,48 +843,62 @@ proxy-groups:
   - 防范境外势力渗透 9
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
+  - ' 香港3ripaojiedian'
+  - ' 香港4ripaojiedian'
+  - ' 香港5ripaojiedian'
+  - ' 日本ripaojiedian'
+  - ' 日本2ripaojiedian'
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - ' 新加坡3ripaojiedian'
+  - 美国2ripaojiedian
+  - ' 美国3ripaojiedian'
+  - 香港ripaojiedian
   - 香港3ripaojiedian
   - 香港4ripaojiedian
   - 香港5ripaojiedian
   - 日本ripaojiedian
   - 日本2ripaojiedian
-  - 日本3ripaojiedian
-  - 新加坡ripaojiedian
-  - 新加坡2ripaojiedian
   - 新加坡3ripaojiedian
-  - 美国2ripaojiedian
   - 美国3ripaojiedian
-  - 香港ripaojiedian
-  - _RU_俄罗斯
-  - _US_美国
-  - _IR_伊朗-_DE_德国
-  - _US_美国_1
-  - _SE_瑞典
-  - _GB_英国
-  - _CN_中国-_FR_法国
-  - _IR_伊朗-_DE_德国_1
-  - _TH_泰国
-  - _CN_中国-_JP_日本
-  - _NL_荷兰
-  - _RU_俄罗斯-_FR_法国
-  - _TR_土耳其
-  - _FI_芬兰-_TR_土耳其
-  - _DE_德国
-  - _SG_新加坡
-  - _RU_俄罗斯-_NL_荷兰
-  - _US_美国_2
-  - _RU_俄罗斯_1
+  - HK_218MBs
+  - HK_356MBs
+  - IN_132MBs
+  - TR_142MBs
+  - US_117MBs
+  - US_238MBs
+  - PL_143MBs
+  - FR_121MBs
+  - FR_211MBs
+  - FR_317MBs
+  - FR_412MBs
+  - FR_525MBs
+  - FR_614MBs
+  - JP_351MBs
+  - TW_127MBs
+  - FR_1122MBs
+  - TW_253MBs
   - _CN_中国
-  - _CN_中国-_IE_爱尔兰
-  - _US_美国_3
+  - _US_美国
+  - _IT_意大利
+  - _US_美国-_TH_泰国
   - _HK_中国香港-_JP_日本
+  - _FR_法国
+  - _CN_中国-_JP_日本
+  - _DE_德国
   - _CN_中国-_US_美国
+  - _FI_芬兰
+  - _HK_中国香港
+  - _CN_中国-_FR_法国
   - _CN_中国-_HK_中国香港
-  - _CN_中国-_US_美国_1
+  - _CN_中国-_SG_新加坡
+  - _US_美国_1
+  - _CN_中国-_IE_爱尔兰
+  - _TR_土耳其
   - _CN_中国-_DE_德国
-  - _US_美国_4
-  - _NL_荷兰_1
-  - _RU_俄罗斯_2
+  - _US_美国_2
+  - _US_美国_3
 - name: 🐢 延迟最低
   type: url-test
   proxies:
@@ -746,48 +926,62 @@ proxy-groups:
   - 防范境外势力渗透 9
   - tg频道ripaojiedian 1
   - ' 香港ripaojiedian'
+  - ' 香港3ripaojiedian'
+  - ' 香港4ripaojiedian'
+  - ' 香港5ripaojiedian'
+  - ' 日本ripaojiedian'
+  - ' 日本2ripaojiedian'
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡2ripaojiedian
+  - ' 新加坡3ripaojiedian'
+  - 美国2ripaojiedian
+  - ' 美国3ripaojiedian'
+  - 香港ripaojiedian
   - 香港3ripaojiedian
   - 香港4ripaojiedian
   - 香港5ripaojiedian
   - 日本ripaojiedian
   - 日本2ripaojiedian
-  - 日本3ripaojiedian
-  - 新加坡ripaojiedian
-  - 新加坡2ripaojiedian
   - 新加坡3ripaojiedian
-  - 美国2ripaojiedian
   - 美国3ripaojiedian
-  - 香港ripaojiedian
-  - _RU_俄罗斯
-  - _US_美国
-  - _IR_伊朗-_DE_德国
-  - _US_美国_1
-  - _SE_瑞典
-  - _GB_英国
-  - _CN_中国-_FR_法国
-  - _IR_伊朗-_DE_德国_1
-  - _TH_泰国
-  - _CN_中国-_JP_日本
-  - _NL_荷兰
-  - _RU_俄罗斯-_FR_法国
-  - _TR_土耳其
-  - _FI_芬兰-_TR_土耳其
-  - _DE_德国
-  - _SG_新加坡
-  - _RU_俄罗斯-_NL_荷兰
-  - _US_美国_2
-  - _RU_俄罗斯_1
+  - HK_218MBs
+  - HK_356MBs
+  - IN_132MBs
+  - TR_142MBs
+  - US_117MBs
+  - US_238MBs
+  - PL_143MBs
+  - FR_121MBs
+  - FR_211MBs
+  - FR_317MBs
+  - FR_412MBs
+  - FR_525MBs
+  - FR_614MBs
+  - JP_351MBs
+  - TW_127MBs
+  - FR_1122MBs
+  - TW_253MBs
   - _CN_中国
-  - _CN_中国-_IE_爱尔兰
-  - _US_美国_3
+  - _US_美国
+  - _IT_意大利
+  - _US_美国-_TH_泰国
   - _HK_中国香港-_JP_日本
+  - _FR_法国
+  - _CN_中国-_JP_日本
+  - _DE_德国
   - _CN_中国-_US_美国
+  - _FI_芬兰
+  - _HK_中国香港
+  - _CN_中国-_FR_法国
   - _CN_中国-_HK_中国香港
-  - _CN_中国-_US_美国_1
+  - _CN_中国-_SG_新加坡
+  - _US_美国_1
+  - _CN_中国-_IE_爱尔兰
+  - _TR_土耳其
   - _CN_中国-_DE_德国
-  - _US_美国_4
-  - _NL_荷兰_1
-  - _RU_俄罗斯_2
+  - _US_美国_2
+  - _US_美国_3
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
