@@ -32,6 +32,12 @@ def is_valid_proxy(proxy):
         return False
     if len(server) < 3:
         return False
+    # 过滤新版 VLESS 后量子加密节点(mlkem768x25519plus 等),
+    # 旧内核客户端无法解析,会导致整个订阅加载失败
+    if str(proxy.get('type', '')).lower() == 'vless':
+        enc = proxy.get('encryption')
+        if enc and str(enc).strip().lower() not in ('none', ''):
+            return False
     return True
 
 print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始获取节点...")

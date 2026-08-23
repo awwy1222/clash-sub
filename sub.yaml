@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-08-23 01:50:35
-# EdgeGo: 10 个, 公共: 69 个
+# Clash 订阅 - 更新于 2026-08-23 21:30:55
+# EdgeGo: 10 个, 公共: 87 个
 
 proxies:
 - name: node_1
@@ -457,82 +457,182 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- cipher: aes-128-gcm
+  name: AU_131MBs
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: 10927
+  server: mn.qwer-cn.org
+  type: ss
 - cipher: aes-256-cfb
-  name: JP_113MBs
+  name: GB_116MBs
+  password: amazonskr05
+  port: 443
+  server: 35.178.103.18
+  type: ss
+- cipher: aes-128-gcm
+  name: JP_149MBs
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: 10937
+  server: mn.qwer-cn.org
+  type: ss
+- cipher: aes-128-gcm
+  name: SG_145MBs
+  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
+  port: 10934
+  server: mn.qwer-cn.org
+  type: ss
+- name: TH_120MBs
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20006
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: JP_215MBs
   password: 7eadc6dbe2ae
-  port: 65443
+  port: '65443'
   server: 121.46.230.136
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: KR_114MBs
-  password: 7eadc6dbe2ae
-  port: '65443'
-  server: 121.46.230.138
+- name: ID_131MBs
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20056
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: GB_231MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21104'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: JP_416MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21109'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: IT_231MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21113'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: KR_215MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21114'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: GB_326MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21117'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: JP_512MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21119'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: IT_329MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21120'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: FR_212MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21126'
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: IN_139MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21103'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: GB_422MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21104'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US_432MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21105'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: US_526MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21108'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: KR_312MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21114'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: GB_512MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21117'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: SG_211MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21121'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: FR_318MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21122'
+  server: 211.91.158.44
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: TH_221MBs
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: '21123'
+  server: 211.91.158.44
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: FR_21017KBs
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.18.152.140
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
+  name: DE_429MBs
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: '20022'
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/68.0.3440.106 Safari/537.36
-    path: /assignment
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: FR_324MBs
-  network: ws
-  password: humanity
-  port: '443'
-  server: 216.24.57.7
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: FR_419MBs
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.18.152.159
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: US_1834MBs
-  network: ws
-  password: MiTiVPN
-  port: '443'
-  server: 188.42.145.180
-  skip-cert-verify: false
-  sni: 82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-g@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: _CN_中国-_JP_日本
   type: ss
   server: 121.46.230.136
@@ -791,15 +891,6 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- type: vless
-  server: ge-20b81e.atlanta-api.com
-  port: 443
-  uuid: 74099b9e-52fd-4540-b642-b8d60f3b5a2a
-  encryption: mlkem768x25519plus.native.0rtt.NZBih2jIVFR24bMMX7i-Q9XE3oESSooOHSeDvnjP3fc0EaqCVMWndYUo6mUakYN2ZaYHVZofOZsanhV2ZNoFVOcvfKo7RybJVza0Y6ZT1ogxe1G72XUauZxaUwQ3m3YrapuNA8VPQ-yHZSiDnpC04QQKnAA_5sNGprfLGbM56-QRiqC9FvMpqpCZe_YOg7ZcZkatqEU-Z_a4fWs_xtOmzAUlkJPGCbye7jCeWkjF6aML4he3dGxyn6esW2QHQuoU_HJizXSvvCyOwwKq0INO-UDCoXISlGZwrqtu0Dexw-yGZJgQb5pGrPpnMYYCgcO1w9I_DPw1q4pcCFBnOwiceuy8Wuum3vViqrUBrGU0lIxH7NXPiMKM0wyXMZpjRUc
-  tls: false
-  skip-cert-verify: true
-  udp: true
-  name: ge-20b81eatlanta-apicom
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -861,12 +952,31 @@ proxy-groups:
   - 美国ripaojiedian
   - 台湾ripaojiedian
   - 美国3ripaojiedian
-  - JP_113MBs
-  - KR_114MBs
-  - FR_21017KBs
-  - FR_324MBs
-  - FR_419MBs
-  - US_1834MBs
+  - AU_131MBs
+  - GB_116MBs
+  - JP_149MBs
+  - SG_145MBs
+  - TH_120MBs
+  - JP_215MBs
+  - ID_131MBs
+  - GB_231MBs
+  - JP_416MBs
+  - IT_231MBs
+  - KR_215MBs
+  - GB_326MBs
+  - JP_512MBs
+  - IT_329MBs
+  - FR_212MBs
+  - IN_139MBs
+  - GB_422MBs
+  - US_432MBs
+  - US_526MBs
+  - KR_312MBs
+  - GB_512MBs
+  - SG_211MBs
+  - FR_318MBs
+  - TH_221MBs
+  - DE_429MBs
   - _CN_中国-_JP_日本
   - _NO_挪威
   - _US_美国
@@ -891,7 +1001,6 @@ proxy-groups:
   - _CN_中国-_FR_法国
   - _CN_中国-_JP_日本_1
   - _NL_荷兰_3
-  - ge-20b81eatlanta-apicom
 - name: 🐢 延迟最低
   type: url-test
   proxies:
@@ -943,12 +1052,31 @@ proxy-groups:
   - 美国ripaojiedian
   - 台湾ripaojiedian
   - 美国3ripaojiedian
-  - JP_113MBs
-  - KR_114MBs
-  - FR_21017KBs
-  - FR_324MBs
-  - FR_419MBs
-  - US_1834MBs
+  - AU_131MBs
+  - GB_116MBs
+  - JP_149MBs
+  - SG_145MBs
+  - TH_120MBs
+  - JP_215MBs
+  - ID_131MBs
+  - GB_231MBs
+  - JP_416MBs
+  - IT_231MBs
+  - KR_215MBs
+  - GB_326MBs
+  - JP_512MBs
+  - IT_329MBs
+  - FR_212MBs
+  - IN_139MBs
+  - GB_422MBs
+  - US_432MBs
+  - US_526MBs
+  - KR_312MBs
+  - GB_512MBs
+  - SG_211MBs
+  - FR_318MBs
+  - TH_221MBs
+  - DE_429MBs
   - _CN_中国-_JP_日本
   - _NO_挪威
   - _US_美国
@@ -973,7 +1101,6 @@ proxy-groups:
   - _CN_中国-_FR_法国
   - _CN_中国-_JP_日本_1
   - _NL_荷兰_3
-  - ge-20b81eatlanta-apicom
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
