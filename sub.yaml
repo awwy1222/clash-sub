@@ -1,6 +1,13 @@
-# Clash 订阅 - 更新于 2026-08-23 21:30:55
+# Clash 订阅 - 更新于 2026-08-23 22:03:04
 # EdgeGo: 10 个, 公共: 87 个
 
+mixed-port: 7897
+allow-lan: false
+mode: rule
+log-level: info
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
 proxies:
 - name: node_1
   type: hysteria
@@ -895,9 +902,113 @@ proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
+  - ♻️ 自动选择
   - EdgeGo节点
   - 公共节点
   - 🐢 延迟最低
+- name: ♻️ 自动选择
+  type: url-test
+  proxies:
+  - node_1
+  - githubcomAlvin9999-newpacfanqiang
+  - githubcomAlvin9999-newpacfanqiang_2
+  - githubcomAlvin9999-newpacfanqiang_3
+  - githubcomAlvin9999-newpacfanqiang_4
+  - githubcomAlvin9999-newpacfanqiang_5
+  - hysteria_6221070191
+  - hysteria_6221070191_2
+  - hysteria_58312990
+  - hysteria_58312990_2
+  - 防范境外势力渗透
+  - 防范境外势力渗透 1
+  - 防范境外势力渗透 2
+  - 防范境外势力渗透 3
+  - 防范境外势力渗透 4
+  - 防范境外势力渗透 5
+  - 防范境外势力渗透 6
+  - 防范境外势力渗透 7
+  - 防范境外势力渗透 8
+  - 防范境外势力渗透 9
+  - tg频道ripaojiedian 1
+  - ' 香港ripaojiedian'
+  - ' 香港3ripaojiedian'
+  - ' 香港4ripaojiedian'
+  - ' 香港5ripaojiedian'
+  - ' 日本ripaojiedian'
+  - ' 日本2ripaojiedian'
+  - ' 日本3ripaojiedian'
+  - ' 新加坡ripaojiedian'
+  - ' 新加坡2ripaojiedian'
+  - ' 新加坡3ripaojiedian'
+  - ' 美国ripaojiedian'
+  - ' 美国2ripaojiedian'
+  - ' 美国3ripaojiedian'
+  - 香港ripaojiedian
+  - 香港2ripaojiedian
+  - 香港3ripaojiedian
+  - 日本ripaojiedian
+  - 日本2ripaojiedian
+  - 香港4ripaojiedian
+  - 日本3ripaojiedian
+  - 新加坡ripaojiedian
+  - 新加坡3ripaojiedian
+  - 香港5ripaojiedian
+  - 美国2ripaojiedian
+  - 美国ripaojiedian
+  - 台湾ripaojiedian
+  - 美国3ripaojiedian
+  - AU_131MBs
+  - GB_116MBs
+  - JP_149MBs
+  - SG_145MBs
+  - TH_120MBs
+  - JP_215MBs
+  - ID_131MBs
+  - GB_231MBs
+  - JP_416MBs
+  - IT_231MBs
+  - KR_215MBs
+  - GB_326MBs
+  - JP_512MBs
+  - IT_329MBs
+  - FR_212MBs
+  - IN_139MBs
+  - GB_422MBs
+  - US_432MBs
+  - US_526MBs
+  - KR_312MBs
+  - GB_512MBs
+  - SG_211MBs
+  - FR_318MBs
+  - TH_221MBs
+  - DE_429MBs
+  - _CN_中国-_JP_日本
+  - _NO_挪威
+  - _US_美国
+  - _CZ_捷克-_DE_德国
+  - _US_美国_1
+  - _NO_挪威_1
+  - _EE_爱沙尼亚
+  - _NL_荷兰
+  - _TH_泰国
+  - _CN_中国-_US_美国
+  - _CN_中国-_US_美国_1
+  - _FI_芬兰
+  - _FI_芬兰_1
+  - _US_美国_2
+  - _HK_中国香港
+  - _EE_爱沙尼亚_1
+  - _NL_荷兰_1
+  - _HK_中国香港_1
+  - _LV_拉脱维亚
+  - _US_美国_3
+  - _NL_荷兰_2
+  - _CN_中国-_FR_法国
+  - _CN_中国-_JP_日本_1
+  - _NL_荷兰_3
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
 - name: EdgeGo节点
   type: select
   proxies:
@@ -1106,33 +1217,132 @@ proxy-groups:
   tolerance: 50
 rules:
 - DOMAIN-SUFFIX,local,DIRECT
-- IP-CIDR,127.0.0.0/8,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT
-- IP-CIDR,172.16.0.0/12,DIRECT
-- IP-CIDR,192.168.0.0/16,DIRECT
-- IP-CIDR,224.0.0.0/4,DIRECT
-- IP-CIDR,255.255.255.255/32,DIRECT
-- GEOIP,CN,DIRECT
-- IP-CIDR,100.64.0.0/10,DIRECT
-- IP-CIDR,100.0.0.0/8,DIRECT
+- DOMAIN-SUFFIX,lan,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+- IP-CIDR,255.255.255.255/32,DIRECT,no-resolve
+- DOMAIN-SUFFIX,ad.zanox.com,REJECT
+- DOMAIN-SUFFIX,adcolony.com,REJECT
+- DOMAIN-SUFFIX,admob.com,REJECT
+- DOMAIN-SUFFIX,ads.twitter.com,REJECT
+- DOMAIN-SUFFIX,advertising.com,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-SUFFIX,googlesyndication.com,REJECT
+- DOMAIN-SUFFIX,googleadservices.com,REJECT
+- DOMAIN-SUFFIX,adnxs.com,REJECT
+- DOMAIN-SUFFIX,adsrvr.org,REJECT
+- DOMAIN-SUFFIX,criteo.com,REJECT
+- DOMAIN-SUFFIX,applovin.com,REJECT
+- DOMAIN-SUFFIX,unityads.unity3d.com,REJECT
+- DOMAIN-SUFFIX,supersonic.com,REJECT
+- DOMAIN-SUFFIX,umeng.com,REJECT
+- DOMAIN-SUFFIX,cnzz.com,REJECT
+- AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
 - DOMAIN-SUFFIX,cn,DIRECT
 - DOMAIN-SUFFIX,baidu.com,DIRECT
 - DOMAIN-SUFFIX,qq.com,DIRECT
 - DOMAIN-SUFFIX,weixin.com,DIRECT
+- DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+- DOMAIN-SUFFIX,wechat.com,DIRECT
 - DOMAIN-SUFFIX,taobao.com,DIRECT
 - DOMAIN-SUFFIX,tmall.com,DIRECT
 - DOMAIN-SUFFIX,jd.com,DIRECT
 - DOMAIN-SUFFIX,alipay.com,DIRECT
+- DOMAIN-SUFFIX,aliyun.com,DIRECT
+- DOMAIN-SUFFIX,alibaba.com,DIRECT
 - DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
 - DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,biliapi.net,DIRECT
+- DOMAIN-SUFFIX,hdslb.com,DIRECT
 - DOMAIN-SUFFIX,tencent.com,DIRECT
 - DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,weibo.cn,DIRECT
 - DOMAIN-SUFFIX,csdn.net,DIRECT
 - DOMAIN-SUFFIX,ithome.com,DIRECT
-- DOMAIN-SUFFIX,netease.com,DIRECT
-- DOMAIN-SUFFIX,microsoft.com,DIRECT
-- DOMAIN-SUFFIX,office.com,DIRECT
-- DOMAIN-SUFFIX,apple.com,DIRECT
-- DOMAIN-SUFFIX,icloud.com,DIRECT
-- DOMAIN-SUFFIX,steamcontent.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,xiaohongshu.com,DIRECT
+- DOMAIN-SUFFIX,bytedance.com,DIRECT
+- DOMAIN-SUFFIX,douyin.com,DIRECT
+- DOMAIN-SUFFIX,douyinpic.com,DIRECT
+- DOMAIN-SUFFIX,kuaishou.com,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,xiaomi.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,12306.cn,DIRECT
+- DOMAIN-SUFFIX,12306.com,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,qunar.com,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,so.com,DIRECT
+- DOMAIN-SUFFIX,360.cn,DIRECT
+- DOMAIN-SUFFIX,360.com,DIRECT
+- DOMAIN-SUFFIX,gitee.com,DIRECT
+- DOMAIN-SUFFIX,juejin.cn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,v.qq.com,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN-SUFFIX,qpic.cn,DIRECT
+- DOMAIN-SUFFIX,alicdn.com,DIRECT
+- DOMAIN-SUFFIX,taobaocdn.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bytecdn.cn,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,snssdk.com,DIRECT
+- DOMAIN-SUFFIX,zjcdn.com,DIRECT
+- GEOSITE,CN,DIRECT
+- GEOIP,CN,DIRECT
 - MATCH,🚀 节点选择
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - +.lan
+  - +.local
+  - +.msftconnecttest.com
+  - +.msftncsi.com
+  - dns.msftncsi.com
+  - +.stun.*.*
+  - +.stun.*.*.*
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - +.time.edu.cn
+  - +.ntp.org
+  - +.pool.ntp.org
+  - time1.cloud.tencent.com
+  - +.qq.com
+  - +.wechat.com
+  - +.weixin.qq.com
+  - +.market.xiaomi.com
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  nameserver:
+  - https://223.5.5.5/dns-query
+  - https://doh.pub/dns-query
+  fallback:
+  - https://dns.cloudflare.com/dns-query
+  - https://dns.google/dns-query
+  - tcp://1.1.1.1:53
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4

@@ -31,65 +31,30 @@ PUBLIC_SUBS = [
     'https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml',
 ]
 
-RULES = """# 本地网络
-- DOMAIN-SUFFIX,local,DIRECT
-- IP-CIDR,127.0.0.0/8,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT
-- IP-CIDR,172.16.0.0/12,DIRECT
-- IP-CIDR,192.168.0.0/16,DIRECT
-- IP-CIDR,224.0.0.0/4,DIRECT
-- IP-CIDR,255.255.255.255/32,DIRECT
-- GEOIP,CN,DIRECT
+# 广告拦截列表
+AD_DOMAINS = [
+    'ad.zanox.com', 'adcolony.com', 'admob.com', 'ads.twitter.com',
+    'advertising.com', 'doubleclick.net', 'googlesyndication.com',
+    'googleadservices.com', 'adnxs.com', 'adsrvr.org', 'criteo.com',
+    'applovin.com', 'unityads.unity3d.com', 'supersonic.com',
+    'umeng.com', 'cnzz.com',
+]
 
-# Tailscale 虚拟网络
-- IP-CIDR,100.64.0.0/10,DIRECT
-- IP-CIDR,100.0.0.0/8,DIRECT
-
-# 广告
-- DOMAIN-SUFFIX,ad.zanox.com,REJECT
-- DOMAIN-SUFFIX,adcolony.com,REJECT
-- DOMAIN-SUFFIX,admob.com,REJECT
-- DOMAIN-SUFFIX,ads.twitter.com,REJECT
-- DOMAIN-SUFFIX,advertising.com,REJECT
-- DOMAIN-SUFFIX,doubleclick.net,REJECT
-- DOMAIN-SUFFIX,googlesyndication.com,REJECT
-
-# 国内常见网站直连
-- DOMAIN-SUFFIX,cn,DIRECT
-- DOMAIN-SUFFIX,baidu.com,DIRECT
-- DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,weixin.com,DIRECT
-- DOMAIN-SUFFIX,taobao.com,DIRECT
-- DOMAIN-SUFFIX,tmall.com,DIRECT
-- DOMAIN-SUFFIX,jd.com,DIRECT
-- DOMAIN-SUFFIX,alipay.com,DIRECT
-- DOMAIN-SUFFIX,163.com,DIRECT
-- DOMAIN-SUFFIX,bilibili.com,DIRECT
-- DOMAIN-SUFFIX,tencent.com,DIRECT
-- DOMAIN-SUFFIX,weibo.com,DIRECT
-- DOMAIN-SUFFIX,csdn.net,DIRECT
-- DOMAIN-SUFFIX,ithome.com,DIRECT
-- DOMAIN-SUFFIX,netease.com,DIRECT
-
-# Microsoft
-- DOMAIN-SUFFIX,microsoft.com,DIRECT
-- DOMAIN-SUFFIX,office.com,DIRECT
-- DOMAIN-KEYWORD,microsoft,DIRECT
-- DOMAIN-KEYWORD,azure,DIRECT
-- DOMAIN-KEYWORD,githubusercontent,DIRECT
-
-# Apple
-- DOMAIN-SUFFIX,apple.com,DIRECT
-- DOMAIN-SUFFIX,icloud.com,DIRECT
-
-# Steam
-- DOMAIN-SUFFIX,steamcontent.com,DIRECT
-- DOMAIN-KEYWORD,steamcommunity,DIRECT
-- DOMAIN-KEYWORD,steammobile,DIRECT
-
-# 默认规则
-- MATCH,🚀 节点选择
-"""
+# 常用国内域名(直连兜底,GEOSITE,CN 之外的保险)
+CN_DOMAINS = [
+    'cn', 'baidu.com', 'qq.com', 'weixin.com', 'weixin.qq.com', 'wechat.com',
+    'taobao.com', 'tmall.com', 'jd.com', 'alipay.com', 'aliyun.com',
+    'alibaba.com', '163.com', '126.com', 'netease.com', 'bilibili.com',
+    'biliapi.net', 'hdslb.com', 'tencent.com', 'weibo.com', 'weibo.cn',
+    'csdn.net', 'ithome.com', 'zhihu.com', 'douban.com', 'xiaohongshu.com',
+    'bytedance.com', 'douyin.com', 'douyinpic.com', 'kuaishou.com',
+    'mi.com', 'xiaomi.com', 'miui.com', '12306.cn', '12306.com',
+    'meituan.com', 'dianping.com', 'ele.me', 'ctrip.com', 'qunar.com',
+    'sogou.com', 'so.com', '360.cn', '360.com', 'gitee.com', 'juejin.cn',
+    'oschina.net', 'jianshu.com', 'iqiyi.com', 'youku.com', 'v.qq.com',
+    'gtimg.com', 'qpic.cn', 'alicdn.com', 'taobaocdn.com', 'bdstatic.com',
+    'bdimg.com', 'bytecdn.cn', 'pstatp.com', 'snssdk.com', 'zjcdn.com',
+]
 
 def sanitize_name(name):
     import re
@@ -267,49 +232,77 @@ def main():
     gitlabip_names = [p['name'] for p in gitlabip_proxies] if gitlabip_proxies else ['DIRECT']
     public_names = [p['name'] for p in public_proxies] if public_proxies else ['DIRECT']
     
-    rules_list = [
+    # ===== 规则:国内全直连,其余全走代理 =====
+    rules_list = []
+    # 1. 局域网 / 私有地址直连
+    rules_list += [
         'DOMAIN-SUFFIX,local,DIRECT',
-        'IP-CIDR,127.0.0.0/8,DIRECT',
-        'IP-CIDR,10.0.0.0/8,DIRECT',
-        'IP-CIDR,172.16.0.0/12,DIRECT',
-        'IP-CIDR,192.168.0.0/16,DIRECT',
-        'IP-CIDR,224.0.0.0/4,DIRECT',
-        'IP-CIDR,255.255.255.255/32,DIRECT',
-        'GEOIP,CN,DIRECT',
-        'IP-CIDR,100.64.0.0/10,DIRECT',
-        'IP-CIDR,100.0.0.0/8,DIRECT',
-        'DOMAIN-SUFFIX,cn,DIRECT',
-        'DOMAIN-SUFFIX,baidu.com,DIRECT',
-        'DOMAIN-SUFFIX,qq.com,DIRECT',
-        'DOMAIN-SUFFIX,weixin.com,DIRECT',
-        'DOMAIN-SUFFIX,taobao.com,DIRECT',
-        'DOMAIN-SUFFIX,tmall.com,DIRECT',
-        'DOMAIN-SUFFIX,jd.com,DIRECT',
-        'DOMAIN-SUFFIX,alipay.com,DIRECT',
-        'DOMAIN-SUFFIX,163.com,DIRECT',
-        'DOMAIN-SUFFIX,bilibili.com,DIRECT',
-        'DOMAIN-SUFFIX,tencent.com,DIRECT',
-        'DOMAIN-SUFFIX,weibo.com,DIRECT',
-        'DOMAIN-SUFFIX,csdn.net,DIRECT',
-        'DOMAIN-SUFFIX,ithome.com,DIRECT',
-        'DOMAIN-SUFFIX,netease.com,DIRECT',
-        'DOMAIN-SUFFIX,microsoft.com,DIRECT',
-        'DOMAIN-SUFFIX,office.com,DIRECT',
-        'DOMAIN-SUFFIX,apple.com,DIRECT',
-        'DOMAIN-SUFFIX,icloud.com,DIRECT',
-        'DOMAIN-SUFFIX,steamcontent.com,DIRECT',
-        'MATCH,🚀 节点选择',
+        'DOMAIN-SUFFIX,lan,DIRECT',
+        'IP-CIDR,127.0.0.0/8,DIRECT,no-resolve',
+        'IP-CIDR,10.0.0.0/8,DIRECT,no-resolve',
+        'IP-CIDR,172.16.0.0/12,DIRECT,no-resolve',
+        'IP-CIDR,192.168.0.0/16,DIRECT,no-resolve',
+        'IP-CIDR,100.64.0.0/10,DIRECT,no-resolve',
+        'IP-CIDR,224.0.0.0/4,DIRECT,no-resolve',
+        'IP-CIDR,255.255.255.255/32,DIRECT,no-resolve',
     ]
-    
+    # 2. 广告拦截
+    rules_list += [f'DOMAIN-SUFFIX,{d},REJECT' for d in AD_DOMAINS]
+    # 3. 拦截 QUIC(UDP 443),让谷歌/YouTube 流量稳定走代理
+    rules_list.append('AND,((NETWORK,UDP),(DST-PORT,443)),REJECT')
+    # 4. 常用国内域名直连(快速路径)
+    rules_list += [f'DOMAIN-SUFFIX,{d},DIRECT' for d in CN_DOMAINS]
+    # 5. GEOSITE 国内域名大库直连(数万条国内域名,覆盖面广)
+    rules_list.append('GEOSITE,CN,DIRECT')
+    # 6. 国内 IP 直连
+    rules_list.append('GEOIP,CN,DIRECT')
+    # 7. 其余(国外)全部走代理
+    rules_list.append('MATCH,🚀 节点选择')
+
+    # ===== 全局配置 + DNS(国内域名用国内 DNS,国外走 fallback) =====
+    dns_config = {
+        'enable': True,
+        'listen': '0.0.0.0:1053',
+        'ipv6': False,
+        'enhanced-mode': 'fake-ip',
+        'fake-ip-range': '198.18.0.1/16',
+        'fake-ip-filter': [
+            '+.lan', '+.local',
+            '+.msftconnecttest.com', '+.msftncsi.com', 'dns.msftncsi.com',
+            '+.stun.*.*', '+.stun.*.*.*',
+            'time.*.com', 'time.*.gov', 'time.*.edu.cn', '+.time.edu.cn',
+            '+.ntp.org', '+.pool.ntp.org', 'time1.cloud.tencent.com',
+            '+.qq.com', '+.wechat.com', '+.weixin.qq.com',
+            '+.market.xiaomi.com',
+        ],
+        'default-nameserver': ['223.5.5.5', '119.29.29.29'],
+        'nameserver': ['https://223.5.5.5/dns-query', 'https://doh.pub/dns-query'],
+        'fallback': ['https://dns.cloudflare.com/dns-query', 'https://dns.google/dns-query', 'tcp://1.1.1.1:53'],
+        'fallback-filter': {
+            'geoip': True,
+            'geoip-code': 'CN',
+            'ipcidr': ['240.0.0.0/4'],
+        },
+    }
+
     config = {
+        'mixed-port': 7897,
+        'allow-lan': False,
+        'mode': 'rule',
+        'log-level': 'info',
+        'unified-delay': True,
+        'tcp-concurrent': True,
+        'global-client-fingerprint': 'chrome',
         'proxies': all_proxies,
         'proxy-groups': [
-            {'name': '🚀 节点选择', 'type': 'select', 'proxies': ['EdgeGo节点', '公共节点', '🐢 延迟最低']},
+            {'name': '🚀 节点选择', 'type': 'select', 'proxies': ['♻️ 自动选择', 'EdgeGo节点', '公共节点', '🐢 延迟最低']},
+            {'name': '♻️ 自动选择', 'type': 'url-test', 'proxies': [p['name'] for p in all_proxies], 'url': 'http://www.gstatic.com/generate_204', 'interval': 300, 'tolerance': 50},
             {'name': 'EdgeGo节点', 'type': 'select', 'proxies': gitlabip_names},
             {'name': '公共节点', 'type': 'select', 'proxies': public_names},
             {'name': '🐢 延迟最低', 'type': 'url-test', 'proxies': [p['name'] for p in all_proxies], 'url': 'http://www.gstatic.com/generate_204', 'interval': 300, 'tolerance': 50}
         ],
         'rules': rules_list,
+        'dns': dns_config,
     }
     
     yaml_content = yaml.dump(config, allow_unicode=True, sort_keys=False)

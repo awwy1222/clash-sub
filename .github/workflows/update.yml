@@ -32,3 +32,10 @@ jobs:
           git add sub.yaml
           git diff --staged --quiet || git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M')"
           git push
+
+      - name: Purge jsDelivr cache
+        if: success()
+        run: |
+          sleep 5
+          curl -sf "https://purge.jsdelivr.net/gh/awwy1222/clash-sub@master/sub.yaml" > /dev/null || true
+          echo "jsDelivr 缓存已刷新,订阅地址: https://cdn.jsdelivr.net/gh/awwy1222/clash-sub@master/sub.yaml"
