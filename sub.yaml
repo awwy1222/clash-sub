@@ -1,5 +1,5 @@
-# Clash 订阅 - 更新于 2026-08-31 05:13:45
-# EdgeGo: 10 个, 公共: 54 个
+# Clash 订阅 - 更新于 2026-09-01 04:49:07
+# EdgeGo: 10 个, 公共: 70 个
 
 mixed-port: 7897
 allow-lan: false
@@ -318,74 +318,48 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: CA_134MBs
-  password: amazonskr05
-  port: 443
-  server: 35.182.250.193
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: US_529MBs
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 15.204.247.244
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: US_646MBs
-  password: OhGXJG4nEqTN62cDDcD_8_CddrpTHn0u
-  port: '1080'
-  server: de-server-1.zelnora.ir
-  type: ss
-  udp: true
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  client-fingerprint: chrome
-  name: FR_225MBs
-  network: ws
-  password: humanity
-  port: '443'
-  server: 198.41.223.96
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /assignment
 - client-fingerprint: chrome
-  name: FR_315MBs
+  name: FR_132MBs
   network: ws
   password: humanity
   port: '443'
-  server: 104.18.152.161
+  server: 104.18.152.233
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.75 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.84 Safari/537.36
+    path: /assignment
+- alterId: 2
+  cipher: auto
+  name: Other_119MBs
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  name: FR_243MBs
+  network: ws
+  password: humanity
+  port: '443'
+  server: 172.67.74.2
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /assignment
 - cipher: chacha20-ietf
-  name: SG_240MBs
-  password: passwd
-  plugin: obfs
-  plugin-opts:
-    host: 37949-LD4JNZAf.download.microsoft.com
-    mode: http
-  port: '8211'
-  server: cn08.somethingstranges.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: SG_338MBs
+  name: SG_236MBs
   password: passwd
   plugin: obfs
   plugin-opts:
@@ -395,34 +369,314 @@ proxies:
   server: cn07.somethingstranges.com
   type: ss
   udp: true
-- name: _CN_中国-_US_美国
+- alterId: '0'
+  cipher: auto
+  name: HK_128MBs
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  type: vmess
+  uuid: 2498a366-dd3c-4f0b-832c-f2df12f7ee27
+  ws-opts:
+    headers:
+      Host: 791f9b5b1318471268a2dc21098376cc.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: GB_150MBs
+  network: ws
+  port: 34228
+  server: jp.6807251.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7aa3a024-e333-4b63-99a2-3db9d3b2054e
+  ws-opts:
+    headers:
+      Host: a.189.cn
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: JP_139MBs
+  network: ws
+  port: 16617
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ca68cf56-7c3c-4127-816e-7442de9176b7
+  ws-opts:
+    headers:
+      Host: 7ddc7ef7c7f198c5e7dbed9634157ca7.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- cipher: chacha20-ietf
+  name: JP_240MBs
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    host: 37949-LD4JNZAf.download.microsoft.com
+    mode: http
+  port: 8406
+  server: cn12.somethingstranges.com
   type: ss
-  server: 121.46.230.232
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+- cipher: aes-256-cfb
+  name: GB_244MBs
+  password: amazonskr05
+  port: 443
+  server: 35.179.104.254
+  type: ss
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: IN_140MBs
+  network: ws
+  port: 16626
+  server: planb.mojcn.com.linuxlh.xin
+  type: vmess
+  uuid: 302cf141-f8e2-448d-aca5-3ad9e9f1b4c1
+  ws-opts:
+    headers:
+      Host: d2c315853d201942b93c6d6de56fec5d.mobgslb.tbcache.com
+    path: /
+- name: HK_242MBs
+  password: 302cf77d-6fb7-4ac8-ae61-88e286340d59
+  port: 50222
+  server: hk03.qianmoip.win
+  skip-cert-verify: true
+  sni: taobao.com
+  type: trojan
+- alterId: 1
+  cipher: auto
+  name: JP_352MBs
+  port: 21581
+  server: 01eb6-g01.jp03-7d22-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+- alterId: 0
+  cipher: auto
+  name: HK_357MBs
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6605fd88-f41c-4c2a-90ee-6777ac0a32a2
+  ws-opts:
+    headers:
+      Host: 052977cd32d141678a739f13963d57ac.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: IN_248MBs
+  network: ws
+  port: 16626
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4a9bbf17-5684-452c-9b84-ba3743a5b819
+  ws-opts:
+    headers:
+      Host: f2a1fd8cc931919f1ada44cdfa8310e9.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: IN_335MBs
+  network: ws
+  port: 16626
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e48b885-1a50-4c5c-aafa-9051b06bf488
+  ws-opts:
+    headers:
+      Host: f630621db21a916c20751c19fc2358a9.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: DE_613MBs
+  network: ws
+  port: '65531'
+  server: 78.31.249.175
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7aa3a024-e333-4b63-99a2-3db9d3b2054e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: HK_452MBs
+  network: ws
+  port: '16622'
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00736f0b-8715-45b7-888b-ced7aaa637bf
+  ws-opts:
+    headers:
+      Host: 71863cd408e0a1b6626012d168c0b94e.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- cipher: aes-256-gcm
+  name: HK_524MBs
+  password: 72553320ae6bcc8f
+  port: '20210'
+  server: 212.192.15.178
+  type: ss
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: US_2431MBs
+  network: ws
+  port: '24187'
+  server: 23.236.69.39
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 12a8ee36-5936-4449-90bd-b5eac6db4c1d
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
+- name: _CN_中国
+  type: vmess
+  server: 112.132.215.108
+  port: 50002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
   skip-cert-verify: true
   udp: true
-- name: _HK_中国香港-_SG_新加坡
+- name: _DE_德国
+  type: vmess
+  server: 78.31.249.175
+  port: 65531
+  uuid: 7aa3a024-e333-4b63-99a2-3db9d3b2054e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  udp: true
+- name: _HK_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港_1
+  type: vmess
+  server: planb.mojcn.com.linuxlh.xin
+  port: 16632
+  uuid: 6605fd88-f41c-4c2a-90ee-6777ac0a32a2
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 052977cd32d141678a739f13963d57ac.mobgslb.tbcache.com
+  udp: true
+- name: _SG_新加坡
+  type: hysteria2
+  server: 47.241.108.227
+  port: 50160
+  password: 436114b5f36b2e704bdfa0927d57b6cd
+  sni: www.bing.com
+  skip-cert-verify: true
+  udp: true
+- name: _GB_英国
+  type: ss
+  server: 18.132.203.206
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: _DE_德国_1
   type: vless
-  server: nian.001.url111.kcloud02.top
-  port: 15006
-  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
-  servername: www.adobe.com
+  server: germany.superbuba.top
+  port: 443
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  servername: germany.superbuba.top
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
-    public-key: g9KZONtwSL8mL772rps2nXVAuQpsgHY33K_pHpI89Rg
-    short-id: 029a6cc4
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
   skip-cert-verify: true
   udp: true
-- name: _MY_马来西亚
+- name: _CA_加拿大
   type: ss
-  server: 118.107.222.231
+  server: 35.182.226.121
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_US_美国
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_US_美国_1
+  type: ss
+  server: 121.46.230.233
   port: 65443
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国_1
+  type: vless
+  server: us22.sofast.live
+  port: 58011
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _GB_英国_1
+  type: ss
+  server: 18.133.240.229
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
   skip-cert-verify: true
   udp: true
 - name: _CN_中国-_FR_法国
@@ -441,41 +695,7 @@ proxies:
   port: 30806
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国-_SG_新加坡
-  type: vmess
-  server: v45.hdacd.com
-  port: 30845
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港-_SG_新加坡_1
-  type: vless
-  server: 82.38.46.66
-  port: 15006
-  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
-  servername: www.adobe.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: g9KZONtwSL8mL772rps2nXVAuQpsgHY33K_pHpI89Rg
-    short-id: 029a6cc4
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国
-  type: vmess
-  server: 112.132.215.108
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
+  cipher: none
   tls: false
   skip-cert-verify: true
   udp: true
@@ -487,6 +707,72 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
+  skip-cert-verify: true
+  udp: true
+- name: _DE_德国_2
+  type: ss
+  server: 130.61.83.100
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EItZd/Xd+cmdmMJ9FLqMrlkRD6D/u/iVR0p1qJZMblQ=
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港_2
+  type: vmess
+  server: v10.zgtfqs.click
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: none
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_US_美国_2
+  type: ss
+  server: 121.46.230.232
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  skip-cert-verify: true
+  udp: true
+- name: _RU_俄罗斯
+  type: vless
+  server: 31.76.34.121
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  servername: russia.cendora.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: uo-U-FDlo7Cqldg7JKUe8jHvYnwP08NanGX0tUFrqEc
+    short-id: bef240e96a8474a3
+  skip-cert-verify: true
+  udp: true
+- name: _CN_中国-_US_美国_3
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: _HK_中国香港_3
+  type: trojan
+  server: hk04.qianmoip.win
+  port: 52224
+  password: 302cf77d-6fb7-4ac8-ae61-88e286340d59
+  sni: taobao.com
+  skip-cert-verify: true
+  udp: true
+- name: _MY_马来西亚
+  type: ss
+  server: 118.107.222.231
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   skip-cert-verify: true
   udp: true
 - name: _DK_丹麦
@@ -503,113 +789,40 @@ proxies:
     short-id: a1b2c3d4
   skip-cert-verify: true
   udp: true
-- name: _CA_加拿大
-  type: ss
-  server: 3.96.124.46
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: _DE_德国
-  type: hysteria2
-  server: replay.wwwinternetvideo.click
-  port: 443
-  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
-  sni: replay.wwwinternetvideo.click
-  skip-cert-verify: true
-  udp: true
-- name: _CA_加拿大_1
-  type: ss
-  server: 35.182.250.193
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  skip-cert-verify: true
-  udp: true
-- name: _EE_爱沙尼亚
+- name: _HK_中国香港-_SG_新加坡
   type: vless
-  server: 31.76.70.32
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  servername: baltic.cendora.ru
+  server: 82.38.46.66
+  port: 15006
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  servername: www.adobe.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-    short-id: 4a46213c935e2ee4
+    public-key: g9KZONtwSL8mL772rps2nXVAuQpsgHY33K_pHpI89Rg
+    short-id: 029a6cc4
   skip-cert-verify: true
   udp: true
-- name: _CN_中国-_US_美国_1
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _CN_中国-_KR_韩国
-  type: ss
-  server: 121.46.230.138
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港
+- name: _CN_中国-_DE_德国
   type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: _US_美国_1
-  type: vmess
-  server: 38.246.226.240
-  port: 52080
-  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: http
-  udp: true
-- name: _TH_泰国
-  type: ss
-  server: 103.169.67.34
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  skip-cert-verify: true
-  udp: true
-- name: _HK_中国香港_1
-  type: vmess
-  server: v10.zgtfqs.click
-  port: 30807
+  server: v33.hdacd.com
+  port: 30833
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: none
   tls: false
   skip-cert-verify: true
   udp: true
-- name: _FR_法国
+- name: _HK_中国香港-_SG_新加坡_1
   type: ss
-  server: 95.170.13.47
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-  skip-cert-verify: true
-  udp: true
-- name: _GB_英国
-  type: ss
-  server: 18.132.203.206
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
+  server: cn08.somethingstranges.com
+  port: 8211
+  cipher: chacha20-ietf
+  password: passwd
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 37949-LD4JNZAf.download.microsoft.com
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -658,35 +871,51 @@ proxy-groups:
   - 美国3ripaojiedian
   - 台湾ripaojiedian
   - 香港ripaojiedian
-  - CA_134MBs
-  - US_529MBs
-  - US_646MBs
-  - FR_225MBs
-  - FR_315MBs
-  - SG_240MBs
-  - SG_338MBs
+  - FR_132MBs
+  - Other_119MBs
+  - FR_243MBs
+  - SG_236MBs
+  - HK_128MBs
+  - GB_150MBs
+  - JP_139MBs
+  - JP_240MBs
+  - GB_244MBs
+  - IN_140MBs
+  - HK_242MBs
+  - JP_352MBs
+  - HK_357MBs
+  - IN_248MBs
+  - IN_335MBs
+  - DE_613MBs
+  - HK_452MBs
+  - HK_524MBs
+  - US_2431MBs
+  - _CN_中国
+  - _DE_德国
+  - _HK_中国香港
+  - _HK_中国香港_1
+  - _SG_新加坡
+  - _GB_英国
+  - _DE_德国_1
+  - _CA_加拿大
   - _CN_中国-_US_美国
-  - _HK_中国香港-_SG_新加坡
-  - _MY_马来西亚
+  - _CN_中国-_US_美国_1
+  - _CN_中国_1
+  - _GB_英国_1
   - _CN_中国-_FR_法国
   - _CN_中国-_JP_日本
-  - _CN_中国-_SG_新加坡
-  - _HK_中国香港-_SG_新加坡_1
-  - _CN_中国
   - _US_美国
+  - _DE_德国_2
+  - _HK_中国香港_2
+  - _CN_中国-_US_美国_2
+  - _RU_俄罗斯
+  - _CN_中国-_US_美国_3
+  - _HK_中国香港_3
+  - _MY_马来西亚
   - _DK_丹麦
-  - _CA_加拿大
-  - _DE_德国
-  - _CA_加拿大_1
-  - _EE_爱沙尼亚
-  - _CN_中国-_US_美国_1
-  - _CN_中国-_KR_韩国
-  - _HK_中国香港
-  - _US_美国_1
-  - _TH_泰国
-  - _HK_中国香港_1
-  - _FR_法国
-  - _GB_英国
+  - _HK_中国香港-_SG_新加坡
+  - _CN_中国-_DE_德国
+  - _HK_中国香港-_SG_新加坡_1
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -731,35 +960,51 @@ proxy-groups:
   - 美国3ripaojiedian
   - 台湾ripaojiedian
   - 香港ripaojiedian
-  - CA_134MBs
-  - US_529MBs
-  - US_646MBs
-  - FR_225MBs
-  - FR_315MBs
-  - SG_240MBs
-  - SG_338MBs
+  - FR_132MBs
+  - Other_119MBs
+  - FR_243MBs
+  - SG_236MBs
+  - HK_128MBs
+  - GB_150MBs
+  - JP_139MBs
+  - JP_240MBs
+  - GB_244MBs
+  - IN_140MBs
+  - HK_242MBs
+  - JP_352MBs
+  - HK_357MBs
+  - IN_248MBs
+  - IN_335MBs
+  - DE_613MBs
+  - HK_452MBs
+  - HK_524MBs
+  - US_2431MBs
+  - _CN_中国
+  - _DE_德国
+  - _HK_中国香港
+  - _HK_中国香港_1
+  - _SG_新加坡
+  - _GB_英国
+  - _DE_德国_1
+  - _CA_加拿大
   - _CN_中国-_US_美国
-  - _HK_中国香港-_SG_新加坡
-  - _MY_马来西亚
+  - _CN_中国-_US_美国_1
+  - _CN_中国_1
+  - _GB_英国_1
   - _CN_中国-_FR_法国
   - _CN_中国-_JP_日本
-  - _CN_中国-_SG_新加坡
-  - _HK_中国香港-_SG_新加坡_1
-  - _CN_中国
   - _US_美国
+  - _DE_德国_2
+  - _HK_中国香港_2
+  - _CN_中国-_US_美国_2
+  - _RU_俄罗斯
+  - _CN_中国-_US_美国_3
+  - _HK_中国香港_3
+  - _MY_马来西亚
   - _DK_丹麦
-  - _CA_加拿大
-  - _DE_德国
-  - _CA_加拿大_1
-  - _EE_爱沙尼亚
-  - _CN_中国-_US_美国_1
-  - _CN_中国-_KR_韩国
-  - _HK_中国香港
-  - _US_美国_1
-  - _TH_泰国
-  - _HK_中国香港_1
-  - _FR_法国
-  - _GB_英国
+  - _HK_中国香港-_SG_新加坡
+  - _CN_中国-_DE_德国
+  - _HK_中国香港-_SG_新加坡_1
 - name: 🐢 延迟最低
   type: url-test
   proxies:
@@ -798,35 +1043,51 @@ proxy-groups:
   - 美国3ripaojiedian
   - 台湾ripaojiedian
   - 香港ripaojiedian
-  - CA_134MBs
-  - US_529MBs
-  - US_646MBs
-  - FR_225MBs
-  - FR_315MBs
-  - SG_240MBs
-  - SG_338MBs
+  - FR_132MBs
+  - Other_119MBs
+  - FR_243MBs
+  - SG_236MBs
+  - HK_128MBs
+  - GB_150MBs
+  - JP_139MBs
+  - JP_240MBs
+  - GB_244MBs
+  - IN_140MBs
+  - HK_242MBs
+  - JP_352MBs
+  - HK_357MBs
+  - IN_248MBs
+  - IN_335MBs
+  - DE_613MBs
+  - HK_452MBs
+  - HK_524MBs
+  - US_2431MBs
+  - _CN_中国
+  - _DE_德国
+  - _HK_中国香港
+  - _HK_中国香港_1
+  - _SG_新加坡
+  - _GB_英国
+  - _DE_德国_1
+  - _CA_加拿大
   - _CN_中国-_US_美国
-  - _HK_中国香港-_SG_新加坡
-  - _MY_马来西亚
+  - _CN_中国-_US_美国_1
+  - _CN_中国_1
+  - _GB_英国_1
   - _CN_中国-_FR_法国
   - _CN_中国-_JP_日本
-  - _CN_中国-_SG_新加坡
-  - _HK_中国香港-_SG_新加坡_1
-  - _CN_中国
   - _US_美国
+  - _DE_德国_2
+  - _HK_中国香港_2
+  - _CN_中国-_US_美国_2
+  - _RU_俄罗斯
+  - _CN_中国-_US_美国_3
+  - _HK_中国香港_3
+  - _MY_马来西亚
   - _DK_丹麦
-  - _CA_加拿大
-  - _DE_德国
-  - _CA_加拿大_1
-  - _EE_爱沙尼亚
-  - _CN_中国-_US_美国_1
-  - _CN_中国-_KR_韩国
-  - _HK_中国香港
-  - _US_美国_1
-  - _TH_泰国
-  - _HK_中国香港_1
-  - _FR_法国
-  - _GB_英国
+  - _HK_中国香港-_SG_新加坡
+  - _CN_中国-_DE_德国
+  - _HK_中国香港-_SG_新加坡_1
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
